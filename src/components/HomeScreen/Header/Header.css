@@ -10,14 +10,14 @@
 }
 .content h1 {
   color: #fff;
-  font-size: 50px;
+  font-size: 45px;
   margin-bottom: 3px;
   color: #10271D;
   line-height: 1.1;
 }
 .content p {
   margin-top: 10px;
-  font-size: 22px;
+  font-size: 19px;
   margin-bottom: 15px;
   color: #76867E;
 }
@@ -25,16 +25,16 @@
   background-color: #689030;
   padding: 10px 30px;
   border: none;
-  border-radius: 5px;
+  border-radius: 50px;
   font-size: 15px;
   cursor: pointer;
   color: #fff;
 }
 .content div:nth-child(2) img {
-  width: 750px;
+  width: 500px;
   height: 100%;
+  border-radius: 10px;
   object-fit: cover;
-  /* border-radius: 10% 10% 0 0 / 25% 25% 0 0; */
 }
 
 @media only screen and (min-width: 768px) {
@@ -45,7 +45,6 @@
 
   .content > div:first-child {
     width: 40%;
-    /* margin: 0 10px; */
   }
 }
 

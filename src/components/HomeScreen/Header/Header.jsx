@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { Container } from '@mui/material';
-import './Header.css'
+import './Header.css';
+import home from '../../../until/image/home1.jpg'
 const Header = () => {
     return (
         <>
             <div className='header'>
                 <div>
-                    <Container maxWidth="xl">
+                    <Container maxWidth="lg">
                         <div className='content'>
                             <div>
                                 <h1>Electrify Your Home</h1>
@@ -18,7 +19,7 @@ const Header = () => {
                                 <button>Make Plan</button>
                             </div>
                             <div>
-                                <img src='https://recycalyse.eu/wp-content/uploads/shutterstock_572652394.jpg' alt='not found' />
+                                <img src={home} alt='not found' />
                             </div>
                         </div>
                    

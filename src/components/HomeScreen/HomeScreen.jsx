@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Header from './Header/Header'
 import WOW from 'wowjs';
+import TailoredInsights from './TailoredInsights/Tailored';
 
 const HomeScreen = () => {
     useEffect(() => {
@@ -10,6 +11,9 @@ const HomeScreen = () => {
     return (
         <div className='wow fadeInDown' data-wow-duration='1s'>
             <Header />
+            <TailoredInsights/>
+       
+            
         </div>
     )
 };

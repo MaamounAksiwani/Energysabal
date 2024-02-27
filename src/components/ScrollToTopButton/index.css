@@ -4,7 +4,7 @@
     bottom: 15px;
     cursor: pointer;
     width: 60px;
-    background-color: #243346;
+    background-color: #10271D;
     height: 60px;
     color: #fff;
     transition: 0.3s ease;
@@ -20,5 +20,5 @@
   }
   
   .scrollToTopButton:hover {
-    background-color: #ffd41a; 
+    background-color: #689030; 
   }

@@ -1,7 +1,7 @@
 .navBar {
   padding: 20px 0;
   /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
-  background-color: #fff; 
+  /* background-color: #E7F0E9;  */
   /* background-color: red; */
 }
 .navBar img {
@@ -38,7 +38,7 @@
   border: none;
   color: #000;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 50px;
   font-size: 14px;
 }
 .navbarLinks .getStartBtn {
@@ -95,3 +95,25 @@ color: #fff;
  }
 }
 
+
+
+.menuSidebar {
+  height: 100%;
+  width: 20px;
+  background-color: #1ea7dd;
+  padding: 10px 15px;
+}
+
+.menuSidebar .menuNavBarLink {
+  color: #fff;
+  display: block;
+  font-weight: 300;
+  padding: 25px 0px;
+}
+.menuSidebar .burgerSideMenu {
+  display: flex;
+  padding: 15px 0px;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
