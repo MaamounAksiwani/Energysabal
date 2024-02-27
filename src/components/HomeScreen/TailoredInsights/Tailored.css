@@ -22,7 +22,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   text-align: center;
-  gap: 10px;
+  gap: 100px;
 }
 
 .card h1{
@@ -46,12 +46,10 @@
 
 .card div {
   padding:50px 25px;
-  /* background-color: #ccc; */
-  /* border: 1px solid #EEEEEE; */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   transition: box-shadow 0.3s ease;
   transition: 0.3s ease;
-  /* background-color: red; */
 }
 .card .btn{
     background-color: #689030 !important;
@@ -59,19 +57,16 @@
     padding: 10px 25px;
     border-radius: 50px;
     cursor: pointer;
+    font-size: 13px;
     border: none;
 }
 
-.card div:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
 
 @media only screen and (max-width: 768px) {
   .card {
     display: flex;
     flex-direction: column;
+    gap: 10px;
   }
+  
 }
-
-/* color: #10271D; */
-/* color: #76867E; */
