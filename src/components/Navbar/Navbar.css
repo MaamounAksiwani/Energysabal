@@ -1,0 +1,97 @@
+.navBar {
+  padding: 20px 0;
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+  background-color: #fff; 
+  /* background-color: red; */
+}
+.navBar img {
+  /* width: 100px; */
+  max-height: 35px;
+}
+
+.headerNavBar {
+  text-align: center;
+  padding: 10px 0;
+  color: #ebebebeb;
+}
+.navbarLinks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbarLinks div {
+  display: flex;
+  align-items: center;
+}
+.navbarLinks div span {
+  color: #10271D;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 0 10px;
+  font-weight: 600;
+  padding: 0 10px;
+}
+
+.navbarLinks button {
+  padding: 8px 25px;
+  margin: 0 10px;
+  border: none;
+  color: #000;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.navbarLinks .getStartBtn {
+  background-color: #689030;
+color: #fff;
+  transition: 0.3s ease;
+}
+.navbarLinks .SignIn {
+  border: 1px solid #689030;
+  transition: 0.3s ease;
+  background-color: #fff;
+}
+
+.navbarLinks .SignIn:hover {
+  /* border: 1px solid #ebebebeb; */
+  /* color: #ebebebeb; */
+}
+
+
+.menuIcon{
+  display: none !important;
+ font-size: 18px;
+}
+/* .menuItems{ */
+/* } */
+
+
+.menuSidebar {
+  height: 100%;
+  background-color: #1ea7dd;
+  padding: 10px 15px;
+}
+
+.menuSidebar .menuNavBarLink {
+  color: #fff;
+  display: block;
+  font-weight: 300;
+  padding: 25px 0px;
+}
+.menuSidebar .burgerSideMenu {
+  display: flex;
+  padding: 15px 0px;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+} 
+
+@media only screen and (max-width: 768px) {
+ .menuIcon{
+  display: block !important;
+ }
+ .menuItems{
+  display: none !important;
+ }
+}
+
