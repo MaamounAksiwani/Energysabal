@@ -78,16 +78,18 @@ const Energy = () => {
                         <div className='Energycontent'>
                             <div className='EnergyContentImage'>
                                 <img src='https://www.vgx.nl/wp-content/uploads/2022/11/service-page-image1-683x1024.jpg' alt='not found' />
-                                <div className='text'>
+                                {/* <div className='text'>
                                     WHAT WE OFFER
-                                </div>
+                                </div> */}
                             </div>
                             <div>
+                            <p>  WHAT WE OFFER</p>
                                 <h1>
                                     ENERGY SABAL UNLOCKS THE TRUE COST
                                     OF ELECTRIFICATION AND MAXIMIZES YOUR
                                     SAVINGS
                                 </h1>
+                                
                                 <div className='ContainerCollapse'>
                                     {renderFaqItems(content, (id) => openState === id, handleToggle)}                </div>
                             </div>
