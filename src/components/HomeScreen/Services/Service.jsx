@@ -18,13 +18,18 @@ const Services = () => {
 
                 <div className='service-container'>
                     <div className='contact'>
-                        <p>YOUR ONE-STOP</p>
-                        <h1>ELECTRIFICATION DESTINATION
+                        <p> INSTALLATION SERVICES</p>
+                        <h1> Your One Stop <br /> Electrification Destination
                         </h1>
                     </div>
                     <div>
-                        <p>With us, you can rest assured that all your energy needs will be met under one roof. Say goodbye to the hascontractors—we handle it all for you
-                            From A to Z, Energy Sabal ensures a seamless experience, making ysmooth and stress free.</p>
+                        <p>With us, you can rest assured that all your energy needs will be met under one roof. Say goodbye to the
+                            hassle of coordinating multiple contractors.
+                        </p>
+                        <p>
+                            We handle it all for you. From A to Z, Energy Sabal ensures a seamless experience, making
+                            your electrification journey smooth and stress free.
+                        </p>
                     </div>
                 </div>
 
@@ -32,36 +37,36 @@ const Services = () => {
                 <div className='service'>
                     <div>
                         <HeatPumpOutlinedIcon className='service-icon' />
-                        <h3>HeatPumpOutlinedIcon</h3>
-                        <ArrowRightAltIcon style={{color:'#FFF' , cursor:'pointer'}}/>
+                        <h3>HeatPump</h3>
+                        <ArrowRightAltIcon style={{ color: '#FFF', cursor: 'pointer' }} />
                     </div>
 
                     <div>
-                        <SolarPowerOutlinedIcon className='service-icon'/>
+                        <SolarPowerOutlinedIcon className='service-icon' />
                         <h3>Solar</h3>
-                        <ArrowRightAltIcon style={{color:'#FFF' , cursor:'pointer'}}/>
+                        <ArrowRightAltIcon style={{ color: '#FFF', cursor: 'pointer' }} />
                     </div>
 
                     <div>
-                        <WaterDropOutlinedIcon  className='service-icon'/>
+                        <WaterDropOutlinedIcon className='service-icon' />
                         <h3>Water Heater</h3>
-                        <ArrowRightAltIcon style={{color:'#FFF' , cursor:'pointer'}}/>
+                        <ArrowRightAltIcon style={{ color: '#FFF', cursor: 'pointer' }} />
                     </div>
 
 
                     <div>
-                        <DeveloperBoardOutlinedIcon  className='service-icon'/>
+                        <DeveloperBoardOutlinedIcon className='service-icon' />
                         <h3>Panel Upgrade</h3>
-                        <ArrowRightAltIcon style={{color:'#FFF' , cursor:'pointer'}}/>
+                        <ArrowRightAltIcon style={{ color: '#FFF', cursor: 'pointer' }} />
                     </div>
 
                     <div>
                         <EvStationOutlinedIcon className='service-icon' />
                         <h3>EV Charging</h3>
-                        <ArrowRightAltIcon style={{color:'#FFF' , cursor:'pointer'}}/>
+                        <ArrowRightAltIcon style={{ color: '#FFF', cursor: 'pointer' }} />
                     </div>
 
-                    <div>
+                    {/* <div>
                         <HdrWeakOutlinedIcon className='service-icon' />
                         <h3>Kitchen</h3>
                         <ArrowRightAltIcon style={{color:'#FFF' , cursor:'pointer'}}/>
@@ -71,7 +76,7 @@ const Services = () => {
                         <LocalLaundryServiceOutlinedIcon className='service-icon' />
                         <h3>Clothes Dryer</h3>
                         <ArrowRightAltIcon style={{color:'#FFF' , cursor:'pointer'}}/>
-                    </div>
+                    </div> */}
 
 
                 </div>

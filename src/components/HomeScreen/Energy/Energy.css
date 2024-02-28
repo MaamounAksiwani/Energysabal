@@ -108,43 +108,31 @@
   }
 }
 .IconButton {
-  border: 0.5px solid #ddd;
   display: flex;
-  font-weight: 300;
-  justify-content: space-between;
+  font-weight: 200;
   align-items: center;
   cursor: pointer;
   padding: 0px 25px;
-  border-radius: 5px;
+  border-bottom: 1px solid #C7CCCA;
 }
+
 .IconButton h3 {
   color: #696969;
   font-weight: 600;
   font-size: 15px;
+  margin-left: 15px;
 }
 .IconButton:hover h3 {
-  color: #fff;
+  color: #696969;
 }
 .IconButton:hover {
   cursor: pointer;
-  background-color: #3b715a;
-  border: 1px solid #3b715a;
 }
 .iconStyle {
-  color: #fff;
-  background-color: #696969;
-  border-radius: 50%;
-}
-
-.IconButton:hover .iconStyle {
-  border-radius: 50%;
-  color: #3b715a;
-  font-size: 24px;
-  background-color: #fff;
+  color: #696969;
 }
 .Collapse {
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  background-color: #fff;
+  padding: 0px 35px ;
 }
 
 .Collapse ul {
@@ -158,7 +146,6 @@
   margin: 10px 0px;
 }
 .collapse-box {
-  /* margin-bottom: 25px; */
   margin: 20px 0px;
 }
 .childBox {

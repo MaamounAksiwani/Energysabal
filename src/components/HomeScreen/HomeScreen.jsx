@@ -11,12 +11,12 @@ const HomeScreen = () => {
         wow.init();
     }, [])
     return (
-        <div className='wow fadeInDown' data-wow-duration='1s'>
+        <div className='wow fadeInDown' data-wow-duration='1s' style={{backgroundColor:'#E7F0E9'}}>
             <Header/>
             <TailoredInsights />
-            <ImageSection/>
-            <Energy/>
             <Services />
+            <Energy/>
+            <ImageSection/>
         </div>
     )
 };

@@ -14,12 +14,13 @@ const Energy = () => {
     const FaqItem = ({ item, isOpen, handleToggle }) => (
         <div className={`collapse-box ${isOpen ? 'active' : ''}`} key={item.id}>
             <div className='IconButton' onClick={() => handleToggle(item.id)}>
-                <h3>{item.title}</h3>
                 {isOpen ? <RemoveIcon className='iconStyle' /> : <AddIcon className='iconStyle' />}
+                <h3>{item.title}</h3>
             </div>
             <Collapse in={isOpen} className='Collapse'>
                 {item.point && item.point.length > 0 ? (
                     <ul>
+                        
                         {item.point.map((ele, index) => (
                             <li key={index}>{`${ele}`}</li>
                         ))}
@@ -78,16 +79,11 @@ const Energy = () => {
                         <div className='Energycontent'>
                             <div className='EnergyContentImage'>
                                 <img src='https://www.vgx.nl/wp-content/uploads/2022/11/service-page-image1-683x1024.jpg' alt='not found' />
-                                {/* <div className='text'>
-                                    WHAT WE OFFER
-                                </div> */}
                             </div>
                             <div>
-                            <p>  WHAT WE OFFER</p>
+                            <p>  What We Offer</p>
                                 <h1>
-                                    ENERGY SABAL UNLOCKS THE TRUE COST
-                                    OF ELECTRIFICATION AND MAXIMIZES YOUR
-                                    SAVINGS
+                                Energy Sabal Unlocks the True Cost of Electrification and Maximizes Your Savings
                                 </h1>
                                 
                                 <div className='ContainerCollapse'>

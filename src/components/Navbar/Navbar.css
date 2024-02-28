@@ -28,12 +28,13 @@
   cursor: pointer;
   font-size: 16px;
   margin: 0 10px;
-  font-weight: 600;
+  font-weight: 400;
   padding: 0 10px;
+  /* color: RED !important; */
 }
 
 .navbarLinks button {
-  padding: 8px 25px;
+  padding: 15px 30px;
   margin: 0 10px;
   border: none;
   color: #000;
@@ -42,14 +43,16 @@
   font-size: 14px;
 }
 .navbarLinks .getStartBtn {
-  background-color: #689030;
+  background-color: #80AA45;
 color: #fff;
   transition: 0.3s ease;
 }
 .navbarLinks .SignIn {
-  border: 1px solid #689030;
+  /* border: 0.5px solid #80AA45; */
   transition: 0.3s ease;
   background-color: #fff;
+  color: #fff;
+  background-color: #3B715A;
 }
 
 .navbarLinks .SignIn:hover {

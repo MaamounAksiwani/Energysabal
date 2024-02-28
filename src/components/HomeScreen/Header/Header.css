@@ -10,20 +10,21 @@
 }
 .content h1 {
   color: #fff;
-  font-size: 45px;
-  margin-bottom: 3px;
+  font-size: 65px;
+  margin-bottom: 15px;
   color: #10271D;
   line-height: 1.1;
 }
 .content p {
   margin-top: 10px;
-  font-size: 19px;
-  margin-bottom: 15px;
+  font-size: 18px;
+  margin-bottom: 25px;
   color: #76867E;
+  font-weight: 300;
 }
 .header button {
-  background-color: #689030;
-  padding: 10px 30px;
+  background-color: #80AA45;
+  padding: 15px 30px;
   border: none;
   border-radius: 50px;
   font-size: 15px;
@@ -33,7 +34,7 @@
 .content div:nth-child(2) img {
   width: 600px;
   height: 100%;
-  border-radius: 10px;
+  border-radius: 15px;
   object-fit: cover;
 }
 

@@ -23,6 +23,13 @@
     color: #fff;
   }
   
+  .centered-text p{
+    color: red;
+    font-weight: 300;
+    color :#C7CCCA;
+    font-size: 25px;
+    margin-bottom: 0;
+  }
   .centered-text h1 {
     margin: 0;
     font-size: 2em;
@@ -30,7 +37,7 @@
   .centered-text button{
     margin: 25px 0;
     background-color: #E65E36;
-    padding: 10px 30px;
+    padding: 15px 30px;
     border: none;
     border-radius: 50px;
     font-size: 15px;

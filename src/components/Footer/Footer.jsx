@@ -24,8 +24,8 @@ const Footer = () => {
                             <li><a href="#">Water Heater</a></li>
                             <li><a href="#">Panel Upgrade</a></li>
                             <li><a href="#">EV Charging</a></li>
-                            <li><a href="#">Kitchen</a></li>
-                            <li><a href="#">Clothes Dryer</a></li>
+                            {/* <li><a href="#">Kitchen</a></li>
+                            <li><a href="#">Clothes Dryer</a></li> */}
                         </ul>
 
                     </div>

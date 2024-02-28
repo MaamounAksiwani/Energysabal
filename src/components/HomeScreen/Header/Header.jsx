@@ -10,7 +10,7 @@ const Header = () => {
                     <Container maxWidth="lg">
                         <div className='content'>
                             <div>
-                                <h1>Electrify Your Home</h1>
+                                <h1>Electrify <br/> Your Home</h1>
                                 <p>Embrace the power of electrification and
                                     sustainable energy solutions. Cut annual energy
                                     costs and make a meaningful impact against

@@ -7,8 +7,9 @@ const ImageSection = () => {
             <div className="overlay">
                 <Container maxWidth='lg'>
                     <div className="centered-text">
-                        <h1>STILL PREFER DIRECT CONTACT? TALK TO <br />
-                            ONE OF OUR ELECTRIFICATION ADVISORS</h1>
+                        <p>Still prefer direct contact? </p>
+                        <h1>
+                        talk to one of our electrification advisors</h1>
                         <button>Contact Us</button>
                     </div>
                 </Container>
