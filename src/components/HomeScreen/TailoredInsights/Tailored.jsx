@@ -7,7 +7,7 @@ const TailoredInsights = () => {
         // wow.init();
     }, [])
     return (
-        <Container maxWidth='lg' style={{ paddingBottom: '50px' }}>
+        <Container maxWidth='lg' style={{ padding: '50px 0 100px 0' }} >
             <div className='titleTailored'>
                 <h3>Tailored Insights for <span>Your Electrification</span> Journey</h3>
                 <h1>Not sure yet? Receive a report first, before making a project plan</h1>

@@ -1,0 +1,54 @@
+.background-container {
+    position: relative;
+    width: 100%;
+    height: 45vh;
+    object-fit: fill !important;
+    background: url('https://www.vgx.nl/wp-content/uploads/2020/04/service-image10.jpg') center/cover no-repeat;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .centered-text {
+    text-align: center;
+    color: #fff;
+  }
+  
+  .centered-text h1 {
+    margin: 0;
+    font-size: 2em;
+  }
+  .centered-text button{
+    margin: 25px 0;
+    background-color: #E65E36;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 50px;
+    font-size: 15px;
+    cursor: pointer;
+    color: #fff;
+    
+  }
+
+  @media only screen and (max-width: 768px) {
+  
+   .centered-text h1 {
+    margin: 0;
+    font-size: 1.4em;
+  }
+  }
+  
+
+  /*  .centered-text h1 {
+    margin: 0;
+    font-size: 2em;
+  } */

@@ -3,6 +3,8 @@ import Header from './Header/Header'
 import WOW from 'wowjs';
 import TailoredInsights from './TailoredInsights/Tailored';
 import Services from './Services/Service';
+import Energy from './Energy/Energy';
+import ImageSection from './ImageSection/ImageSection';
 const HomeScreen = () => {
     useEffect(() => {
         const wow = new WOW.WOW();
@@ -10,8 +12,10 @@ const HomeScreen = () => {
     }, [])
     return (
         <div className='wow fadeInDown' data-wow-duration='1s'>
-            <Header />
+            <Header/>
             <TailoredInsights />
+            <ImageSection/>
+            <Energy/>
             <Services />
         </div>
     )

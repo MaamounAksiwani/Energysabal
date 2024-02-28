@@ -50,7 +50,7 @@ const Navbar = () => {
                 <div style={{
                     background: !isScrolled && (currentPath === '/') ? '#fff' : '#E7F0E9',
                     transition: 'background 0.3s ease',
-                    boxShadow: '0 4px 10px rgba(0, 0, 0, 0.1)'
+                    boxShadow: !isScrolled && (currentPath !== '/') ? `0 4px 10px rgba(0, 0, 0, 0.1)` : ''
                 }} className='navBar'>
                     <Container maxWidth='lg'>
                         <div className='navbarLinks'>

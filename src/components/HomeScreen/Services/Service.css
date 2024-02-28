@@ -1,12 +1,11 @@
 .main-service {
   background-color: #3b715a;
-  height: 70vh;
+  height: 80vh;
 }
 .service-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding: 10px 0;
-  
+  padding: 25px 0;
 }
 .service-container .contact p {
   margin-bottom: 10px;
@@ -27,8 +26,8 @@
   font-weight: 300;
 }
 .service {
-  padding: 50px 0;
   display: grid;
+  gap: 10px;
   grid-template-columns: repeat(4, 1fr);
 }
 .service .service-icon {
@@ -36,6 +35,10 @@
   font-size: 70px;
   color: #eeeeee;
   font-weight: 200;
+}
+.service div{
+    /* background-color: red; */
+    /* padding: 12px; */
 }
 
 .service h3 {

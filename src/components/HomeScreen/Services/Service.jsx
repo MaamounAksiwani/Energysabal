@@ -8,6 +8,7 @@ import DeveloperBoardOutlinedIcon from '@mui/icons-material/DeveloperBoardOutlin
 import EvStationOutlinedIcon from '@mui/icons-material/EvStationOutlined';
 import HdrWeakOutlinedIcon from '@mui/icons-material/HdrWeakOutlined';
 import LocalLaundryServiceOutlinedIcon from '@mui/icons-material/LocalLaundryServiceOutlined';
+import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 const Services = () => {
 
     return (
@@ -32,37 +33,44 @@ const Services = () => {
                     <div>
                         <HeatPumpOutlinedIcon className='service-icon' />
                         <h3>HeatPumpOutlinedIcon</h3>
+                        <ArrowRightAltIcon style={{color:'#FFF' , cursor:'pointer'}}/>
                     </div>
 
                     <div>
                         <SolarPowerOutlinedIcon className='service-icon'/>
                         <h3>Solar</h3>
+                        <ArrowRightAltIcon style={{color:'#FFF' , cursor:'pointer'}}/>
                     </div>
 
                     <div>
                         <WaterDropOutlinedIcon  className='service-icon'/>
                         <h3>Water Heater</h3>
+                        <ArrowRightAltIcon style={{color:'#FFF' , cursor:'pointer'}}/>
                     </div>
 
 
                     <div>
                         <DeveloperBoardOutlinedIcon  className='service-icon'/>
                         <h3>Panel Upgrade</h3>
+                        <ArrowRightAltIcon style={{color:'#FFF' , cursor:'pointer'}}/>
                     </div>
 
                     <div>
                         <EvStationOutlinedIcon className='service-icon' />
                         <h3>EV Charging</h3>
+                        <ArrowRightAltIcon style={{color:'#FFF' , cursor:'pointer'}}/>
                     </div>
 
                     <div>
                         <HdrWeakOutlinedIcon className='service-icon' />
                         <h3>Kitchen</h3>
+                        <ArrowRightAltIcon style={{color:'#FFF' , cursor:'pointer'}}/>
                     </div>
 
                     <div>
                         <LocalLaundryServiceOutlinedIcon className='service-icon' />
                         <h3>Clothes Dryer</h3>
+                        <ArrowRightAltIcon style={{color:'#FFF' , cursor:'pointer'}}/>
                     </div>
 
 

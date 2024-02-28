@@ -1,0 +1,173 @@
+.Energyheader {
+  padding: 100px 0;
+}
+.Energycontent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.Energycontent h1 {
+  color: #fff;
+  font-size: 28px;
+  margin-bottom: 3px;
+  color: #10271d;
+  line-height: 1.1;
+}
+.Energycontent p {
+  margin-top: 10px;
+  font-size: 19px;
+  margin-bottom: 15px;
+  color: #76867e;
+}
+.Energyheader button {
+  background-color: #689030;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 50px;
+  font-size: 15px;
+  cursor: pointer;
+  color: #fff;
+}
+.Energycontent div:nth-child(1) img {
+  width: 400px;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.EnergyContentImage {
+  position: relative;
+}
+
+.EnergyContentImage .text {
+  position: absolute;
+  right: -100px;
+  bottom: 3px;
+  width: 150px;
+  border-radius: 5px;
+  height: 150px;
+  padding: 10px;
+  font-size: 18px;
+  text-align: center;
+  z-index: 100000;
+  color: #fff;
+  background-color: #3b715a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+@media only screen and (min-width: 768px) {
+  .Energycontent {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .Energycontent > div:last-child {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .Energycontent div:nth-child(1) img {
+    width: 100%;
+    height: 100%;
+  }
+  .Energycontent {
+    flex-direction: column-reverse;
+  }
+  .Energyheader {
+    padding-top: 25px;
+  }
+  .Energycontent > div {
+    margin: 10px 0px;
+  }
+  .EnergyContentImage .text {
+    display: none;
+
+  }
+}
+
+.ContainerCollapse {
+  display: flex;
+}
+
+.ContainerCollapse div:first-child {
+}
+@media only screen and (max-width: 768px) {
+  .ContainerCollapse {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .ContainerCollapseOne {
+    width: 100%;
+  }
+  .ContainerCollapseTwo {
+    width: 100%;
+  }
+}
+.IconButton {
+  border: 0.5px solid #ddd;
+  display: flex;
+  font-weight: 300;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 0px 25px;
+  border-radius: 5px;
+}
+.IconButton h3 {
+  color: #696969;
+  font-weight: 600;
+  font-size: 15px;
+}
+.IconButton:hover h3 {
+  color: #fff;
+}
+.IconButton:hover {
+  cursor: pointer;
+  background-color: #3b715a;
+  border: 1px solid #3b715a;
+}
+.iconStyle {
+  color: #fff;
+  background-color: #696969;
+  border-radius: 50%;
+}
+
+.IconButton:hover .iconStyle {
+  border-radius: 50%;
+  color: #3b715a;
+  font-size: 24px;
+  background-color: #fff;
+}
+.Collapse {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+
+.Collapse ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  padding: 25px;
+}
+.Collapse ul li {
+  color: #696969;
+  font-size: 15px;
+  margin: 10px 0px;
+}
+.collapse-box {
+  /* margin-bottom: 25px; */
+  margin: 20px 0px;
+}
+.childBox {
+  margin: 25px;
+}
+
+.collapse-box p {
+  color: #696969;
+  font-size: 15px;
+  margin: 10px 0px;
+  padding: 25px;
+}

@@ -19,7 +19,7 @@ const Header = () => {
                                 <button>Make Plan</button>
                             </div>
                             <div>
-                                <img src={home} alt='not found' />
+                                <img src='https://www.vgx.nl/wp-content/uploads/2022/11/post-image5-1024x1024.jpg' alt='not found' />
                             </div>
                         </div>
                    

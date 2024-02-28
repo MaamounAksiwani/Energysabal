@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar/Navbar";
 
 import HomeScreen from "./components/HomeScreen/HomeScreen";
 import ScrollToTopButton from './components/ScrollToTopButton/index'
+import Footer from './components/Footer/Footer';
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
           <Route exact path="/" element={<HomeScreen />} />
         </Routes>
         <ScrollToTopButton/>
+        <Footer/>
       </BrowserRouter>
     </>
   );
