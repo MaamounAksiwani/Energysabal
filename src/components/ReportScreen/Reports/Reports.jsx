@@ -12,7 +12,7 @@ const Reports = () => {
             </div>
             <div className='card'>
 
-                <div style={{ padding: '50px' }}>
+                <div>
                     <h1>Electrification <br />
                         Assessment Report</h1>
                     <h3>Free</h3>
@@ -23,7 +23,7 @@ const Reports = () => {
 
                 </div>
 
-                <div style={{ padding: '50px' }}>
+                <div>
 
                     <h1>Comprehensive <br />
                         Electrification Report</h1>

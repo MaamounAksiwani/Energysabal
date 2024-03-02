@@ -40,21 +40,18 @@
 .card p {
   color: #76867e;
   line-height: 1.8;
-  /* background-color: red; */
   padding: 15px 30px;
   margin-top: 0 !important;
-  /* color: red; */
   font-weight: 200;
   margin-bottom: 40px;
 }
 .card h4 {
   color: #76867e;
   font-weight: 200;
-  padding: 0 50px;
+  padding: 0 20px;
 }
 .card div {
   padding: 50px 25px;
-  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
   border-radius: 15px;
   background-color: #fff;
   transition: box-shadow 0.3s ease;
