@@ -1,0 +1,25 @@
+.electrification-need{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    gap: 25px;
+    padding-bottom: 50px;
+}
+
+
+ .electrification-icon {
+    font-size: 70px !important;
+    color: #10271d;
+    font-weight: 200;
+  }
+
+
+
+  @media only screen and (max-width: 768px) {
+    .electrification-need{
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+    
+  }

@@ -112,7 +112,6 @@
   font-weight: 200;
   align-items: center;
   cursor: pointer;
-  padding: 0px 25px;
   border-bottom: 1px solid #C7CCCA;
 }
 
@@ -129,10 +128,11 @@
   cursor: pointer;
 }
 .iconStyle {
-  color: #696969;
+  color: #000;
 }
 .Collapse {
-  padding: 0px 35px ;
+  /* padding: 0px 25px ; */
+  /* background-color: red; */
 }
 
 .Collapse ul {

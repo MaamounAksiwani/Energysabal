@@ -9,6 +9,8 @@ const HomeScreen = () => {
     useEffect(() => {
         const wow = new WOW.WOW();
         wow.init();
+        
+        window.scrollTo(0, 0)
     }, [])
     return (
         <div className='wow fadeInDown' data-wow-duration='1s' style={{backgroundColor:'#E7F0E9'}}>

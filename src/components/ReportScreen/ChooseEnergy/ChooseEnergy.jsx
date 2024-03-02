@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
 import { Container } from '@mui/material';
-import './Energy.css';
 import Collapse from '@mui/material/Collapse';
 import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
-import home from '../../../until/image/home1.jpg'
-const Energy = () => {
+const ChooseEnergy = () => {
     const [openState, setOpenState] = useState(null);
     const handleToggle = (index) => {
         const isOpen = openState === index;
@@ -15,12 +13,12 @@ const Energy = () => {
         <div className={`collapse-box ${isOpen ? 'active' : ''}`} key={item.id}>
             <div className='IconButton' onClick={() => handleToggle(item.id)}>
                 {isOpen ? <RemoveIcon className='iconStyle' /> : <AddIcon className='iconStyle' />}
-                <h3 style={{color:'#000'}}>{item.title}</h3>
+                <h3 style={{ color: '#000' }}>{item.title}</h3>
             </div>
             <Collapse in={isOpen} className='Collapse'>
                 {item.point && item.point.length > 0 ? (
                     <ul>
-                        
+
                         {item.point.map((ele, index) => (
                             <li key={index}>{`${ele}`}</li>
                         ))}
@@ -43,33 +41,43 @@ const Energy = () => {
     const content = [
         {
             id: 0,
-            title: 'TIME & COST EFFICIENCY',
+            title: 'EXPERT INSIGHTS TAILORED TO YOUR PROJECT',
             point: [],
-            description: `Our Contractors know the best way to
-            organize your home electrification
-            projects, so your new appliances get
-            installed on time and within your budget`
+            description: `Our team of experienced professionals
+            provides personalized insights tailored
+            specifically to your electrification project.
+            We take into account your unique needs,
+            preferences, and goals to deliver
+            recommendations that are perfectly
+            suited to your situation`
         },
         {
             id: 1,
-            title: 'INCENTIVES AND REBATES',
+            title: 'COMPREHENSIVE ANALYSIS FOR INFORMED DECISION-MAKING',
             point: [],
-            description: `Our contractors can show you all the
-            ways to save money, like getting tax
-            credits, refunds, and other funding
-            options`
+            description: `Our reports offer a thorough and detailed
+            analysis of all aspects of your
+            electrification project. From cost
+            estimations to energy savings potential,
+            we provide the information you need to
+            make informed decisions about your
+            project’s scope, timeline, and budget`
         },
         {
             id: 2,
-            title: 'EXPERT GUIDANCE',
+            title: 'ACCESS TO EXCLUSIVE BENEFITS AND INCENTIVES',
             point: [
             ],
-            description: `Going electric can be a bit tricky,
-            especially since every home is different.
-            But don’t worry! A contractor can help
-            you imagine a cozy, energy-saving home
-            that suits you perfectly.`
-        },
+            description: `By choosing Energy Sabal Reports, you
+            gain access to exclusive benefits and
+            incentives that can help you maximize
+            your savings and minimize your
+            environmental impact. From tax credits to
+            rebates and financing options, we’ll help
+            you navigate the available incentives to
+            ensure you get the most out of your
+            electrification project.`
+        }
     ]
     return (
         <>
@@ -78,14 +86,18 @@ const Energy = () => {
                     <Container maxWidth="lg">
                         <div className='Energycontent'>
                             <div className='EnergyContentImage'>
-                                <img src='https://www.vgx.nl/wp-content/uploads/2022/11/service-page-image1-683x1024.jpg' alt='not found' />
+                                <img src='https://americanbusinessesforcleanenergy.org/wp-content/uploads/2021/03/windmill-energy-turbine.jpg' alt='not found' />
                             </div>
                             <div>
-                            <p>  What We Offer</p>
+                                <p> Why Choose Energy Sabal Reports?
+
+                                </p>
                                 <h1>
-                                Energy Sabal Unlocks the True Cost of Electrification and Maximizes Your Savings
+                                    We Provide Expert Guidance And Comprehensive Analysis In Our
+                                    Reports To Help You Make Informed Choices When Embarking On
+                                    Electrification Projects
                                 </h1>
-                                
+
                                 <div className='ContainerCollapse'>
                                     {renderFaqItems(content, (id) => openState === id, handleToggle)}                </div>
                             </div>
@@ -98,4 +110,4 @@ const Energy = () => {
     )
 };
 
-export default Energy;
+export default ChooseEnergy;

@@ -1,0 +1,39 @@
+.Process{
+    background-color: #80AA45;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-bottom: 50px ;
+    gap: 15px;
+  }
+  
+  .card-content {
+    
+    background-color:#fff ;
+    border-radius: 10px;
+    padding: 30px;
+  }
+  
+  .top-text {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color :#10271d
+  }
+  
+  .bottom-text {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+  
+
+  @media only screen and (max-width: 768px) {
+    .cards-container {
+      display: flex;
+      flex-direction: column;
+      /* gap: 25px; */
+    }
+    
+  }

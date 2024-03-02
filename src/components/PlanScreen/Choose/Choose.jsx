@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
 import { Container } from '@mui/material';
-import './Energy.css';
 import Collapse from '@mui/material/Collapse';
 import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
-import home from '../../../until/image/home1.jpg'
-const Energy = () => {
+const Choose = () => {
     const [openState, setOpenState] = useState(null);
     const handleToggle = (index) => {
         const isOpen = openState === index;
@@ -20,7 +18,7 @@ const Energy = () => {
             <Collapse in={isOpen} className='Collapse'>
                 {item.point && item.point.length > 0 ? (
                     <ul>
-                        
+
                         {item.point.map((ele, index) => (
                             <li key={index}>{`${ele}`}</li>
                         ))}
@@ -43,32 +41,51 @@ const Energy = () => {
     const content = [
         {
             id: 0,
-            title: 'TIME & COST EFFICIENCY',
+            title: 'EXPERTISE',
             point: [],
-            description: `Our Contractors know the best way to
-            organize your home electrification
-            projects, so your new appliances get
-            installed on time and within your budget`
+            description: `Our team consists of experienced
+            professionals who are knowledgeable in
+            the latest electrification technologies and
+            solutions.`
         },
         {
             id: 1,
-            title: 'INCENTIVES AND REBATES',
+            title: 'QUALITY',
             point: [],
-            description: `Our contractors can show you all the
-            ways to save money, like getting tax
-            credits, refunds, and other funding
-            options`
+            description: `We only use high-quality products and
+            materials in our installations, ensuring
+            durability, efficiency, and performance.
+            `
         },
         {
             id: 2,
-            title: 'EXPERT GUIDANCE',
+            title: 'CUSTOMER SATISFACTION',
             point: [
             ],
-            description: `Going electric can be a bit tricky,
-            especially since every home is different.
-            But don’t worry! A contractor can help
-            you imagine a cozy, energy-saving home
-            that suits you perfectly.`
+            description: `Your satisfaction is our priority. We strive
+            to exceed your expectations with our
+            excellent service and support throughout
+            the electrification process`
+        },
+        {
+            id: 3,
+            title: 'INNOVATION',
+            point: [
+            ],
+            description: `We stay up-to-date with the latest
+            advancements in electrification
+            technology to offer you cutting-edge
+            solutions for your home or business.`
+        },
+        {
+            id: 4,
+            title: 'SUSTAINABILITY',
+            point: [
+            ],
+            description: `By choosing Energy Sabal, you’re making
+            a commitment to sustainability. Our
+            solutions help reduce carbon emissions
+            and minimize environmental impact.`
         },
     ]
     return (
@@ -78,14 +95,16 @@ const Energy = () => {
                     <Container maxWidth="lg">
                         <div className='Energycontent'>
                             <div className='EnergyContentImage'>
-                                <img src='https://www.vgx.nl/wp-content/uploads/2022/11/service-page-image1-683x1024.jpg' alt='not found' />
+                                <img src='https://americanbusinessesforcleanenergy.org/wp-content/uploads/2021/03/windmill-energy-turbine.jpg' alt='not found' />
                             </div>
                             <div>
-                            <p>  What We Offer</p>
+                                <p> Why Choose Us?
+                                </p>
                                 <h1>
-                                Energy Sabal Unlocks the True Cost of Electrification and Maximizes Your Savings
+                                    Energy Sabal Is Dedicated To Delivering Exceptional Service And
+                                    Expertise To Our Valued Clients
                                 </h1>
-                                
+
                                 <div className='ContainerCollapse'>
                                     {renderFaqItems(content, (id) => openState === id, handleToggle)}                </div>
                             </div>
@@ -98,4 +117,4 @@ const Energy = () => {
     )
 };
 
-export default Energy;
+export default Choose;

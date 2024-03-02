@@ -1,11 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React  from 'react';
 import { Container } from '@mui/material';
 import './Tailored.css';
 const TailoredInsights = () => {
-    useEffect(() => {
-        // const wow = new WOW.WOW();
-        // wow.init();
-    }, [])
     return (
         <Container maxWidth='lg' style={{ padding: '50px 0 100px 0' }} >
             <div className='titleTailored'>

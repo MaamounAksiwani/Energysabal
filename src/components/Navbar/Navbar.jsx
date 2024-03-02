@@ -1,96 +1,134 @@
 import React, { useState, useEffect } from 'react';
 import { Container } from '@mui/material';
 import { useNavigate } from 'react-router';
-import './Navbar.css';
 import { Link, useLocation } from 'react-router-dom';
-
-import logo from '../../until/image/energysabal-black.svg'
-
+import CloseIcon from '@mui/icons-material/Close';
 import MenuIcon from '@mui/icons-material/Menu';
-
+import logo from '../../until/image/energysabal-black.svg';
+import './Navbar.css';
 
 const Navbar = () => {
-    const location = useLocation();
-    const currentPath = location.pathname;
+  const navigate = useNavigate();
+  const location = useLocation();
+  const currentPath = location.pathname;
 
-    const [menuVisible, setMenuVisible] = useState(false);
-    const [isOpen, setIsOpen] = useState(false);
-    const [isScrolled, setIsScrolled] = useState(false);
+  const [menuVisible, setMenuVisible] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
-    const handleMenuClick = () => {
-        setMenuVisible(!menuVisible);
+
+  const handleToggleMenu = () => {
+    setIsOpen(!isOpen);
+    console.log('handleToggleMenu');
+  };
+
+  const handleLinkClick = (path) => {
+    navigate(path);
+    setMenuVisible(false);
+  };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      setIsScrolled(scrollPosition > 50);
     };
 
+    window.addEventListener('scroll', handleScroll);
 
-    const handleToggleMenu = () => {
-        setIsOpen(!isOpen);
-        console.log('handleToggleMenu',);
-    }
-
-    const navbarStyle = {
-        position: 'fixed',
-        width: '100%',
-        zIndex: 10000000,
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
     };
+  }, []);
 
-    useEffect(() => {
-        const handleScroll = () => {
-            const scrollPosition = window.scrollY;
-            setIsScrolled(scrollPosition > 50);
-        };
-        window.addEventListener('scroll', handleScroll);
+  const navbarStyle = {
+    position: 'fixed',
+    width: '100%',
+    zIndex: 10000000,
+  };
 
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, [])
-    return (
-        <>
-            <div style={navbarStyle}>
-                <div style={{
-                    background: !isScrolled && (currentPath === '/') ? '#E7F0E9' : '#D6E2D9',
-                    transition: 'background 0.3s ease',
-                    boxShadow: !isScrolled && (currentPath !== '/') ? `0 4px 10px rgba(0, 0, 0, 0.1)` : ''
-                }} className='navBar'>
-                    <Container maxWidth='lg'>
-                        <div className='navbarLinks'>
-                            <img src={logo} alt='logo not found' />
-                            <div>
-                                <MenuIcon className='menuIcon' onClick={handleToggleMenu} />
-                            </div>
+  const sidebarStyle = {
+    position: 'fixed',
+    top: 0,
+    right: isOpen ? 0 : '-100%',
+    height: '100%',
+    width: '250px',
+    backgroundColor: '#fff',
+    boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
+    transition: 'right 0.3s ease',
+  };
+  const overlayStyle = {
+    display: isOpen ? 'block' : 'none',
+    position: 'fixed',
+    top: 0,
+    left: 0,
+    width: isOpen ? 'calc(100% - 250px)' : '0%',
+    height: '100%',
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    zIndex: 9999999,
+  };
 
-                            <div className={`menuItems`}>
-                                <span>Plan</span>
-                                <span>Install</span>
-                                <span>Report</span>
-                                <span>Contact</span>
-                                <span>About</span>
-                                <button className='getStartBtn'>Make Plan</button>
-                                <button className='SignIn'>Receive Report</button>
-                            </div>
-                        </div>
-
-
-                        {/* {isOpen && <div className='menuSidebar'>
-
-                            <Link to='/search/' className='menuNavBarLink' >Find Programs </Link>
-                            <div style={{ width: '100%', height: '0.5px', background: '#fff' }} />
-
-                            <Link to='/students/' className='menuNavBarLink' onClick={handleToggleMenu}>Students</Link>
-                            <div style={{ width: '100%', height: '0.5px', background: '#fff' }} />
-
-                            <Link to='/study-agents/' className='menuNavBarLink' onClick={handleToggleMenu}>Study Agents</Link>
-                            <div style={{ width: '100%', height: '0.5px', background: '#fff' }} />
-
-                            <Link to='/schools/' className='menuNavBarLink' onClick={handleToggleMenu}>School</Link>
-                            <div style={{ width: '100%', height: '0.5px', background: '#fff' }} />
-                        </div>
-                        } */}
-                    </Container>
-                </div>
+  return (
+    <div style={navbarStyle}>
+      <div
+        style={{
+          background:
+            !isScrolled && (currentPath === '/' || currentPath === '/Plan' || currentPath === '/Report')
+              ? '#E7F0E9'
+              : '#D6E2D9',
+          transition: 'background 0.3s ease',
+          boxShadow:
+            !isScrolled && (currentPath !== '/' && currentPath !== '/Plan' && currentPath !== '/Report')
+              ? '0 4px 10px rgba(0, 0, 0, 0.1)'
+              : '',
+        }}
+        className='navBar'
+      >
+        <Container maxWidth='lg'>
+        <div style={overlayStyle} onClick={handleToggleMenu}></div>
+          <div className='navbarLinks'>
+            <img style={{ cursor: 'pointer' }} onClick={() => handleLinkClick('/')} src={logo} alt='logo not found' />
+            <div>
+              <MenuIcon className='menuIcon' onClick={handleToggleMenu} />
             </div>
-        </>
-    )
+
+            <div className={`menuItems ${menuVisible ? 'visible' : ''}`}>
+              <span onClick={() => handleLinkClick('/Plan')}>Plan</span>
+              <span onClick={() => handleLinkClick('/Report')}>Report</span>
+              <span>Contractor</span>
+              <span>About</span>
+              <span>Contact</span>
+              <button className='getStartBtn'>Make Plan</button>
+              <button className='SignIn'>Receive Report</button>
+            </div>
+          </div>
+        </Container>
+        <div style={sidebarStyle}>
+          <div className='sideBar'>
+            <Link to='/' className='logo'>
+              <img style={{ cursor: 'pointer' }} onClick={() => handleLinkClick('/')} src={logo} alt='logo not found' />
+            </Link>
+            <CloseIcon onClick={handleToggleMenu} style={{ fontSize: '30px' }} />
+          </div>
+
+          <div className='menuSidebar'>
+            <h3 onClick={() => {
+              handleLinkClick('/Plan')
+              setIsOpen(false)  
+            }}>Plan</h3>
+            <h3 onClick={() => {
+                handleLinkClick('/Report')
+                setIsOpen(false)
+            }}>Report</h3>
+            <h3>Contractor</h3>
+            <h3>About</h3>
+            <h3>Contact</h3>
+            <button className='getStartBtn'>Make Plan</button>
+            <button className='SignIn'>Receive Report</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default Navbar;
