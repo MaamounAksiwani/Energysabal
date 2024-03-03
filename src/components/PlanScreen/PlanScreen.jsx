@@ -17,7 +17,7 @@ const PlanScreen = () => {
             <Electrification/>
             <Process/>
             <Choose/>
-            <Business/>
+            {/* <Business/> */}
         </div>
     );
 };

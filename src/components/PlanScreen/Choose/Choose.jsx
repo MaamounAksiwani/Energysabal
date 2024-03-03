@@ -3,6 +3,7 @@ import { Container } from '@mui/material';
 import Collapse from '@mui/material/Collapse';
 import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
+import img from '../../../until/image/pexels-gustavo-fring-4254157.jpg'
 const Choose = () => {
     const [openState, setOpenState] = useState(null);
     const handleToggle = (index) => {
@@ -13,7 +14,7 @@ const Choose = () => {
         <div className={`collapse-box ${isOpen ? 'active' : ''}`} key={item.id}>
             <div className='IconButton' onClick={() => handleToggle(item.id)}>
                 {isOpen ? <RemoveIcon className='iconStyle' /> : <AddIcon className='iconStyle' />}
-                <h3 style={{color:'#000'}}>{item.title}</h3>
+                <h3 style={{ color: '#000' }}>{item.title}</h3>
             </div>
             <Collapse in={isOpen} className='Collapse'>
                 {item.point && item.point.length > 0 ? (
@@ -88,6 +89,14 @@ const Choose = () => {
             and minimize environmental impact.`
         },
     ]
+
+    const paragraphStyle = {
+        color: '#76867e',
+        marginBottom: '10px',
+        fontSize: '13px',
+        fontWeight: 300,
+        letterSpacing: '1px',
+    };
     return (
         <>
             <div className='Energyheader'>
@@ -95,14 +104,15 @@ const Choose = () => {
                     <Container maxWidth="lg">
                         <div className='Energycontent'>
                             <div className='EnergyContentImage'>
-                                <img src='https://americanbusinessesforcleanenergy.org/wp-content/uploads/2021/03/windmill-energy-turbine.jpg' alt='not found' />
+                                <img src={img} alt='not found' />
                             </div>
                             <div>
-                                <p> Why Choose Us?
+                                <p style={paragraphStyle}>
+                                WHY CHOOSE US?
                                 </p>
                                 <h1>
                                     Energy Sabal Is Dedicated To Delivering Exceptional Service And
-                                    Expertise To Our Valued Clients
+                                    Expertise
                                 </h1>
 
                                 <div className='ContainerCollapse'>

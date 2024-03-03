@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 import { Container } from '@mui/material';
+import home from '../../../until/image/shutterstock_2040549122.jpg'
 
 const Header = () => {
     return (
@@ -20,11 +20,11 @@ const Header = () => {
                                     solution for you
 
                                 </p>
-                                <button>Receive Report
+                                <button style={{backgroundColor:' #80aa45'}}>Receive Report
                                 </button>
                             </div>
                             <div>
-                                <img src='https://soleil.axiomthemes.com/wp-content/uploads/2022/11/portfolio-image8.jpg' alt='not found' />
+                                <img src={home} alt='not found' />
                             </div>
                         </div>
 

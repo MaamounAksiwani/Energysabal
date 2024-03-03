@@ -9,7 +9,7 @@ const ImageSection = () => {
                     <div className="centered-text">
                         <p>Still prefer direct contact? </p>
                         <h1>
-                        talk to one of our electrification advisors</h1>
+                        Talk to One of Our Electrification Advisors</h1>
                         <button>Contact Us</button>
                     </div>
                 </Container>

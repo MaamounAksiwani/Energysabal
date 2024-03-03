@@ -56,6 +56,7 @@ const Navbar = () => {
     boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
     transition: 'right 0.3s ease',
   };
+
   const overlayStyle = {
     display: isOpen ? 'block' : 'none',
     position: 'fixed',
@@ -92,16 +93,28 @@ const Navbar = () => {
             </div>
 
             <div className={`menuItems ${menuVisible ? 'visible' : ''}`}>
-              <span onClick={() => handleLinkClick('/Plan')}>Plan</span>
+            <span onClick={() => handleLinkClick('/Plan')}>Plan</span>
               <span onClick={() => handleLinkClick('/Report')}>Report</span>
               <span>Contractor</span>
               <span>About</span>
               <span>Contact</span>
+            </div>
+
+            <div className={`menuItems ${menuVisible ? 'visible' : ''}`}>
+              {/* <span onClick={() => handleLinkClick('/Plan')}>Plan</span>
+              <span onClick={() => handleLinkClick('/Report')}>Report</span>
+              <span>Contractor</span>
+              <span>About</span>
+              <span>Contact</span> */}
               <button className='getStartBtn'>Make Plan</button>
               <button className='SignIn'>Receive Report</button>
             </div>
           </div>
         </Container>
+
+
+
+
         <div style={sidebarStyle}>
           <div className='sideBar'>
             <Link to='/' className='logo'>

@@ -20,7 +20,7 @@ const App = () => {
           <Route exact path='/Report' element={<ReportScreen/>}/>
           <Route path="*" element={<NotFound />} />
         </Routes>
-        <ScrollToTopButton/>
+        {/* <ScrollToTopButton/> */}
         <Footer/>
       </BrowserRouter>
     </>

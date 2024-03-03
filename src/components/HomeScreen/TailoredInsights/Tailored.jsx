@@ -29,11 +29,11 @@ const TailoredInsights = () => {
 
                 <div>
 
-                    <h1>Comprehensive <br/> Electrification Plan</h1>
-                    <h3>$19.99</h3>
+                    <h1>Comprehensive <br/> Electrification Report</h1>
+                    <h3>$29.99</h3>
                     <p>Ready to take your electrification project to
                         the next level? Our Comprehensive
-                        Electrification Plan offers detailed cost
+                        Electrification Report offers detailed cost
                         estimations, customized recommendations,
                         and access to all available incentives and
                         governmental assistance. With this

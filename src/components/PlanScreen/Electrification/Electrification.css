@@ -5,14 +5,29 @@
     gap: 25px;
     padding-bottom: 50px;
 }
-
+.arrow-icon{
+  cursor: pointer;
+  transition: 0.3s ease !important;
+}
+.arrow-icon:hover{
+  padding-left: 10px;
+}
 
  .electrification-icon {
     font-size: 70px !important;
     color: #80aa45;
+    /* color:#3b715a !important; */
     font-weight: 200;
+    /* color: red; */
   }
 
+  .electrification-need p{
+    margin-top: 10px;
+  font-size: 16px;
+  margin-bottom: 25px;
+  color: #76867E;
+  font-weight: 300;
+  }
 
 
   @media only screen and (max-width: 768px) {

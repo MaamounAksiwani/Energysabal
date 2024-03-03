@@ -15,19 +15,10 @@ const Footer = () => {
                         <ul>
                             <li><a href="#">+49 176 20092661</a></li>
                             <li><a href="#">Hello@Energysabal.com</a></li>
-                            <li ><a> <LinkedInIcon style={{color:'#1976d2'}}/></a></li>
+                            <li ><a> <LinkedInIcon style={{color:'#fff' , cursor:'pointer'}}/></a></li>
                         </ul>
                     </div>
 
-                    <div class="footer-col">
-                        <h4>Explore</h4>
-                        <ul>
-                            <li><a href="#">Plan</a></li>
-                            <li><a href="#">Report</a></li>
-                            <li><a href="#">Contractor</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </div>
                     <div class="footer-col">
                         <h4>Installation</h4>
                         <ul>
@@ -43,6 +34,16 @@ const Footer = () => {
                         </ul>
 
                     </div>
+                    <div class="footer-col">
+                        <h4>Explore</h4>
+                        <ul>
+                            <li><a href="#">Plan</a></li>
+                            <li><a href="#">Report</a></li>
+                            <li><a href="#">Contractor</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+              
              
 
                     <div class="footer-col">
@@ -59,8 +60,8 @@ const Footer = () => {
 
                 </div>
 
-                <div style={{ textAlign: 'center', color: "#ddd", fontSize: '8px' }}>
-                    <h1 style={{ marginTop: '100px' }}>© 2024 Energy Sabal. All Rights Reserved</h1>
+                <div style={{ textAlign: 'center',  color: "#ddd", fontSize: '8px' }}>
+                    <h1 style={{ marginTop: '100px' , fontWeight:'300' }}>© 2024 Energy Sabal. All Rights Reserved</h1>
                 </div>
 
             </Container>

@@ -1,5 +1,6 @@
 .Process{
-    background-color: #80AA45;
+    background-color: #3b715a;
+    padding-bottom: 50px;
 }
 
 .cards-container {
@@ -10,10 +11,20 @@
   }
   
   .card-content {
-    
-    background-color:#fff ;
-    border-radius: 10px;
-    padding: 30px;
+    background-size: cover;
+  background-position: center;
+  border-radius: 10px; /* Adjust this as needed */
+  padding: 20px; /* Adjust this as needed */
+
+  transition: transform 0.2s ease-in-out;
+    /* background-color:#fff ; */
+    /* border-radius: 10px; */
+    /* padding: 25px 20px; */
+  }
+
+  .card-content:hover{
+    transform: scale(1.05);
+
   }
   
   .top-text {
@@ -37,3 +48,4 @@
     }
     
   }
+

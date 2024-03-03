@@ -4,7 +4,7 @@ import './Energy.css';
 import Collapse from '@mui/material/Collapse';
 import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
-import home from '../../../until/image/home1.jpg'
+import home from '../../../until/image/shutterstock_529456762.jpg'
 const Energy = () => {
     const [openState, setOpenState] = useState(null);
     const handleToggle = (index) => {
@@ -78,10 +78,12 @@ const Energy = () => {
                     <Container maxWidth="lg">
                         <div className='Energycontent'>
                             <div className='EnergyContentImage'>
-                                <img src='https://www.vgx.nl/wp-content/uploads/2022/11/service-page-image1-683x1024.jpg' alt='not found' />
+                                <img src={home} alt='not found' />
                             </div>
                             <div>
-                            <p>  What We Offer</p>
+                                <p>WHAT WE OFFER
+
+</p>
                                 <h1>
                                 Energy Sabal Unlocks the True Cost of Electrification and Maximizes Your Savings
                                 </h1>

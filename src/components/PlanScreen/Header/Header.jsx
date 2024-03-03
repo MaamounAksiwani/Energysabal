@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 // import './index.css';
 import { Container } from '@mui/material';
+import img from '../../../until/image/shutterstock_2206914231.jpg'
 
 const Header = () => {
     return (
@@ -25,7 +26,7 @@ const Header = () => {
                                 </button>
                             </div>
                             <div>
-                                <img src='https://soleil.axiomthemes.com/wp-content/uploads/2022/11/service-image6.jpg' alt='not found' />
+                                <img src={img} alt='not found' />
                             </div>
                         </div>
 

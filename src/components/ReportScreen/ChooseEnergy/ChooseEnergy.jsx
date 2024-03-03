@@ -3,6 +3,7 @@ import { Container } from '@mui/material';
 import Collapse from '@mui/material/Collapse';
 import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
+import photo from '../../../until/image/shutterstock_1236719398.jpg'
 const ChooseEnergy = () => {
     const [openState, setOpenState] = useState(null);
     const handleToggle = (index) => {
@@ -53,7 +54,7 @@ const ChooseEnergy = () => {
         },
         {
             id: 1,
-            title: 'COMPREHENSIVE ANALYSIS FOR INFORMED DECISION-MAKING',
+            title: 'COMPREHENSIVE ANALYSIS',
             point: [],
             description: `Our reports offer a thorough and detailed
             analysis of all aspects of your
@@ -79,6 +80,14 @@ const ChooseEnergy = () => {
             electrification project.`
         }
     ]
+
+    const paragraphStyle = {
+        color: '#76867e',
+        marginBottom: '10px',
+        fontSize: '13px',
+        fontWeight: 300,
+        letterSpacing: '1px',
+      };
     return (
         <>
             <div className='Energyheader'>
@@ -86,15 +95,14 @@ const ChooseEnergy = () => {
                     <Container maxWidth="lg">
                         <div className='Energycontent'>
                             <div className='EnergyContentImage'>
-                                <img src='https://americanbusinessesforcleanenergy.org/wp-content/uploads/2021/03/windmill-energy-turbine.jpg' alt='not found' />
+                                <img src={photo} alt='not found' />
                             </div>
                             <div>
-                                <p> Why Choose Energy Sabal Reports?
+                                <p style={paragraphStyle}> WHY CHOOSE ENERGY SABAL REPORTS?
 
                                 </p>
                                 <h1>
-                                    We Provide Expert Guidance And Comprehensive Analysis In Our
-                                    Reports To Help You Make Informed Choices When Embarking On
+                                 Make Informed Choices When Embarking On
                                     Electrification Projects
                                 </h1>
 

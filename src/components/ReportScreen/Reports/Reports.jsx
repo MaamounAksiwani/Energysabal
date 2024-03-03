@@ -16,30 +16,28 @@ const Reports = () => {
                     <h1>Electrification <br />
                         Assessment Report</h1>
                     <h3>Free</h3>
-                    <h4> <CheckIcon style={{ color: '#80aa45', fontSize: '18px', marginRight: '5px' }} />Preliminary cost estimation</h4>
-                    <h4> <CheckIcon style={{ color: '#80aa45', fontSize: '18px', marginRight: '5px' }} />  Basic recommendations for energy-efficient upgrades</h4>
-                    <h4> <CheckIcon style={{ color: '#80aa45', fontSize: '18px', marginRight: '5px' }} /> Overview of available incentives and rebates</h4>
-                    <button style={{marginTop:'115px'}}  className='btn'>Get Free Report</button>
+                    <h4>  Preliminary cost estimation <CheckIcon style={{ color: '#80aa45', fontSize: '18px' }} /> </h4>
+                    <h4> Basic recommendations for energy-efficient upgrades <CheckIcon style={{ color: '#80aa45', fontSize: '18px' }} />  </h4>
+                    <h4>  Overview of available incentives and rebates <CheckIcon style={{ color: '#80aa45', fontSize: '18px' }} /></h4>
+                    <button style={{ marginTop: '80px' }} className='btn'>Get Free Report</button>
 
                 </div>
-
                 <div>
-
                     <h1>Comprehensive <br />
                         Electrification Report</h1>
                     <h3>$29.99</h3>
-                    <h4> <CheckIcon style={{ color: '#80aa45', fontSize: '18px', marginRight: '5px' }} /> Detailed cost estimation for all aspects of
-                        your project</h4>
+                    <h4>  Detailed cost estimation for all aspects of
+                        your project <CheckIcon style={{ color: '#80aa45', fontSize: '18px' }} /></h4>
 
-                    <h4> <CheckIcon style={{ color: '#80aa45', fontSize: '18px', marginRight: '5px' }} /> Customized recommendations tailored to
-                        your needs</h4>
-                    <h4> <CheckIcon style={{ color: '#80aa45', fontSize: '18px', marginRight: '5px' }} /> Access to exclusive incentives, rebates, and
-                        financing options
+                    <h4> Customized recommendations tailored to
+                        your needs <CheckIcon style={{ color: '#80aa45', fontSize: '18px' }} /></h4>
+                    <h4>Access to exclusive incentives, rebates, and
+                        financing options <CheckIcon style={{ color: '#80aa45', fontSize: '18px' }} />
                     </h4>
 
-                    <h4> <CheckIcon style={{ color: '#80aa45', fontSize: '18px', marginRight: '5px' }} /> Assistance in navigating the electrification
-                        process</h4>
-                    <button style={{marginTop:'35px'}} className='btn'>Purchase Comprehensive Report</button>
+                    <h4> Assistance in navigating the electrification
+                        process <CheckIcon style={{ color: '#80aa45', fontSize: '18px' }} /></h4>
+                    <button style={{ marginTop: '35px' }} className='btn'>Purchase Comprehensive Report</button>
                 </div>
 
             </div>

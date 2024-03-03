@@ -15,10 +15,11 @@
   line-height: 1.1;
 }
 .Energycontent p {
-  margin-top: 10px;
-  font-size: 19px;
-  margin-bottom: 15px;
   color: #76867e;
+  margin-bottom: 10px;
+  font-size: 13px;
+  font-weight: 300;
+  letter-spacing: 1px;
 }
 .Energyheader button {
   background-color: #689030;

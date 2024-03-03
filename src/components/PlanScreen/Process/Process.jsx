@@ -2,12 +2,20 @@ import React from 'react';
 import './Process.css';
 import { Container } from '@mui/material';
 
+import photo1 from '../../../until/image/send/pexels-gustavo-fring-4254163.jpg'
+
+import photo2 from '../../../until/image/send/pexels-kindel-media-9800009.jpg'
+
+import photo3 from '../../../until/image/send/pexels-kindel-media-9875408.jpg'
+
+import photo4 from '../../../until/image/send/shutterstock_1674266917.jpg'
+
 const Process = () => {
     const cardsData = [
         {
             id: 1,
-            backgroundImage: 'https://americanbusinessesforcleanenergy.org/wp-content/uploads/2021/03/windmill-energy-turbine.jpg',
-            topText: '1- Consultation & Assessment',
+            backgroundImage: photo1,
+            topText: '1. Consultation',
             bottomText: `Our Contractors Will Guide
             You Through An Initial
             Consultation To Discuss
@@ -25,8 +33,8 @@ const Process = () => {
         },
         {
             id: 2,
-            backgroundImage: 'https://americanbusinessesforcleanenergy.org/wp-content/uploads/2021/03/windmill-energy-turbine.jpg',
-            topText: '2- Customized Solutions',
+            backgroundImage: photo2,
+            topText: '2. Customized Solutions',
             bottomText: `Based On Our Consultation
             And Assessment, We
             Develop Customized
@@ -42,8 +50,8 @@ const Process = () => {
         },
         {
             id: 3,
-            backgroundImage: 'https://americanbusinessesforcleanenergy.org/wp-content/uploads/2021/03/windmill-energy-turbine.jpg',
-            topText: '3- Planning & Installation',
+            backgroundImage: photo3,
+            topText: '3. Planning & Installation',
             bottomText: `Once The Customized
             Solution Is Finalized, Our
             Team Meticulously Plans
@@ -60,8 +68,8 @@ const Process = () => {
         },
         {
             id: 4,
-            backgroundImage: 'https://americanbusinessesforcleanenergy.org/wp-content/uploads/2021/03/windmill-energy-turbine.jpg',
-            topText: '4-Quality Assurance & Support',
+            backgroundImage: photo4,
+            topText: '4. Quality Assurance ',
             bottomText: `We Conduct Thorough
             Quality Assurance Checks
             Throughout The Installation
@@ -79,24 +87,22 @@ const Process = () => {
             Electrification Project`,
         },
     ];
-
-
     const Card = ({ backgroundImage, topText, bottomText }) => (
         <>
-          <div className="card-content">
-            <div className="top-text">{topText}</div>
-            <div className="bottom-text">{bottomText}</div>
-          </div>
+            <div className="card-content" style={{ backgroundImage: `url(${backgroundImage})` }}>
+                <div className="top-text">{topText}</div>
+                <div className="bottom-text">{bottomText}</div>
+            </div>
         </>
-      );
-      
+    );
+
     return (
         <div className='Process'>
             <Container maxWidth="lg">
                 <div className='titleTailored'>
-                    <h1>Our Process</h1>
-                    <h3 style={{ color: '#000', fontSize: '25px ', fontWeight: '400' }}>At Energy Sabal, We Believe In Transparency And Clarity Throughout The Electrification
-                        Process. Here’s An Overview Of Our Approach
+                    <h1 style={{ color: '#fff' }}>Our Process</h1>
+                    <h3 style={{ color: '#C7CCCA', fontSize: '25px ', fontWeight: '400' }}>
+                        At Energy Sabal, we believe in transparency and clarity throughout the electrification process. Here’s an overview of our approach
                     </h3>
                 </div>
 

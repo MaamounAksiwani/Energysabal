@@ -1,12 +1,9 @@
 .navBar {
   padding: 20px 0;
-  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
-  /* background-color: #E7F0E9;  */
-  /* background-color: red; */
 }
 .navBar img {
   /* width: 100px; */
-  max-height: 35px;
+  max-height: 40px;
 }
 
 .headerNavBar {
@@ -30,9 +27,11 @@
   margin: 0 10px;
   font-weight: 400;
   padding: 0 10px;
-  /* color: RED !important; */
+  transition: 0.3s ease;
 }
-
+.navbarLinks div span:hover{
+  padding-top: 10px;
+}
 .navbarLinks button {
   padding: 15px 30px;
   margin: 0 10px;
@@ -44,7 +43,8 @@
   font-size: 14px;
 }
 .getStartBtn {
-  background-color: #80aa45;
+  
+  background-color: #3b715a;
   color: #fff !important;
   transition: 0.3s ease;
 }
@@ -52,7 +52,7 @@
   transition: 0.3s ease;
   background-color: #fff;
   color: #fff !important;
-  background-color: #3b715a;
+  background-color: #80aa45;
 }
 .menuIcon {
   display: none !important;

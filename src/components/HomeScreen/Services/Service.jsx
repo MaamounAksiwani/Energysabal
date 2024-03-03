@@ -9,12 +9,14 @@ import EvStationOutlinedIcon from '@mui/icons-material/EvStationOutlined';
 import HdrWeakOutlinedIcon from '@mui/icons-material/HdrWeakOutlined';
 import LocalLaundryServiceOutlinedIcon from '@mui/icons-material/LocalLaundryServiceOutlined';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
+
+import IndeterminateCheckBoxOutlinedIcon from '@mui/icons-material/IndeterminateCheckBoxOutlined';
 const Services = () => {
 
     return (
         <div className='main-service'>
 
-            <Container maxWidth='lg' style={{ padding: '150px 0' }}>
+            <Container maxWidth='lg' style={{ padding: '100px 0' }}>
 
                 <div className='service-container'>
                     <div className='contact'>
@@ -37,46 +39,52 @@ const Services = () => {
                 <div className='service'>
                     <div>
                         <HeatPumpOutlinedIcon className='service-icon' />
-                        <h3>HeatPump</h3>
-                        <ArrowRightAltIcon style={{ color: '#FFF', cursor: 'pointer' }} />
+                        <h3>Heat Pump</h3>
+                        <ArrowRightAltIcon style={{ color: '#FFF', cursor: 'pointer' }} className='arrow-icon' />
                     </div>
 
                     <div>
                         <SolarPowerOutlinedIcon className='service-icon' />
                         <h3>Solar</h3>
-                        <ArrowRightAltIcon style={{ color: '#FFF', cursor: 'pointer' }} />
+                        <ArrowRightAltIcon style={{ color: '#FFF', cursor: 'pointer' }} className='arrow-icon' />
                     </div>
 
                     <div>
                         <WaterDropOutlinedIcon className='service-icon' />
                         <h3>Water Heater</h3>
-                        <ArrowRightAltIcon style={{ color: '#FFF', cursor: 'pointer' }} />
+                        <ArrowRightAltIcon style={{ color: '#FFF', cursor: 'pointer' }} className='arrow-icon' />
                     </div>
 
 
                     <div>
                         <DeveloperBoardOutlinedIcon className='service-icon' />
-                        <h3>Panel Upgrade</h3>
-                        <ArrowRightAltIcon style={{ color: '#FFF', cursor: 'pointer' }} />
+                        <h3>Electrical Panel</h3>
+                        <ArrowRightAltIcon style={{ color: '#FFF', cursor: 'pointer' }} className='arrow-icon' />
                     </div>
 
                     <div>
                         <EvStationOutlinedIcon className='service-icon' />
-                        <h3>EV Charging</h3>
-                        <ArrowRightAltIcon style={{ color: '#FFF', cursor: 'pointer' }} />
-                    </div>
-
-                    {/* <div>
-                        <HdrWeakOutlinedIcon className='service-icon' />
-                        <h3>Kitchen</h3>
-                        <ArrowRightAltIcon style={{color:'#FFF' , cursor:'pointer'}}/>
+                        <h3>EV Charger</h3>
+                        <ArrowRightAltIcon style={{ color: '#FFF', cursor: 'pointer' }} className='arrow-icon' />
                     </div>
 
                     <div>
+                        <HdrWeakOutlinedIcon className='service-icon' />
+                        <h3>Cooktop</h3>
+                        <ArrowRightAltIcon style={{ color: '#FFF', cursor: 'pointer' }} className='arrow-icon' />
+                    </div>
+
+                    <div>
+                        <IndeterminateCheckBoxOutlinedIcon className='service-icon'/>
+                        <h3>Oven</h3>
+                        <ArrowRightAltIcon style={{ color: '#FFF', cursor: 'pointer' }} className='arrow-icon' />
+                    </div>
+                    
+                    <div>
                         <LocalLaundryServiceOutlinedIcon className='service-icon' />
                         <h3>Clothes Dryer</h3>
-                        <ArrowRightAltIcon style={{color:'#FFF' , cursor:'pointer'}}/>
-                    </div> */}
+                        <ArrowRightAltIcon style={{ color: '#FFF', cursor: 'pointer' }} className='arrow-icon' />
+                    </div>
 
 
                 </div>
