@@ -94,7 +94,7 @@ const Navbar = () => {
             <div className={`menuItems ${menuVisible ? 'visible' : ''}`}>
               <span onClick={() => handleLinkClick('/Plan')}>Plan</span>
               <span onClick={() => handleLinkClick('/Report')}>Report</span>
-              <span onClick={() => { handleLinkClick('/Contractor') }}>Contractor</span>
+              <span onClick={() =>  handleLinkClick('/Contractor') }>Contractor</span>
               <span>About</span>
               <span>Contact</span>
             </div>
@@ -126,7 +126,9 @@ const Navbar = () => {
               handleLinkClick('/Report')
               setIsOpen(false)
             }}>Report</h3>
-            <h3>Contractor</h3>
+            <h3 onClick={()=>{
+                  handleLinkClick('/Contractor')
+            }}>Contractor</h3>
             <h3>About</h3>
             <h3>Contact</h3>
             <button className='getStartBtn'>Make Plan</button>
