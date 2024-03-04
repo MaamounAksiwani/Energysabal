@@ -6,7 +6,6 @@ import CloseIcon from '@mui/icons-material/Close';
 import MenuIcon from '@mui/icons-material/Menu';
 import logo from '../../until/image/energysabal-black.svg';
 import './Navbar.css';
-
 const Navbar = () => {
   const navigate = useNavigate();
   const location = useLocation();
@@ -73,19 +72,19 @@ const Navbar = () => {
       <div
         style={{
           background:
-            !isScrolled && (currentPath === '/' || currentPath === '/Plan' || currentPath === '/Report')
+            !isScrolled && (currentPath === '/' || currentPath === '/Plan' || currentPath === '/Report' || currentPath === '/Contractor')
               ? '#E7F0E9'
               : '#D6E2D9',
           transition: 'background 0.3s ease',
           boxShadow:
-            !isScrolled && (currentPath !== '/' && currentPath !== '/Plan' && currentPath !== '/Report')
+            !isScrolled && (currentPath !== '/' && currentPath !== '/Plan' && currentPath !== '/Report' && currentPath !== '/Contractor')
               ? '0 4px 10px rgba(0, 0, 0, 0.1)'
               : '',
         }}
         className='navBar'
       >
         <Container maxWidth='lg'>
-        <div style={overlayStyle} onClick={handleToggleMenu}></div>
+          <div style={overlayStyle} onClick={handleToggleMenu}></div>
           <div className='navbarLinks'>
             <img style={{ cursor: 'pointer' }} onClick={() => handleLinkClick('/')} src={logo} alt='logo not found' />
             <div>
@@ -93,19 +92,14 @@ const Navbar = () => {
             </div>
 
             <div className={`menuItems ${menuVisible ? 'visible' : ''}`}>
-            <span onClick={() => handleLinkClick('/Plan')}>Plan</span>
+              <span onClick={() => handleLinkClick('/Plan')}>Plan</span>
               <span onClick={() => handleLinkClick('/Report')}>Report</span>
-              <span>Contractor</span>
+              <span onClick={() => { handleLinkClick('/Contractor') }}>Contractor</span>
               <span>About</span>
               <span>Contact</span>
             </div>
 
             <div className={`menuItems ${menuVisible ? 'visible' : ''}`}>
-              {/* <span onClick={() => handleLinkClick('/Plan')}>Plan</span>
-              <span onClick={() => handleLinkClick('/Report')}>Report</span>
-              <span>Contractor</span>
-              <span>About</span>
-              <span>Contact</span> */}
               <button className='getStartBtn'>Make Plan</button>
               <button className='SignIn'>Receive Report</button>
             </div>
@@ -126,11 +120,11 @@ const Navbar = () => {
           <div className='menuSidebar'>
             <h3 onClick={() => {
               handleLinkClick('/Plan')
-              setIsOpen(false)  
+              setIsOpen(false)
             }}>Plan</h3>
             <h3 onClick={() => {
-                handleLinkClick('/Report')
-                setIsOpen(false)
+              handleLinkClick('/Report')
+              setIsOpen(false)
             }}>Report</h3>
             <h3>Contractor</h3>
             <h3>About</h3>

@@ -87,7 +87,7 @@ const ChooseEnergy = () => {
         fontSize: '13px',
         fontWeight: 300,
         letterSpacing: '1px',
-      };
+    };
     return (
         <>
             <div className='Energyheader'>
@@ -102,7 +102,7 @@ const ChooseEnergy = () => {
 
                                 </p>
                                 <h1>
-                                 Make Informed Choices When Embarking On
+                                    Make Informed Choices When Embarking On
                                     Electrification Projects
                                 </h1>
 

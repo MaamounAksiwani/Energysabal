@@ -9,9 +9,7 @@ const TailoredInsights = () => {
                 <h3>Not sure yet? Receive a report first, before making a project plan</h3>
             </div>
 
-
             <div className='card'>
-
                 <div>
                     <h1>Electrification <br/> Assessment Report</h1>
                     <h3>Free</h3>
