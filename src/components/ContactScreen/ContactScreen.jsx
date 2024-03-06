@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import WOW from 'wowjs';
 
 import { Container, TextField, Button, Grid } from '@mui/material';
 import CreateIcon from '@mui/icons-material/Create';
@@ -49,8 +50,16 @@ const ContactScreen = () => {
             setFormErrors(errors);
         }
     };
+
+
+    useEffect(() => {
+        const wow = new WOW.WOW();
+        wow.init();
+
+        window.scrollTo(0, 0)
+    }, [])
     return (
-        <div className='header' style={{ backgroundColor: '#D6E2D9' }}>
+        <div className='header wow fadeInDown'  data-wow-duration='1s' style={{ backgroundColor: '#D6E2D9' }}>
             <div>
                 <Container maxWidth="lg">
                     <div className='content'>
@@ -66,10 +75,10 @@ const ContactScreen = () => {
                                 your electrification needs.
                             </p>
 
-                            <div style={{display:'flex' , alignItems:'center'}}>
+                            <div style={{ display: 'flex', alignItems: 'center' }}>
 
-                                <PhoneIcon style={{backgroundColor:'#689030'  , color:'#fff' , borderRadius:'50%' , padding:'10px' , marginRight:'10px'}} />
-                                <h2 style={{fontWeight:'bold'}}>
+                                <PhoneIcon style={{ backgroundColor: '#689030', color: '#fff', borderRadius: '50%', padding: '10px', marginRight: '10px' }} />
+                                <h2 style={{ fontWeight: 'bold' }}>
                                     0 800 555 44 33</h2>
                             </div>
 
