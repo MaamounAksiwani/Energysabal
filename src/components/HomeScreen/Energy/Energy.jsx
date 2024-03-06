@@ -13,20 +13,20 @@ const Energy = () => {
     };
     const FaqItem = ({ item, isOpen, handleToggle }) => (
         <div className={`collapse-box ${isOpen ? 'active' : ''}`} key={item.id}>
-            <div className='IconButton' onClick={() => handleToggle(item.id)}>
+            <div className={`IconButton ${isOpen ? 'active' : ''}`} onClick={() => handleToggle(item.id)}>
                 {isOpen ? <RemoveIcon className='iconStyle' /> : <AddIcon className='iconStyle' />}
-                <h3 style={{color:'#000'}}>{item.title}</h3>
+                <h3 style={{ color: '#000' }}>{item.title}</h3>
             </div>
             <Collapse in={isOpen} className='Collapse'>
                 {item.point && item.point.length > 0 ? (
                     <ul>
-                        
+
                         {item.point.map((ele, index) => (
                             <li key={index}>{`${ele}`}</li>
                         ))}
                     </ul>
                 ) : (
-                    <p>{item.description}</p>
+                    <p className={` ${isOpen ? 'desBorder' : ''}`} >{item.description}</p>
                 )}
             </Collapse>
         </div>
@@ -83,11 +83,11 @@ const Energy = () => {
                             <div>
                                 <p>WHAT WE OFFER
 
-</p>
+                                </p>
                                 <h1>
-                                Energy Sabal Unlocks the True Cost of Electrification and Maximizes Your Savings
+                                    Energy Sabal Unlocks the True Cost of Electrification and Maximizes Your Savings
                                 </h1>
-                                
+
                                 <div className='ContainerCollapse'>
                                     {renderFaqItems(content, (id) => openState === id, handleToggle)}                </div>
                             </div>

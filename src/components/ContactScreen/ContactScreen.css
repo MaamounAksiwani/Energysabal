@@ -1,0 +1,15 @@
+.main-form{
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 20px;
+    width: 35%;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .main-form{
+        width: auto;
+        padding: 25px;
+    }
+  }

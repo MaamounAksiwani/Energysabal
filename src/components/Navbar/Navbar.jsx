@@ -72,12 +72,12 @@ const Navbar = () => {
       <div
         style={{
           background:
-            !isScrolled && (currentPath === '/' || currentPath === '/Plan' || currentPath === '/Report' || currentPath === '/Contractor')
+            !isScrolled && (currentPath === '/' || currentPath === '/Plan' || currentPath === '/Report' || currentPath === '/Contact' || currentPath === '/Contractor')
               ? '#E7F0E9'
               : '#D6E2D9',
           transition: 'background 0.3s ease',
           boxShadow:
-            !isScrolled && (currentPath !== '/' && currentPath !== '/Plan' && currentPath !== '/Report' && currentPath !== '/Contractor')
+            !isScrolled && (currentPath !== '/' && currentPath !== '/Plan' && currentPath !== '/Report' && currentPath !== '/Contractor' && currentPath !== '/Contact')
               ? '0 4px 10px rgba(0, 0, 0, 0.1)'
               : '',
         }}
@@ -94,9 +94,11 @@ const Navbar = () => {
             <div className={`menuItems ${menuVisible ? 'visible' : ''}`}>
               <span onClick={() => handleLinkClick('/Plan')}>Plan</span>
               <span onClick={() => handleLinkClick('/Report')}>Report</span>
-              <span onClick={() =>  handleLinkClick('/Contractor') }>Contractor</span>
+              <span onClick={() => handleLinkClick('/Contractor')}>Contractor</span>
               <span>About</span>
-              <span>Contact</span>
+              <span onClick={() => {
+                handleLinkClick('/Contact')
+              }}>Contact</span>
             </div>
 
             <div className={`menuItems ${menuVisible ? 'visible' : ''}`}>
@@ -126,11 +128,15 @@ const Navbar = () => {
               handleLinkClick('/Report')
               setIsOpen(false)
             }}>Report</h3>
-            <h3 onClick={()=>{
-                  handleLinkClick('/Contractor')
+            <h3 onClick={() => {
+              handleLinkClick('/Contractor')
+              setIsOpen(false)
             }}>Contractor</h3>
             <h3>About</h3>
-            <h3>Contact</h3>
+            <h3 onClick={() => {
+              handleLinkClick('/Contact')
+              setIsOpen(false)
+            }}>Contact</h3>
             <button className='getStartBtn'>Make Plan</button>
             <button className='SignIn'>Receive Report</button>
           </div>

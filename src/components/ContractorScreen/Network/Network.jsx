@@ -1,103 +1,108 @@
-import { Container } from '@mui/material';
-import React, { useState, useEffect } from 'react';
-import { TextField, Button, Grid } from '@mui/material';
+import React, { useState } from 'react';
+import CreateIcon from '@mui/icons-material/Create';
+import { Container, TextField, Button, Grid } from '@mui/material';
+import {
+  PersonOutline as PersonOutlineIcon,
+  Mail as MailIcon,
+  Business as BusinessIcon,
+  Phone as PhoneIcon,
+  Feed as FeedIcon,
+} from '@mui/icons-material';
 
 const Network = () => {
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    Email: '',
+    PhoneNumber: '',
+    CompanyName: '',
+    CompanyOperation: '',
+    AdditionalInformation: '',
+  });
 
-    const [firstName, setFirstName] = useState('');
-    const [lastName, setLastName] = useState('');
-    const [firstNameError, setFirstNameError] = useState(false);
-    const [lastNameError, setLastNameError] = useState(false);
+  const [formErrors, setFormErrors] = useState({
+    firstName: false,
+    lastName: false,
+  });
 
-    const handleFirstNameChange = (event) => {
-        setFirstName(event.target.value);
-        setFirstNameError(false);
-    };
+  const handleInputChange = (field) => (event) => {
+    setFormData({ ...formData, [field]: event.target.value });
+    setFormErrors({ ...formErrors, [field]: false });
+  };
 
-    const handleLastNameChange = (event) => {
-        setLastName(event.target.value);
-        setLastNameError(false);
-    };
+  const handleSubmit = () => {
+    // Validation logic
+    const errors = {};
+    Object.keys(formData).forEach((field) => {
+      if (!formData[field].trim()) {
+        errors[field] = true;
+      }
+    });
 
-    const handleSubmit = () => {
-        // Validation logic
-        if (!firstName) {
-            setFirstNameError(true);
-        }
+    // If no validation errors, proceed with form submission
+    if (Object.keys(errors).length === 0) {
+      // Perform form submission or other actions here
+      console.log('Form submitted:', formData);
+    } else {
+      setFormErrors(errors);
+    }
+  };
 
-        if (!lastName) {
-            setLastNameError(true);
-        }
+  return (
+    <Container style={{ paddingBottom: '50px' }}>
+      <div className='titleTailored'>
+        <h1>Join Our Network</h1>
+        <h3>Streamline your workload, we handle the marketing, sales, and administrative tasks while you focus on installation</h3>
+      </div>
+      <div style={{ backgroundColor: '#fff', padding: '50px', borderRadius: '20px' }}>
 
-        // Additional validation logic can be added here
-
-        // If no validation errors, you can proceed with form submission
-        if (!firstNameError && !lastNameError) {
-            // Perform form submission or other actions here
-            console.log('Form submitted:', { firstName, lastName });
-        }
-    };
-    return (
-        <Container>
-            <div className='titleTailored'>
-                <h1>Join Our Network</h1>
-                <h3>Streamline your workload, we handle the marketing, sales, and administrative tasks while you focus on installation</h3>
-            </div>
-
-            <Grid container spacing={1}>
-                <Grid item xs={6}>
-                    <TextField
-                        label="First Name"
-                        fullWidth
-                        margin="normal"
-                        size='medium'
-                        value={firstName}
-                        onChange={handleFirstNameChange}
-                        error={firstNameError}
-                        helperText={firstNameError && 'First Name is required'}
-                    />
-                </Grid>
-                <Grid item xs={6}>
-                    <TextField
-                        label="Last Name"
-                        fullWidth
-                        size='medium'
-                        margin="normal"
-                        value={lastName}
-                        onChange={handleLastNameChange}
-                        error={lastNameError}
-                        helperText={lastNameError && 'Last Name is required'}
-                    />
-                </Grid>
-
-                <Grid item xs={12}>
-                    <TextField size='medium' label="E-Mail" fullWidth margin="normal" />
-                </Grid>
-
-                <Grid item xs={12}>
-                    <TextField size='medium' label="Phone Number" fullWidth margin="normal" />
-                </Grid>
-
-                <Grid item xs={12}>
-                    <TextField  size='medium' label="Company Name" fullWidth margin="normal" />
-                </Grid>
-
-                <Grid item xs={12}>
-                    <TextField size='medium' label="My Company Operates In" fullWidth margin="normal" />
-                </Grid>
-
-                <Grid item xs={12}>
-                    <TextField size='medium'  label="Additional Information" fullWidth margin="normal" />
-                </Grid>
-
-                <Grid item xs={12} style={{ marginBottom: '50px' }}>
-                    <Button   size='medium' style={{ backgroundColor: '#3b715a', color: "#fff", padding: '15px 0' }} color="primary" fullWidth onClick={handleSubmit}>
-                        Submit
-                    </Button>
-                </Grid>
+        <Grid container spacing={1}>
+          {Object.keys(formData).map((field) => (
+            <Grid item xs={field === 'firstName' || field === 'lastName' ? 6 : 12} key={field}>
+              <TextField
+                size='medium'
+                variant="standard"
+                label={field === 'firstName' ? 'First Name' : field === 'lastName' ? 'Last Name' : field.replace(/([A-Z])/g, ' $1').trim()}
+                fullWidth
+                margin="dense"
+                value={formData[field]}
+                onChange={handleInputChange(field)}
+                error={formErrors[field]}
+                helperText={formErrors[field] && `${field === 'firstName' || field === 'lastName' ? 'Name' : field} is required`}
+                InputProps={{
+                  startAdornment: (
+                    field === 'AdditionalInformation' ? (
+                      <CreateIcon style={{ color: '#76867E', paddingRight: '10px', fontSize: '25px' }} />
+                    ) : (
+                      React.createElement(
+                        field === 'PhoneNumber' ? PhoneIcon : field === 'CompanyName' || field === 'CompanyOperation' ? BusinessIcon : PersonOutlineIcon,
+                        { style: { color: '#76867E', paddingRight: '10px', fontSize: '25px', padding: '10px 10px 10px 0' } }
+                      )
+                    )
+                  ),
+                }}
+                InputLabelProps={{
+                  style: { color: '#76867E' },
+                }}
+              />
             </Grid>
-        </Container>
-    );
+          ))}
+
+          <Grid item xs={12}>
+            <Button
+              size='medium'
+              style={{ backgroundColor: '#80aa45', borderRadius: '25px', color: "#fff", padding: '10px 0', marginTop: '20px' }}
+              color="primary"
+              fullWidth
+              onClick={handleSubmit}
+            >
+              Send
+            </Button>
+          </Grid>
+        </Grid>
+      </div>
+    </Container>
+  );
 };
 
 export default Network;

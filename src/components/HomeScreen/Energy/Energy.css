@@ -116,6 +116,14 @@
   border-bottom: 1px solid #C7CCCA;
 }
 
+.IconButton.active {
+  border-bottom: none; /* Remove border when active (Collapse is open) */
+}
+
+.desBorder{
+  border-bottom: 1px solid #C7CCCA;
+}
+
 .IconButton h3 {
   color: #696969;
   font-weight: 600;
