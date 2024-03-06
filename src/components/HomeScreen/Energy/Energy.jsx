@@ -12,6 +12,7 @@ const Energy = () => {
         setOpenState(isOpen ? null : index);
     };
     const FaqItem = ({ item, isOpen, handleToggle }) => (
+        
         <div className={`collapse-box ${isOpen ? 'active' : ''}`} key={item.id}>
             <div className={`IconButton ${isOpen ? 'active' : ''}`} onClick={() => handleToggle(item.id)}>
                 {isOpen ? <RemoveIcon className='iconStyle' /> : <AddIcon className='iconStyle' />}

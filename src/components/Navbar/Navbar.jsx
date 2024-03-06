@@ -72,9 +72,10 @@ const Navbar = () => {
       <div
         style={{
           background:
-            !isScrolled && (currentPath === '/' || currentPath === '/Plan' || currentPath === '/Report' || currentPath === '/Contact' || currentPath === '/Contractor')
+            !isScrolled && (currentPath === '/' || currentPath === '/Plan' || currentPath === '/Report'  || currentPath === '/Contractor')
               ? '#E7F0E9'
               : '#D6E2D9',
+              
           transition: 'background 0.3s ease',
           boxShadow:
             !isScrolled && (currentPath !== '/' && currentPath !== '/Plan' && currentPath !== '/Report' && currentPath !== '/Contractor' && currentPath !== '/Contact')
