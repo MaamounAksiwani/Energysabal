@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="645" viewBox="0 0 500 645">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #225333;
+      }
+
+      .cls-2 {
+        fill: #80c60f;
+      }
+
+      .cls-3 {
+        fill: #609030;
+      }
+
+      .cls-4 {
+        fill: #103110;
+      }
+    </style>
+  </defs>
+  <g id="Group_196" data-name="Group 196" transform="translate(-93.821 -150.466)">
+    <path id="lightbulb-cfl-sharp-solid" class="cls-1" d="M0,360V260L500,160V260Z" transform="translate(93.821 290.466)"/>
+    <path id="lightbulb-cfl-sharp-solid-2" data-name="lightbulb-cfl-sharp-solid" class="cls-2" d="M250,100l-39.375,7.812L0,150V50L191.406,11.719,250,0V100Z" transform="translate(343.821 150.466)"/>
+    <path id="lightbulb-cfl-sharp-solid-3" data-name="lightbulb-cfl-sharp-solid" class="cls-3" d="M500,64V164L0,264V164Z" transform="translate(93.821 236.466)"/>
+    <path id="lightbulb-cfl-sharp-solid-4" data-name="lightbulb-cfl-sharp-solid" class="cls-4" d="M176,401V301l225-45V356L176,401Z" transform="translate(-82.179 394.465)"/>
+  </g>
+</svg>

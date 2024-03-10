@@ -9,6 +9,7 @@ import ReportScreen from "./components/ReportScreen/ReportScreen";
 import NotFound from "./components/NotFound";
 import Contractor from "./components/ContractorScreen/Contractor";
 import ContactScreen from "./components/ContactScreen/ContactScreen";
+import AboutScreen from "./components/AboutScreen/AboutScreen";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
           <Route exact path="/Report" element={<ReportScreen />} />
           <Route exact path="/Contractor" element={<Contractor />} />
           <Route exact path="/Contact" element={<ContactScreen />} />
+          <Route exact path='/About' element={<AboutScreen/>}/>
           <Route path="*" element={<NotFound />} />
         </Routes>
         {/* <ScrollToTopButton/> */}

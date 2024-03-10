@@ -5,6 +5,28 @@
     gap: 25px;
     padding-bottom: 50px;
 }
+
+.MissionCard{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  gap: 25px;
+  padding-bottom: 50px;
+}
+.MissionCard h3{
+  /* color: #C7CCCA !important */
+    color: #fff !important;
+}
+.MissionCardTitle h1{
+  color: #fff;
+}
+.MissionCard p{
+  color: #C7CCCA !important;
+  margin-top: 10px !important;
+  font-size: 16px !important;
+  margin-bottom: 25px !important;
+ font-weight: 300 !important;
+}
 .arrow-icon{
   cursor: pointer;
   transition: 0.3s ease !important;
@@ -20,6 +42,12 @@
     font-weight: 200;
     /* color: red; */
   }
+  .Mission-icon{
+    font-size: 70px !important;
+    color: #eeeeee;
+    /* color:#3b715a !important; */
+    font-weight: 200;
+  }
 
   .electrification-need p{
     margin-top: 10px;
@@ -31,10 +59,12 @@
 
 
   @media only screen and (max-width: 768px) {
-    .electrification-need{
+    .electrification-need , .MissionCard{
       display: flex;
       flex-direction: column;
       gap: 25px;
     }
+
+
     
   }

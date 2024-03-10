@@ -15,7 +15,8 @@ const Process = () => {
         {
             id: 1,
             backgroundImage: photo1,
-            topText: '1. Consultation',
+            topText: '01.',
+            title: 'Consultation',
             bottomText: `Our Contractors Will Guide
             You Through An Initial
             Consultation To Discuss
@@ -34,7 +35,8 @@ const Process = () => {
         {
             id: 2,
             backgroundImage: photo2,
-            topText: '2. Customized Solutions',
+            topText: '02.',
+            title: "Customized Solutions",
             bottomText: `Based On Our Consultation
             And Assessment, We
             Develop Customized
@@ -51,7 +53,8 @@ const Process = () => {
         {
             id: 3,
             backgroundImage: photo3,
-            topText: '3. Planning & Installation',
+            topText: '03.',
+            title: 'Planning & Installation',
             bottomText: `Once The Customized
             Solution Is Finalized, Our
             Team Meticulously Plans
@@ -69,7 +72,8 @@ const Process = () => {
         {
             id: 4,
             backgroundImage: photo4,
-            topText: '4. Quality Assurance ',
+            topText: '04',
+            title: ' Quality Assurance ',
             bottomText: `We Conduct Thorough
             Quality Assurance Checks
             Throughout The Installation
@@ -87,11 +91,15 @@ const Process = () => {
             Electrification Project`,
         },
     ];
-    const Card = ({ backgroundImage, topText, bottomText }) => (
+    const Card = ({ backgroundImage, topText, bottomText, title }) => (
         <>
             <div className="card-content" style={{ backgroundImage: `url(${backgroundImage})` }}>
-                <div className="top-text">{topText}</div>
-                <div className="bottom-text">{bottomText}</div>
+                <div className="overlay"></div>
+                <div className="top-text" style={{ zIndex: 1000 }}>{topText}</div>
+                {/* <div className='contact'> */}
+                    <h2 style={{ zIndex: 1000 }}>{title}</h2>
+                    <div className="bottom-text" style={{ zIndex: 1000 }}>{bottomText}</div>
+                {/* </div> */}
             </div>
         </>
     );
@@ -113,6 +121,7 @@ const Process = () => {
                             backgroundImage={card.backgroundImage}
                             topText={card.topText}
                             bottomText={card.bottomText}
+                            title={card.title}
                         />
                     ))}
                 </div>

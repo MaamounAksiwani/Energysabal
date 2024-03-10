@@ -70,19 +70,19 @@ const Navbar = () => {
   return (
     <div style={navbarStyle}>
       <div
-        style={{
-          background:
-            !isScrolled && (currentPath === '/' || currentPath === '/Plan' || currentPath === '/Report'  || currentPath === '/Contractor')
-              ? '#E7F0E9'
-              : '#D6E2D9',
-              
-          transition: 'background 0.3s ease',
-          boxShadow:
-            !isScrolled && (currentPath !== '/' && currentPath !== '/Plan' && currentPath !== '/Report' && currentPath !== '/Contractor' && currentPath !== '/Contact')
-              ? '0 4px 10px rgba(0, 0, 0, 0.1)'
-              : '',
-        }}
-        className='navBar'
+       style={{
+        background:
+          (!isScrolled && (currentPath === '/' || currentPath === '/Plan' || currentPath === '/Report' || currentPath === '/Contractor' || currentPath === '/About')) ||
+          (!isScrolled && currentPath === '/About')
+            ? '#E7F0E9'
+            : '#D6E2D9',
+        transition: 'background 0.3s ease',
+        boxShadow:
+          !isScrolled && currentPath !== '/About' && currentPath !== '/' && currentPath !== '/Plan' && currentPath !== '/Report' && currentPath !== '/Contractor' && currentPath !== '/Contact'
+            ? '0 4px 10px rgba(0, 0, 0, 0.1)'
+            : '',
+      }}
+      className='navBar'
       >
         <Container maxWidth='lg'>
           <div style={overlayStyle} onClick={handleToggleMenu}></div>
@@ -96,7 +96,7 @@ const Navbar = () => {
               <span onClick={() => handleLinkClick('/Plan')}>Plan</span>
               <span onClick={() => handleLinkClick('/Report')}>Report</span>
               <span onClick={() => handleLinkClick('/Contractor')}>Contractor</span>
-              <span>About</span>
+              <span onClick={()=>{handleLinkClick('/About')}}>About</span>
               <span onClick={() => {
                 handleLinkClick('/Contact')
               }}>Contact</span>
@@ -133,7 +133,10 @@ const Navbar = () => {
               handleLinkClick('/Contractor')
               setIsOpen(false)
             }}>Contractor</h3>
-            <h3>About</h3>
+            <h3 onClick={()=>{
+              handleLinkClick('/About');
+              setIsOpen(false)
+            }}>About</h3>
             <h3 onClick={() => {
               handleLinkClick('/Contact')
               setIsOpen(false)
