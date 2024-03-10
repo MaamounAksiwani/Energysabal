@@ -72,7 +72,7 @@ const Process = () => {
         {
             id: 4,
             backgroundImage: photo4,
-            topText: '04',
+            topText: '04.',
             title: ' Quality Assurance ',
             bottomText: `We Conduct Thorough
             Quality Assurance Checks
