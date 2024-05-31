@@ -4,6 +4,8 @@ import { Container } from '@mui/material';
 import HeatPumpOutlinedIcon from '@mui/icons-material/HeatPumpOutlined';
 import SolarPowerOutlinedIcon from '@mui/icons-material/SolarPowerOutlined';
 import WaterDropOutlinedIcon from '@mui/icons-material/WaterDropOutlined';
+import { useNavigate } from 'react-router';
+
 import DeveloperBoardOutlinedIcon from '@mui/icons-material/DeveloperBoardOutlined';
 import EvStationOutlinedIcon from '@mui/icons-material/EvStationOutlined';
 import HdrWeakOutlinedIcon from '@mui/icons-material/HdrWeakOutlined';
@@ -13,6 +15,11 @@ import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 
 
 const Electrification = () => {
+    const navigate = useNavigate();
+
+    const handleLinkClick = (path) => {
+        navigate(path);
+    };
     return (
         <div style={{ paddingBottom: '50px' }}>
             <Container maxWidth="lg">
@@ -29,7 +36,7 @@ const Electrification = () => {
                         <p>Upgrade your water heating
                             system to an energy efficient
                             model</p>
-                        <ArrowRightAltIcon className='arrow-icon' />
+                        <ArrowRightAltIcon className='arrow-icon' onClick={() => handleLinkClick('/HeatPump')} />
                     </div>
 
                     <div>
@@ -50,7 +57,7 @@ const Electrification = () => {
                             with our modern water
                             heaters</p>
 
-                            <ArrowRightAltIcon className='arrow-icon' />
+                        <ArrowRightAltIcon className='arrow-icon' />
                     </div>
 
 
@@ -62,7 +69,7 @@ const Electrification = () => {
                         <p>Upgrade your electrical panel
                             to pre-wire your home</p>
 
-                            <ArrowRightAltIcon className='arrow-icon' />
+                        <ArrowRightAltIcon className='arrow-icon' />
                     </div>
 
 
