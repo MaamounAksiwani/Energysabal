@@ -40,7 +40,7 @@ const Electrification = () => {
                     </div>
 
                     <div>
-                        <SolarPowerOutlinedIcon className='electrification-icon' />
+                        <SolarPowerOutlinedIcon className='electrification-icon' onClick={() => handleLinkClick('/HeatPump')} />
                         <h3>Solar</h3>
                         <p>Harness the power of the sun
                             to generate clean electricity
@@ -50,44 +50,44 @@ const Electrification = () => {
                     </div>
 
                     <div>
-                        <WaterDropOutlinedIcon className='electrification-icon' />
+                        <WaterDropOutlinedIcon className='electrification-icon' onClick={() => handleLinkClick('/HeatPump')} />
 
                         <h3>Water Heater</h3>
                         <p>Enjoy hot water efficiently
                             with our modern water
                             heaters</p>
 
-                        <ArrowRightAltIcon className='arrow-icon' />
+                        <ArrowRightAltIcon className='arrow-icon' onClick={() => handleLinkClick('/HeatPump')} />
                     </div>
 
 
 
                     <div>
-                        <DeveloperBoardOutlinedIcon className='electrification-icon' />
+                        <DeveloperBoardOutlinedIcon className='electrification-icon' onClick={() => handleLinkClick('/HeatPump')} />
 
                         <h3>Electrical Panel</h3>
                         <p>Upgrade your electrical panel
                             to pre-wire your home</p>
 
-                        <ArrowRightAltIcon className='arrow-icon' />
+                        <ArrowRightAltIcon className='arrow-icon' onClick={() => handleLinkClick('/HeatPump')} />
                     </div>
 
 
 
                     <div>
-                        <EvStationOutlinedIcon className='electrification-icon' />
+                        <EvStationOutlinedIcon className='electrification-icon' onClick={() => handleLinkClick('/HeatPump')} />
 
                         <h3>EV Charger
                         </h3>
                         <p>Charge your electric vehicle
                             conveniently at home
                         </p>
-                        <ArrowRightAltIcon className='arrow-icon' />
+                        <ArrowRightAltIcon className='arrow-icon' onClick={() => handleLinkClick('/HeatPump')} />
                     </div>
 
 
                     <div>
-                        <HdrWeakOutlinedIcon className='electrification-icon' />
+                        <HdrWeakOutlinedIcon className='electrification-icon'  onClick={() => handleLinkClick('/HeatPump')}/>
                         <h3>Cooktop
                         </h3>
                         <p>Cook sustainably with electric
@@ -95,12 +95,12 @@ const Electrification = () => {
 
                         </p>
 
-                        <ArrowRightAltIcon className='arrow-icon' />
+                        <ArrowRightAltIcon className='arrow-icon'  onClick={() => handleLinkClick('/HeatPump')} />
                     </div>
 
 
                     <div>
-                        <IndeterminateCheckBoxOutlinedIcon className='electrification-icon' />
+                        <IndeterminateCheckBoxOutlinedIcon className='electrification-icon' onClick={() => handleLinkClick('/HeatPump')} />
 
 
                         <h3>Oven
@@ -109,11 +109,11 @@ const Electrification = () => {
                             minimizing your
                             environmental impact
                         </p>
-                        <ArrowRightAltIcon className='arrow-icon' />
+                        <ArrowRightAltIcon className='arrow-icon'  onClick={() => handleLinkClick('/HeatPump')}/>
                     </div>
 
                     <div>
-                        <LocalLaundryServiceOutlinedIcon className='electrification-icon' />
+                        <LocalLaundryServiceOutlinedIcon className='electrification-icon' onClick={() => handleLinkClick('/HeatPump')} />
 
                         <h3>Clothes Dryer
                         </h3>
@@ -122,7 +122,7 @@ const Electrification = () => {
                             drye
                         </p>
 
-                        <ArrowRightAltIcon className='arrow-icon' />
+                        <ArrowRightAltIcon className='arrow-icon' onClick={() => handleLinkClick('/HeatPump')} />
                     </div>
 
                 </div>

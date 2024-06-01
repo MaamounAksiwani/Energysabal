@@ -14,3 +14,116 @@ code {
   /* font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace; */
 }
+
+
+.box-price{
+  padding: 50px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  gap: 5px;
+}
+
+.box-price div{
+  padding: 5px 15px;
+  border-radius: 5px;
+  border: 1px solid #CCC;
+}
+
+.box-price h3{
+  margin-bottom: 0;
+}
+.box-price h4{
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+.Tabs{ 
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  gap: 5px;
+}
+
+.Tabs span{
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: 1px solid #CCC;
+  /* border-radius: 5px; */
+  border-radius: 50px;
+}
+.Tabs-option{
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 50px ;
+}
+
+.des-option h2{
+  color:#80aa45 ;
+  margin-bottom: 10px;
+}
+.des-option{
+  text-align: left;
+  border-radius: 5px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  margin-top: 15px;
+}
+.des-option h4{
+  margin: 0;
+  font-weight: 500;
+}
+.des-option button{
+  margin: 15px 3px;
+  padding: 8px 20px;
+  border: none;
+  background-color: #80aa45;
+  border-radius: 50px;
+  color: #FFF;
+  cursor: pointer;
+}
+
+
+.des-option button:last-child{
+  background-color: #3b715a !important;
+}
+
+
+
+.Tabs span.active {
+  background-color: #80aa45;
+  color: #fff;
+}
+
+.Request{
+   text-align: center;
+   padding: 50px 0;
+}
+
+.Request button{
+  border-radius: 50px;
+  background-color: #80aa45;
+  /* padding: 10px 20px; */
+  border: none;
+  color: #FFF;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 25px;
+  padding: 15px 30px;
+}
+.Request h1{
+  margin-bottom: 10px;
+}
+.Request h3{
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 768px) {
+  .box-price{
+      grid-template-columns: repeat(1, 2fr);
+  }
+  .Tabs {
+    
+    grid-template-columns: repeat(2, 2fr);
+  }
+}

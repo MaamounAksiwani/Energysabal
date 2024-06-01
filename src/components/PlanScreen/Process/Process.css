@@ -1,6 +1,6 @@
 .Process {
   background-color: #3b715a;
-  padding-bottom: 50px;
+  padding-bottom: 25px;
 }
 
 .cards-container {
@@ -11,7 +11,7 @@
 }
 
 .card-content {
-  position: relative; /* Add this to make the overlay position relative to the card */
+  position: relative;
   background-size: cover;
   background-position: center;
   border-radius: 10px;
