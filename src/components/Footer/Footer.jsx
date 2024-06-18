@@ -3,8 +3,14 @@ import { Container } from '@mui/material';
 import { useNavigate } from 'react-router';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import './Footer.css';
-import logo from '../../until/image/energysabal-white.svg'
+import logo from '../../until/image/energysabal-white.svg';
+
+
 const Footer = () => {
+    const navigate = useNavigate();
+    const handleLinkClick = (path) => {
+        navigate(path);
+      };
     return (
         <footer class="footer">
             <Container maxWidth='lg'>
@@ -22,7 +28,7 @@ const Footer = () => {
                     <div class="footer-col">
                         <h4>Installation</h4>
                         <ul>
-                            <li>Heat Pump</li>
+                            <li onClick={() => handleLinkClick('/HeatPump')}> Heat Pump</li>
                             <li>Solar</li>
                             <li>Water Heater</li>
                             <li>Electrical Panel</li>
@@ -37,10 +43,10 @@ const Footer = () => {
                     <div class="footer-col">
                         <h4>Explore</h4>
                         <ul>
-                            <li>Plan</li>
-                            <li>Report</li>
-                            <li>Contractor</li>
-                            <li>Contact</li>
+                            <li onClick={() => handleLinkClick('/Plan')}>Plan</li>
+                            <li onClick={() => handleLinkClick('/Report')}>Report</li>
+                            <li onClick={() => handleLinkClick('/Contractor')}>Contractor</li>
+                            <li onClick={() => handleLinkClick('/Contact')}>Contact</li>
                         </ul>
                     </div>
               
@@ -49,7 +55,7 @@ const Footer = () => {
                     <div class="footer-col">
                         <h4>Information</h4>
                         <ul>
-                            <li>About Us</li>
+                            <li onClick={() => handleLinkClick('/About')}>About Us</li>
                             <li>FAQ</li>
                             <li>Terms & Conditions</li>
                             <li>Privacy Policy</li>

@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import WOW from 'wowjs';
 import EmailOutlinedIcon  from '@mui/icons-material/EmailOutlined';
-
-
 import { Container, TextField, Button, Grid } from '@mui/material';
 import CreateIcon from '@mui/icons-material/Create';
 import './ContactScreen.css'
