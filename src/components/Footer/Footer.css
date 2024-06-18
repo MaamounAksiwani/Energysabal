@@ -78,22 +78,23 @@ ul {
   margin-bottom: 10px;
 }
 
-.footer-col ul li a {
+.footer-col ul li  {
   color: #ddd;
   display: block;
   font-size: 1rem;
   font-weight: 300;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   text-decoration: none;
+  cursor: pointer;
   transition: all 0.3s ease;
 }
 
-.footer-col ul li a:hover {
+.footer-col ul li:hover {
   color: #fff;
-  padding-left: 7px;
+  padding-left: 7px !important;
 }
 
-.footer-col .social-links a {
+.footer-col .social-links  {
   color: #fff;
   background-color: rgba(255, 255, 255, 0.2);
   display: inline-block;
@@ -106,7 +107,7 @@ ul {
   transition: all 0.5s ease;
 }
 
-.footer-col .social-links a:hover {
+.footer-col .social-links:hover {
   color: #151515;
   background-color: #fff;
 }

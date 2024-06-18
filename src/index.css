@@ -20,7 +20,8 @@ code {
   padding: 50px 0;
   display: grid;
   grid-template-columns: repeat(3, 2fr);
-  gap: 5px;
+  gap: 15px;
+  /* background-color: red; */
 }
 
 .box-price div{
@@ -38,13 +39,17 @@ code {
 }
 
 .Tabs{ 
-  display: grid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* display: grid;
   grid-template-columns: repeat(4, 2fr);
-  gap: 5px;
+  gap: 5px; */
 }
 
 .Tabs span{
-  padding: 10px;
+  padding: 15px;
+  margin: 0 10px;
   cursor: pointer;
   transition: background-color 0.3s ease;
   border: 1px solid #CCC;
@@ -62,10 +67,10 @@ code {
 }
 .des-option{
   text-align: left;
-  border-radius: 5px;
+  border-radius: 15px;
   padding: 15px;
   border: 1px solid #ccc;
-  margin-top: 15px;
+  margin-top: 30px;
 }
 .des-option h4{
   margin: 0;
@@ -73,10 +78,10 @@ code {
 }
 .des-option button{
   margin: 15px 3px;
-  padding: 8px 20px;
+  padding: 5px 20px;
   border: none;
   background-color: #80aa45;
-  border-radius: 50px;
+  border-radius: 5px;
   color: #FFF;
   cursor: pointer;
 }
@@ -89,13 +94,17 @@ code {
 
 
 .Tabs span.active {
-  background-color: #80aa45;
+  background-color: #3b715a;
   color: #fff;
 }
 
 .Request{
+  background-color: #3b715a;
+  color: #fff;
    text-align: center;
-   padding: 50px 0;
+   padding: 30px 0;
+   margin-top: 20px;
+   border-radius: 15px;
 }
 
 .Request button{
@@ -125,5 +134,8 @@ code {
   .Tabs {
     
     grid-template-columns: repeat(2, 2fr);
+  }
+  .Request{
+    padding: 50px;
   }
 }

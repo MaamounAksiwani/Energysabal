@@ -1,0 +1,33 @@
+
+textarea:focus {
+    outline: none;
+    border-color: black;
+  }
+  
+  .expandable-textarea {
+    display: grid;
+  }
+  
+  .expandable-textarea textarea,
+  .expandable-textarea::after {
+    grid-area: 1 / 1 / 2 / 2;
+  
+    /* Custom styling goes here */
+    font: inherit;
+    font-size: 14px;
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: 1px solid #c0c0c0;
+  }
+  
+  .expandable-textarea textarea {
+    resize: none;
+    overflow: hidden;
+  }
+  
+  .expandable-textarea::after {
+    content: attr(data-replicated-value) " ";
+    white-space: pre-wrap;
+    visibility: hidden;
+  }
+  

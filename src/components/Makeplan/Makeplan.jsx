@@ -60,6 +60,15 @@ const Makeplan = () => {
 
         window.scrollTo(0, 0)
     }, [])
+
+
+    useEffect(() => {
+        document.title = "MakePlan | Energy Sabal";
+        return () => {
+            document.title = "";
+        };
+    }, []);
+
     return (
         <div className='wow fadeInDown' data-wow-duration='1s' style={{ backgroundColor: '#E7F0E9', paddingTop: '100px' }}>
 
@@ -75,7 +84,7 @@ const Makeplan = () => {
                             <p>We are eager to hear from you. Kindly fill out the
                                 form, and we’ll respond promptly. Your inquiry is
                                 valuable to us, and we’re here to assist you with all
-                                your electrification needs.
+                                your electrification needs
                             </p>
 
                             <div style={{ display: 'flex', alignItems: 'center' }}>
@@ -119,44 +128,93 @@ const Makeplan = () => {
                                 ))}
                                 <div>
 
-                                    <h4>Which products are you interested in?</h4>
+                                    <h4 style={{ color: '#76867E', fontWeight: "300", paddingRight: '10px', fontSize: '15px' }}>Which products are you interested in?</h4>
                                 </div>
                                 <div>
-            <FormControlLabel
-                control={<Checkbox sx={{ '&.Mui-checked': { color: '#80aa45' } }} />}
-                label="Heat Pump"
-            />
-            <FormControlLabel
-          control={<Checkbox sx={{ '&.Mui-checked': { color: '#80aa45' } }} />}
-                label="Solar"
-            />
-            <FormControlLabel
-            control={<Checkbox sx={{ '&.Mui-checked': { color: '#80aa45' } }} />}
-                label="Water Heater"
-            />
-            <FormControlLabel
-          control={<Checkbox sx={{ '&.Mui-checked': { color: '#80aa45' } }} />}
-                label="Electrical Panel"
-            />
-            <FormControlLabel
-                control={<Checkbox sx={{ '&.Mui-checked': { color: '#80aa45' } }} />}
-                label="EV Charger"
-            />
-            <FormControlLabel
-                   control={<Checkbox sx={{ '&.Mui-checked': { color: '#80aa45' } }} />}
-                label="Cooktop"
-            />
+                                    <FormControlLabel
+                                        control={<Checkbox sx={{ '&.Mui-checked': { color: '#80aa45' } }} />}
+                                        label="Heat Pump"
+                                        sx={{
+                                            '& .MuiFormControlLabel-label': {
+                                              fontWeight: '300',
+                                              color:"#76867E"
+                                            },
+                                          }} 
+                                    />
+                                    <FormControlLabel
+                                        control={<Checkbox sx={{ '&.Mui-checked': { color: '#80aa45' } }} />}
+                                        label="Solar"
+                                        sx={{
+                                            '& .MuiFormControlLabel-label': {
+                                              fontWeight: '300',
+                                              color:"#76867E"
+                                            },
+                                          }} 
+                                    />
+                                    <FormControlLabel
+                                        control={<Checkbox sx={{ '&.Mui-checked': { color: '#80aa45' } }} />}
+                                        label="Water Heater"
+                                        sx={{
+                                            '& .MuiFormControlLabel-label': {
+                                              fontWeight: '300',
+                                              color:"#76867E"
+                                            },
+                                          }} 
+                                    />
+                                    <FormControlLabel
+                                        control={<Checkbox sx={{ '&.Mui-checked': { color: '#80aa45' } }}  />}
+                                        label="Electrical Panel"
+                                        sx={{
+                                            '& .MuiFormControlLabel-label': {
+                                              fontWeight: '300',
+                                              color:"#76867E"
+                                            },
+                                          }} 
+                                    />
 
-<FormControlLabel
-                   control={<Checkbox sx={{ '&.Mui-checked': { color: '#80aa45' } }} />}
-                label="Oven"
-            />
+                                    <FormControlLabel
+                                        control={<Checkbox sx={{ '&.Mui-checked': { color: '#80aa45' } }} />}
+                                        label="EV Charger"
+                                        sx={{
+                                            '& .MuiFormControlLabel-label': {
+                                              fontWeight: '300',
+                                              color:"#76867E"
+                                            },
+                                          }} 
+                                    />
+                                    <FormControlLabel
+                                        control={<Checkbox sx={{ '&.Mui-checked': { color: '#80aa45' } }} />}
+                                        label="Cooktop"
+                                        sx={{
+                                            '& .MuiFormControlLabel-label': {
+                                              fontWeight: '300',
+                                              color:"#76867E"
+                                            },
+                                          }} 
+                                    />
 
-<FormControlLabel
-                   control={<Checkbox sx={{ '&.Mui-checked': { color: '#80aa45' } }} />}
-                label="Clothes Dryer"
-            />
-        </div>
+                                    <FormControlLabel
+                                        control={<Checkbox sx={{ '&.Mui-checked': { color: '#80aa45' } }} />}
+                                        label="Oven"
+                                        sx={{
+                                            '& .MuiFormControlLabel-label': {
+                                              fontWeight: '300',
+                                              color:"#76867E"
+                                            },
+                                          }} 
+                                    />
+
+                                    <FormControlLabel
+                                        control={<Checkbox sx={{ '&.Mui-checked': { color: '#80aa45' } }} />}
+                                        label="Clothes Dryer"
+                                        sx={{
+                                            '& .MuiFormControlLabel-label': {
+                                              fontWeight: '300',
+                                              color:"#76867E"
+                                            },
+                                          }}  
+                                    />
+                                </div>
 
                                 <Grid item xs={12}>
                                     <Button

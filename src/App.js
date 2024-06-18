@@ -18,7 +18,7 @@ import HeatPump from './components/HeatPump/HeatPump'
 const App = () => {
   return (
     <>
-    {/* <Favicon url={logo}/> */}
+    <Favicon url={logo}/>
       <BrowserRouter>
         <Navbar />
         <Routes>

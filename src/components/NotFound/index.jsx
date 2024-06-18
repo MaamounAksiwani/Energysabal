@@ -7,6 +7,13 @@ const NotFound = () => {
         wow.init();
         window.scrollTo(0, 0)
     }, [])
+
+    useEffect(() => {
+        document.title = "Not Found | Energy Sabal";
+        return () => {
+          document.title = "";
+        };
+      }, []);
     return (
         <div style={{ padding: '100px 0', height: '15.8vh' }} className='wow fadeInDown' data-wow-duration='1s'>
             <Container maxWidth="lg">

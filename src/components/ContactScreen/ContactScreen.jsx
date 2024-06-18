@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import WOW from 'wowjs';
+import EmailOutlinedIcon  from '@mui/icons-material/EmailOutlined';
+
 
 import { Container, TextField, Button, Grid } from '@mui/material';
 import CreateIcon from '@mui/icons-material/Create';
@@ -51,6 +53,13 @@ const ContactScreen = () => {
         }
     };
 
+    useEffect(() => {
+        document.title = "Contact | Energy Sabal";
+        return () => {
+          document.title = "";
+        };
+      }, []);
+
 
     useEffect(() => {
         const wow = new WOW.WOW();
@@ -72,7 +81,7 @@ const ContactScreen = () => {
                             <p>We are eager to hear from you. Kindly fill out the
                                 form, and we’ll respond promptly. Your inquiry is
                                 valuable to us, and we’re here to assist you with all
-                                your electrification needs.
+                                your electrification needs
                             </p>
 
                             <div style={{ display: 'flex', alignItems: 'center' }}>
@@ -103,7 +112,9 @@ const ContactScreen = () => {
                                             InputProps={{
                                                 startAdornment: (
                                                     React.createElement(
-                                                        field === 'PhoneNumber' ? PhoneIcon : field === 'Subject' || field === 'HowCanWeHelpYou' ? BusinessIcon : PersonOutlineIcon,
+                                                        field === 'PhoneNumber' ? PhoneIcon : 
+                                                        field === 'Email' ? EmailOutlinedIcon :
+                                                        field === 'Subject' || field === 'HowCanWeHelpYou' ? BusinessIcon  : PersonOutlineIcon,
                                                         { style: { color: '#76867E', paddingRight: '10px', fontSize: '25px', padding: '10px 10px 10px 0' } }
                                                     )
                                                 ),

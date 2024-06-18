@@ -9,6 +9,14 @@ const AboutScreen = () => {
         const wow = new WOW.WOW();
         wow.init();
     }, [])
+
+    useEffect(() => {
+        document.title = "About-us | Energy Sabal";
+        return () => {
+          document.title = "";
+        };
+      }, []);
+
     return (
         <div className='wow fadeInDown' data-wow-duration='1s' style={{ backgroundColor: '#E7F0E9' }}>
            <Header/>

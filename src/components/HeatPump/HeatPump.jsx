@@ -5,9 +5,10 @@ import img from '../../until/image/DeerfieldWind.jpg'
 import ElectricBoltIcon from '@mui/icons-material/ElectricBolt';
 import Process from '../PlanScreen/Process/Process';
 
+import SystemSecurityUpdateWarningIcon from '@mui/icons-material/SystemSecurityUpdateWarning';
 const HeatPump = () => {
 
-    const [activeTab, setActiveTab] = useState(null);
+    const [activeTab, setActiveTab] = useState('Federal');
 
     const handleTabClick = (tab) => {
         setActiveTab(tab);
@@ -25,6 +26,15 @@ const HeatPump = () => {
         wow.init();
         window.scrollTo(0, 0)
     }, [])
+
+
+    useEffect(() => {
+        document.title = "HeatPump | Energy Sabal";
+        return () => {
+            document.title = "";
+        };
+    }, []);
+
     return (
         <div className='wow fadeInDown' data-wow-duration='1s' style={{ backgroundColor: '#E7F0E9', paddingTop: '100px' }}>
             <h1 style={{ textAlign: 'center', padding: '20px 0 50px 0' }}>Upgrade to an energy-saving heat pump clothes dryer</h1>
@@ -63,65 +73,68 @@ const HeatPump = () => {
                         </div>
 
 
-                        <div className='box-price'>
-                            <div>
-                                <h3> UPFRONT COST</h3>
-                                <h4> $1,000+</h4>
+
+                        <div style={{ backgroundColor: "#FFF", padding: "30px", marginTop: "40px", borderRadius: "15px", boxShadow: "0 4px 10px rgba(0, 0, 0, 0.1)" }}>
+                            <div className='box-price'>
+                                <div>
+                                    <h3> UPFRONT COST</h3>
+                                    <h4> $1,000+</h4>
+                                </div>
+                                <div>
+                                    <h3> UPFRONT COST</h3>
+                                    <h4> $1,000+</h4>
+                                </div>
+                                <div>
+                                    <h3> UPFRONT COST</h3>
+                                    <h4> $1,000+</h4>
+                                </div>
+
+                                <div>
+                                    <h3>FEATURES</h3>
+
+                                    <h4> Place it anywhere
+                                        in the house; no
+                                        ventilation is
+                                        needed</h4>
+                                </div>
+
+                                <div>
+                                    <h3>FEATURES</h3>
+
+                                    <h4> Place it anywhere
+                                        in the house; no
+                                        ventilation is
+                                        needed</h4>
+                                </div>
+
+                                <div>
+                                    <h3>FEATURES</h3>
+
+                                    <h4> Place it anywhere
+                                        in the house; no
+                                        ventilation is
+                                        needed</h4>
+                                </div>
                             </div>
-                            <div>
-                                <h3> UPFRONT COST</h3>
-                                <h4> $1,000+</h4>
-                            </div>
-                            <div>
-                                <h3> UPFRONT COST</h3>
-                                <h4> $1,000+</h4>
-                            </div>
 
-                            <div>
-                                <h3>FEATURES</h3>
 
-                                <h4> Place it anywhere
-                                    in the house; no
-                                    ventilation is
-                                    needed</h4>
-                            </div>
+                            <div style={{ textAlign: 'center', padding: '30px', backgroundColor: '#3b715a', color: "#FFF", borderRadius: '10px' }}>
+                                <div>
+                                    <ElectricBoltIcon style={{ color: '#fff', fontSize: '42px' }} />
+                                    <ElectricBoltIcon style={{ color: '#fff', fontSize: '42px' }} />
+                                </div>
 
-                            <div>
-                                <h3>FEATURES</h3>
+                                <h2> Our Conclusion</h2>
 
-                                <h4> Place it anywhere
-                                    in the house; no
-                                    ventilation is
-                                    needed</h4>
-                            </div>
-
-                            <div>
-                                <h3>FEATURES</h3>
-
-                                <h4> Place it anywhere
-                                    in the house; no
-                                    ventilation is
-                                    needed</h4>
+                                <p>
+                                    Heat Pump clothes dryers are environmentally friendly and highly
+                                    effective
+                                </p>
                             </div>
                         </div>
 
 
-                        <div style={{ textAlign: 'center' }}>
-                            <div>
-                                <ElectricBoltIcon style={{ color: '#80aa45', fontSize: '42px' }} />
-                                <ElectricBoltIcon style={{ color: '#80aa45', fontSize: '42px' }} />
-                            </div>
-
-                            <h2> Our Conclusion</h2>
-
-                            <p>
-                                Heat Pump clothes dryers are environmentally friendly and highly
-                                effective
-                            </p>
-                        </div>
-
-
-                        <div style={{ textAlign: 'center' }}>
+                        <div style={{ textAlign: 'center', backgroundColor: "#fff", borderRadius: '15px' }}>
 
                             <h1 style={{ padding: '20px 0 20px 0' }}>Rebates and Credits</h1>
 
@@ -141,7 +154,8 @@ const HeatPump = () => {
                                 </div>
 
 
-                                <div className='des-option'>
+
+                                {activeTab == 'Federal' && <div className='des-option'>
                                     <h2> $840 off Heat Pump Clothes Dryer</h2>
 
                                     <h4> Federal Home Electrification and Appliance Rebates (HEAR)</h4>
@@ -151,8 +165,10 @@ const HeatPump = () => {
 
                                     <button>REBATE</button>
 
-                                    <button> ! EXPECTED IN 2025</button>
-                                </div>
+{/* <SystemSecurityUpdateWarningIcon style={{fontSize:'13px' , marginTop:'2px'}}/>  */}
+                                    <button> EXPECTED IN 2025</button>
+                                </div>}
+
 
 
                                 <div className='Request'>
@@ -172,7 +188,7 @@ const HeatPump = () => {
 
 
                     </Container>
-                        <Process/>
+                    {/* <Process /> */}
                 </div>
             </div>
 

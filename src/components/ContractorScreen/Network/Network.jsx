@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import CreateIcon from '@mui/icons-material/Create';
 import { Container, TextField, Button, Grid } from '@mui/material';
+import EmailOutlinedIcon  from '@mui/icons-material/EmailOutlined';
+
 import {
+  // LocationOnOutlinedIcon as EmailIcon,
   PersonOutline as PersonOutlineIcon,
   Mail as MailIcon,
   Business as BusinessIcon,
@@ -16,7 +19,7 @@ const Network = () => {
     Email: '',
     PhoneNumber: '',
     CompanyName: '',
-    CompanyOperation: '',
+    MyCompanyOperatesIn: '',
     AdditionalInformation: '',
   });
 
@@ -60,7 +63,7 @@ const Network = () => {
         <div className='main-form'>
           <Grid container spacing={1}>
             {Object.keys(formData).map((field) => (
-              <Grid item xs={field === 'firstName' || field === 'lastName' ? 6 : 12} key={field}>
+              <Grid item xs={12} key={field}>
                 <TextField
                   size='medium'
                   variant="standard"
@@ -74,10 +77,14 @@ const Network = () => {
                   InputProps={{
                     startAdornment: (
                       field === 'AdditionalInformation' ? (
+                        
                         <CreateIcon style={{ color: '#76867E', paddingRight: '10px', fontSize: '25px' }} />
                       ) : (
                         React.createElement(
-                          field === 'PhoneNumber' ? PhoneIcon : field === 'CompanyName' || field === 'CompanyOperation' ? BusinessIcon : PersonOutlineIcon,
+                          field === 'PhoneNumber' ? PhoneIcon :
+                          field === 'Email' ? EmailOutlinedIcon : 
+                          field === 'CompanyName' || field === 'MyCompanyOperatesIn' ? BusinessIcon : 
+                          PersonOutlineIcon,
                           { style: { color: '#76867E', paddingRight: '10px', fontSize: '25px', padding: '10px 10px 10px 0' } }
                         )
                       )

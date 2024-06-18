@@ -93,8 +93,8 @@ const Process = () => {
     ];
     const Card = ({ backgroundImage, topText, bottomText, title }) => (
         <>
-            <div className="card-content" style={{ backgroundImage: `url(${backgroundImage})` }}>
-                <div className="overlay"></div>
+            <div className="card-content">
+                {/* <div className="overlay"></div> */}
                 <div className="top-text" style={{ zIndex: 1000 }}>{topText}</div>
                 {/* <div className='contact'> */}
                     <h2 style={{ zIndex: 1000 }}>{title}</h2>

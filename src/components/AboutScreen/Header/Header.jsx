@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 // import './index.css';
+import './Header.css';
 import { Container } from '@mui/material';
-import img from '../../../until/image/send/Group 196.svg'
-
+import img from '../../../until/image/ABOUT.png'
 const Header = () => {
     return (
         <>
@@ -25,7 +25,7 @@ const Header = () => {
 
                             </div>
                             <div>
-                                <img style={{ height: '100%' }} src={img} alt='not found' />
+                                <img src={img} alt='not found' />
                             </div>
                         </div>
 

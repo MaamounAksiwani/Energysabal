@@ -12,6 +12,13 @@ const HomeScreen = () => {
         
         window.scrollTo(0, 0)
     }, [])
+
+    useEffect(() => {
+        document.title = "Home | Energy Sabal";
+        return () => {
+          document.title = "";
+        };
+      }, []);
     return (
         <div className='wow fadeInDown' data-wow-duration='1s' style={{backgroundColor:'#E7F0E9'}}>
             <Header/>
