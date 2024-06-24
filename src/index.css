@@ -17,8 +17,10 @@ code {
 
 
 .box-price{
-  padding: 50px 0;
+  /* padding: 50px 0; */
   display: grid;
+  padding-top: 10px;
+  padding-bottom: 25px;
   grid-template-columns: repeat(3, 2fr);
   gap: 15px;
   /* background-color: red; */

@@ -5,39 +5,11 @@ import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
 import photo from '../../../until/image/shutterstock_1236719398.jpg'
 const ChooseEnergy = () => {
-    const [openState, setOpenState] = useState(null);
+    const [openIndex, setOpenIndex] = useState(null); // Track the currently open collapse box
+
     const handleToggle = (index) => {
-        const isOpen = openState === index;
-        setOpenState(isOpen ? null : index);
-    };
-    const FaqItem = ({ item, isOpen, handleToggle }) => (
-        <div className={`collapse-box ${isOpen ? 'active' : ''}`} key={item.id}>
-            <div className={`IconButton ${isOpen ? 'active' : ''}`} onClick={() => handleToggle(item.id)}>
-                {isOpen ? <RemoveIcon className='iconStyle' /> : <AddIcon className='iconStyle' />}
-                <h3 style={{ color: '#000' }}>{item.title}</h3>
-            </div>
-            <Collapse in={isOpen} className='Collapse'>
-                {item.point && item.point.length > 0 ? (
-                    <ul>
-
-                        {item.point.map((ele, index) => (
-                            <li key={index}>{`${ele}`}</li>
-                        ))}
-                    </ul>
-                ) : (
-                    <p className={` ${isOpen ? 'desBorder' : ''}`}>{item.description}</p>
-                )}
-            </Collapse>
-        </div>
-    );
-
-    const renderFaqItems = (items, isOpenFn, toggleFn) => (
-        <div className='ContainerCollapseOne'>
-            {items.map((item) => (
-                <FaqItem key={item.id} item={item} isOpen={isOpenFn(item.id)} handleToggle={toggleFn} />
-            ))}
-        </div>
-    );
+        setOpenIndex(openIndex === index ? null : index); // Toggle the collapse box
+    }; 
 
     const content = [
         {
@@ -90,7 +62,53 @@ const ChooseEnergy = () => {
     };
     return (
         <>
-            <div className='Energyheader'>
+           <div className='Energyheader'>
+            <Container maxWidth="lg">
+                <div className='Energycontent'>
+                    <div className='EnergyContentImage'>
+                        <img src={photo} alt='not found' />
+                    </div>
+                    <div>
+                        <p style={paragraphStyle}> WHY CHOOSE ENERGY SABAL REPORTS?</p>
+                        <h1>
+                        Make Informed Choices When Embarking On
+                                    Electrification Projects
+                        </h1>
+                        <div className='ContainerCollapse'>
+                            <div>
+                                {content.map((item) => (
+                                    <div className='collapse-box' key={item.id}>
+                                        <div className={openIndex === item.id ? 'no-border IconButton active' : 'border IconButton'}  onClick={() => handleToggle(item.id)}>
+                                            {openIndex === item.id ? <RemoveIcon className='iconStyle' /> : <AddIcon className='iconStyle' />}
+                                            <h3 
+                                                
+                                                onClick={() => handleToggle(item.id)}
+                                            >
+                                                {item.title}
+                                            </h3>
+                                        </div>
+                                        <Collapse in={openIndex === item.id} className='Collapse'>
+                                            {item.point && item.point.length > 0 ? (
+                                                <ul>
+                                                    {item.point.map((ele, index) => (
+                                                        <li key={index}>{`${ele} ${index}`}</li>
+                                                    ))}
+                                                </ul>
+                                            ) : (
+                                                <p className={openIndex === item.id ? 'border' : 'no-border'}>
+                                                    {item.description}
+                                                </p>
+                                            )}
+                                        </Collapse>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </Container>
+        </div>
+            {/* <div className='Energyheader'>
                 <div>
                     <Container maxWidth="lg">
                         <div className='Energycontent'>
@@ -113,7 +131,7 @@ const ChooseEnergy = () => {
 
                     </Container>
                 </div>
-            </div>
+            </div> */}
         </>
     )
 };

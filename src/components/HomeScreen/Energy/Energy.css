@@ -103,8 +103,6 @@
   display: flex;
 }
 
-.ContainerCollapse div:first-child {
-}
 @media only screen and (max-width: 768px) {
   .ContainerCollapse {
     flex-direction: column;
@@ -126,7 +124,7 @@
 }
 
 .IconButton.active {
-  border-bottom: none; /* Remove border when active (Collapse is open) */
+  border-bottom: none;
 }
 
 .desBorder{
@@ -140,7 +138,7 @@
   margin-left: 15px;
 }
 .IconButton:hover h3 {
-  color: #696969;
+  /* color: #696969; */
 }
 .IconButton:hover {
   cursor: pointer;
@@ -150,7 +148,7 @@
 }
 .Collapse {
   /* padding: 0px 25px ; */
-  /* background-color: red; */
+  /* background-color: red !important; */
 }
 
 .Collapse ul {
@@ -160,19 +158,53 @@
 }
 .Collapse ul li {
   color: #696969;
-  font-size: 15px;
+  font-size: 150px;
   margin: 10px 0px;
 }
 .collapse-box {
   margin: 20px 0px;
 }
-.childBox {
-  margin: 25px;
-}
+
 
 .collapse-box p {
   color: #696969;
   font-size: 15px;
   margin: 10px 0px;
   padding: 25px;
+  /* background-color: red !important; */
+}
+
+
+
+
+
+
+
+h3.border {
+  border-bottom: 1px solid #C7CCCA;
+}
+
+h3.no-border { 
+  border-bottom: none;
+}
+
+p.border {
+  border-bottom: 1px solid #C7CCCA;
+}
+
+p.no-border {
+  border-bottom: none;
+}
+
+
+.IconButton {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.IconButton h3 {
+  color: #000;
+  margin-left: 8px;
+  cursor: pointer;
 }
