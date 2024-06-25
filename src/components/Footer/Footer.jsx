@@ -32,9 +32,9 @@ const Footer = () => {
                             <li>Solar</li>
                             <li>Water Heater</li>
                             <li>Electrical Panel</li>
-                            <li>EV Charging</li>
+                            <li>Electric Vehicle</li>
                             <li>Cooktop</li>
-                            <li>Oven</li>
+                            <li>Lawn Equipment</li>
                             <li>Clothes Dryer</li>
 
                         </ul>

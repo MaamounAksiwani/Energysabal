@@ -22,7 +22,7 @@ const ChooseEnergy = () => {
             We take into account your unique needs,
             preferences, and goals to deliver
             recommendations that are perfectly
-            suited to your situation`
+            suited to your situation.`
         },
         {
             id: 1,
@@ -34,7 +34,7 @@ const ChooseEnergy = () => {
             estimations to energy savings potential,
             we provide the information you need to
             make informed decisions about your
-            project’s scope, timeline, and budget`
+            project’s scope, timeline, and budget.`
         },
         {
             id: 2,

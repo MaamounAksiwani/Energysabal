@@ -79,7 +79,7 @@ const ContactScreen = () => {
                             <p>We are eager to hear from you. Kindly fill out the
                                 form, and we’ll respond promptly. Your inquiry is
                                 valuable to us, and we’re here to assist you with all
-                                your electrification needs
+                                your electrification needs.
                             </p>
 
                             <div style={{ display: 'flex', alignItems: 'center' }}>

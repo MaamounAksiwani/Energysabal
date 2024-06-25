@@ -39,7 +39,7 @@ const Mission = () => {
                             streamline the transition to
                             clean energy, making
                             sustainable electrification
-                            accessible to all
+                            accessible to all.
                         </p>
 
                     </div>

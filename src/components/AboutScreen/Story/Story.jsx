@@ -38,7 +38,7 @@ const Story = () => {
                                     and sustainability, empowering individuals and
                                     businesses to embrace clean energy. Join us in
                                     shaping a brighter tomorrow, powered by Energy
-                                    Sabal
+                                    Sabal.
                                 </h2>
                             </div>
                         </div>

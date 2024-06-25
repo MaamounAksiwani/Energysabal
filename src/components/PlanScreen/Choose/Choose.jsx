@@ -37,7 +37,7 @@ const Choose = () => {
             description: `Your satisfaction is our priority. We strive
             to exceed your expectations with our
             excellent service and support throughout
-            the electrification process`
+            the electrification process.`
         },
         {
             id: 3,

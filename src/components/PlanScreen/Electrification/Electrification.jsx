@@ -12,7 +12,9 @@ import HdrWeakOutlinedIcon from '@mui/icons-material/HdrWeakOutlined';
 import LocalLaundryServiceOutlinedIcon from '@mui/icons-material/LocalLaundryServiceOutlined';
 import IndeterminateCheckBoxOutlinedIcon from '@mui/icons-material/IndeterminateCheckBoxOutlined';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
+import ElectricCarOutlinedIcon from '@mui/icons-material/ElectricCarOutlined';
 
+import GrassOutlinedIcon from '@mui/icons-material/GrassOutlined';
 
 const Electrification = () => {
     const navigate = useNavigate();
@@ -32,10 +34,12 @@ const Electrification = () => {
                 <div className='electrification-need'>
                     <div>
                         <HeatPumpOutlinedIcon className='electrification-icon' />
-                        <h3>HeatPump</h3>
-                        <p>Upgrade your water heating
-                            system to an energy efficient
-                            model</p>
+                        <h3>Heat Pump</h3>
+                        <p>
+                        Upgrade your heating and cooling system to an energy efficient model
+
+
+                        </p>
                         <ArrowRightAltIcon className='arrow-icon' onClick={() => handleLinkClick('/HeatPump')} />
                     </div>
 
@@ -75,9 +79,9 @@ const Electrification = () => {
 
 
                     <div>
-                        <EvStationOutlinedIcon className='electrification-icon' onClick={() => handleLinkClick('/HeatPump')} />
-
-                        <h3>EV Charger
+                        <ElectricCarOutlinedIcon className='electrification-icon' onClick={() => handleLinkClick('/HeatPump')} />
+                        
+                        <h3>Electric Vehicle
                         </h3>
                         <p>Charge your electric vehicle
                             conveniently at home
@@ -100,10 +104,10 @@ const Electrification = () => {
 
 
                     <div>
-                        <IndeterminateCheckBoxOutlinedIcon className='electrification-icon' onClick={() => handleLinkClick('/HeatPump')} />
+                        <GrassOutlinedIcon className='electrification-icon' onClick={() => handleLinkClick('/HeatPump')} />
 
 
-                        <h3>Oven
+                        <h3>Lawn Equipment
                         </h3>
                         <p>Bake delicious meals while
                             minimizing your
@@ -119,7 +123,7 @@ const Electrification = () => {
                         </h3>
                         <p>Dry your clothes efficiently
                             with a heat pump clothes
-                            drye
+                            dryer
                         </p>
 
                         <ArrowRightAltIcon className='arrow-icon' onClick={() => handleLinkClick('/HeatPump')} />

@@ -14,7 +14,7 @@ const Header = () => {
                                     with efficient, eco friendly electrification solutions.
                                     Optimize incentives and financing, ensuring
                                     prompt payment while we handle administrative
-                                    tasks
+                                    tasks.
                                 </p>
                             </div>
                             <div>

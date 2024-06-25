@@ -9,7 +9,9 @@ import EvStationOutlinedIcon from '@mui/icons-material/EvStationOutlined';
 import HdrWeakOutlinedIcon from '@mui/icons-material/HdrWeakOutlined';
 import LocalLaundryServiceOutlinedIcon from '@mui/icons-material/LocalLaundryServiceOutlined';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
+import ElectricCarOutlinedIcon from '@mui/icons-material/ElectricCarOutlined';
 
+import GrassOutlinedIcon from '@mui/icons-material/GrassOutlined';
 import IndeterminateCheckBoxOutlinedIcon from '@mui/icons-material/IndeterminateCheckBoxOutlined';
 const Services = () => {
 
@@ -63,8 +65,9 @@ const Services = () => {
                     </div>
 
                     <div>
-                        <EvStationOutlinedIcon className='service-icon' />
-                        <h3>EV Charger</h3>
+                        <ElectricCarOutlinedIcon className='service-icon' />
+                        
+                        <h3>Electric Vehicle</h3>
                         <ArrowRightAltIcon style={{ color: '#FFF', cursor: 'pointer' }} className='arrow-icon' />
                     </div>
 
@@ -75,8 +78,8 @@ const Services = () => {
                     </div>
 
                     <div>
-                        <IndeterminateCheckBoxOutlinedIcon className='service-icon'/>
-                        <h3>Oven</h3>
+                        <GrassOutlinedIcon className='service-icon'/>
+                        <h3>Lawn Equipment</h3>
                         <ArrowRightAltIcon style={{ color: '#FFF', cursor: 'pointer' }} className='arrow-icon' />
                     </div>
                     

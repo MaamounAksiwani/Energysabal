@@ -19,7 +19,7 @@ const Header = () => {
                                 <p>Embrace the power of electrification and
                                     sustainable energy solutions. Cut annual energy
                                     costs and make a meaningful impact against
-                                    climate change
+                                    climate change.
                                 </p>
                                 <button onClick={()=>{handleLinkClick('/Makeplan')}} >Make Plan</button>
                             </div>

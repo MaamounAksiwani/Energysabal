@@ -4,6 +4,7 @@ import WOW from 'wowjs';
 import img from '../../until/image/DeerfieldWind.jpg'
 import ElectricBoltIcon from '@mui/icons-material/ElectricBolt';
 import Process from '../PlanScreen/Process/Process';
+import FlashOnOutlinedIcon from '@mui/icons-material/FlashOnOutlined';
 import SystemSecurityUpdateWarningIcon from '@mui/icons-material/SystemSecurityUpdateWarning';
 const HeatPump = () => {
 
@@ -49,25 +50,35 @@ const HeatPump = () => {
                                 <h4 style={{ fontWeight: '400' }}>
                                     While we enjoy using all kinds of electric clothes dryers, heat
                                     pump models are our favourites. Heat pump dryers are kinder
-                                    on clothing, consume less energy, and don’t require ventilation
+                                    on clothing, consume less energy, and don’t require ventilation.
                                 </h4>
 
-                                <h2> <ElectricBoltIcon style={{ color: '#80aa45' }} /> WHY DO IT?</h2>
+                                <div style={{ margin: '40px 0' }}>
 
-                                <h4 style={{ fontWeight: '400' }}>
-                                    The most energy-efficient kind of electric dryers are heat pump
-                                    models, which don’t emit carbon dioxide or burn fossil fuels
-                                </h4>
+                                    <h2> <FlashOnOutlinedIcon style={{ color: '#3b715a' }} /> WHY DO IT?</h2>
+
+                                    <h4 style={{ fontWeight: '400', margin: '0' }}>
+                                        The most energy-efficient kind of electric dryers are heat pump
+                                        models, which don’t emit carbon dioxide or burn fossil fuels.
+                                    </h4>
+
+                                </div>
 
 
-                                <h2> <ElectricBoltIcon style={{ color: '#80aa45' }} /> WHEN?</h2>
+                                <div style={{ margin: '40px 0' }}>
 
-                                <h4 style={{ fontWeight: '400' }}>When the life of your existing dryer is almost over.</h4>
+                                    <h2> <FlashOnOutlinedIcon style={{ color: '#3b715a' }} /> WHEN?</h2>
 
-                                <h2> <ElectricBoltIcon style={{ color: '#80aa45' }} /> WHO IS THIS FOR?</h2>
+                                    <h4 style={{ fontWeight: '400', margin: '0' }}>When the life of your existing dryer is almost over.</h4>
+                                </div>
 
-                                <h4 style={{ fontWeight: '400' }}>Homeowners and renters.
-                                </h4>
+
+                                <div style={{ margin: '40px 0' }}>
+
+                                    <h2> <FlashOnOutlinedIcon style={{ color: '#3b715a' }} /> WHO IS THIS FOR?</h2>
+
+                                    <h4 style={{ fontWeight: '400', margin: '0' }}>Homeowners and renters.</h4>
+                                </div>
                             </div>
                         </div>
 
@@ -133,9 +144,10 @@ const HeatPump = () => {
                         </div>
 
 
-                        <div style={{ textAlign: 'center', backgroundColor: "#fff", borderRadius: '15px' }}>
 
-                            <h1 style={{ padding: '20px 0 20px 0' }}>Rebates and Credits</h1>
+                        <h1 style={{ padding: '20px 0 20px 0', textAlign: 'center' }}>Rebates and Credits</h1>
+                        <div style={{ textAlign: 'center', backgroundColor: "#fff", borderRadius: '15px', margin: "20px 0" }}>
+
 
                             <div className='Tabs-option'>
                                 <div className='Tabs'>
@@ -164,7 +176,7 @@ const HeatPump = () => {
 
                                     <button>REBATE</button>
 
-{/* <SystemSecurityUpdateWarningIcon style={{fontSize:'13px' , marginTop:'2px'}}/>  */}
+                                    {/* <SystemSecurityUpdateWarningIcon style={{fontSize:'13px' , marginTop:'2px'}}/>  */}
                                     <button> EXPECTED IN 2025</button>
                                 </div>}
 

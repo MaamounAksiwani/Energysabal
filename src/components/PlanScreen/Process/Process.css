@@ -15,9 +15,13 @@
   /* background-size: cover; */
   /* background-position: center; */
   border-radius: 10px;
+  /* background-color: red; */
+  text-align: center;
+  border: 1px solid #C7CCCA;
+  /* text-justify: auto; */
   /* text-align: center; */
   padding: 20px;
-  background-color: #C7CCCA;
+  /* background-color: #C7CCCA; */
   /* background-color:#3b715a; */
   z-index: 1000;
 }
@@ -34,22 +38,26 @@
 
 
 .card-content h2 {
-  color: #3b715a;
-  font-size: 18px;
+  color: #FFF;
+  /* color: #3b715a; */
+  font-size: 20px;
   margin-bottom: 5px;
 }
 
 .top-text {
-  font-size: 24px;
+  font-size: 50px;
   font-weight: bold;
   margin-bottom: 25px;
-  color: #3b715a;
+  color: #FFF;
+  /* color: #3b715a; */
 }
 
 .bottom-text {
   font-size: 14px;
-  line-height: 1.5;
-  color: #3b715a;
+  margin: 20px 0px;
+  line-height: 1.6;
+  color: #FFF;
+  /* color: #3b715a; */
 }
 .card-content .top-text,
 .card-content h2,

@@ -20,7 +20,7 @@ const Header = () => {
                                     energy accessible to all, offering easy access to
                                     incentives and rebates for homes and businesses,
                                     paving the way to a greener, more sustainable
-                                    world
+                                    world.
                                 </p>
 
                             </div>

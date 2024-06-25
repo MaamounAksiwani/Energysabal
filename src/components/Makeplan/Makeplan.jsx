@@ -84,7 +84,7 @@ const Makeplan = () => {
                             <p>We are eager to hear from you. Kindly fill out the
                                 form, and we’ll respond promptly. Your inquiry is
                                 valuable to us, and we’re here to assist you with all
-                                your electrification needs
+                                your electrification needs.
                             </p>
 
                             <div style={{ display: 'flex', alignItems: 'center' }}>
@@ -136,7 +136,8 @@ const Makeplan = () => {
                                         label="Heat Pump"
                                         sx={{
                                             '& .MuiFormControlLabel-label': {
-                                              fontWeight: '300',
+                                                fontWeight: '400',
+                                                fontSize:'16px',
                                               color:"#76867E"
                                             },
                                           }} 
@@ -146,7 +147,8 @@ const Makeplan = () => {
                                         label="Solar"
                                         sx={{
                                             '& .MuiFormControlLabel-label': {
-                                              fontWeight: '300',
+                                              fontWeight: '400',
+                                              fontSize:'16px',
                                               color:"#76867E"
                                             },
                                           }} 
@@ -156,7 +158,8 @@ const Makeplan = () => {
                                         label="Water Heater"
                                         sx={{
                                             '& .MuiFormControlLabel-label': {
-                                              fontWeight: '300',
+                                                fontWeight: '400',
+                                                fontSize:'16px',
                                               color:"#76867E"
                                             },
                                           }} 
@@ -166,7 +169,8 @@ const Makeplan = () => {
                                         label="Electrical Panel"
                                         sx={{
                                             '& .MuiFormControlLabel-label': {
-                                              fontWeight: '300',
+                                                fontWeight: '400',
+                                                fontSize:'16px',
                                               color:"#76867E"
                                             },
                                           }} 
@@ -177,7 +181,8 @@ const Makeplan = () => {
                                         label="EV Charger"
                                         sx={{
                                             '& .MuiFormControlLabel-label': {
-                                              fontWeight: '300',
+                                                fontWeight: '400',
+                                                fontSize:'16px',
                                               color:"#76867E"
                                             },
                                           }} 
@@ -187,7 +192,8 @@ const Makeplan = () => {
                                         label="Cooktop"
                                         sx={{
                                             '& .MuiFormControlLabel-label': {
-                                              fontWeight: '300',
+                                                fontWeight: '400',
+                                                fontSize:'16px',
                                               color:"#76867E"
                                             },
                                           }} 
@@ -195,10 +201,11 @@ const Makeplan = () => {
 
                                     <FormControlLabel
                                         control={<Checkbox sx={{ '&.Mui-checked': { color: '#80aa45' } }} />}
-                                        label="Oven"
+                                        label="Lawn Equipment"
                                         sx={{
                                             '& .MuiFormControlLabel-label': {
-                                              fontWeight: '300',
+                                                fontWeight: '400',
+                                                fontSize:'16px',
                                               color:"#76867E"
                                             },
                                           }} 
@@ -209,7 +216,8 @@ const Makeplan = () => {
                                         label="Clothes Dryer"
                                         sx={{
                                             '& .MuiFormControlLabel-label': {
-                                              fontWeight: '300',
+                                                fontWeight: '400',
+                                                fontSize:'16px',
                                               color:"#76867E"
                                             },
                                           }}  

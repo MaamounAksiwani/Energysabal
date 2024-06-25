@@ -17,56 +17,45 @@ const Process = () => {
             backgroundImage: photo1,
             topText: '01.',
             title: 'Consultation',
-            bottomText: `Our Contractors Will Guide
-            You Through An Initial
-            Consultation To Discuss
-            Your Electrification Goals.
-            During This Process, We’ll
-            Assess Your Specific Needs
-            And Preferences.
-            Additionally, Our Team Will
-            Show You All The Ways To
-            Save Money, Like
-            Accessing Tax Credits,
-            Refunds, And Other
-            Funding Options Through
-            Incentives And Rebates.`,
+            bottomText: `Our contractors will guide you through an initial consultation 
+            to discuss your electrification goals. During this process, we'll assess your specific needs and preferences. Our team will show you all the ways
+             to save money, like accessing tax credits, refunds, and other funding options.`,
         },
         {
             id: 2,
             backgroundImage: photo2,
             topText: '02.',
-            title: "Customized Solutions",
-            bottomText: `Based On Our Consultation
-            And Assessment, We
-            Develop Customized
-            Electrification Solutions
-            Tailored To Your Unique
-            Requirements. We Take Into
-            Account Factors Such As
-            Your Energy Needs,
-            Budget, And Environmental
-            Considerations To Provide
-            You With The Most Suitable
-            Options.`,
+            title: "Customized solutions",
+            bottomText: `Based on our consultation
+            and assessment, we
+            develop customized
+            electrification solutions
+            tailored to your unique
+            requirements. We take into
+            account factors such as
+            your energy needs,
+            budget, and environmental
+            oonsiderations to provide
+            you with  suitable
+            options.`,
         },
         {
             id: 3,
             backgroundImage: photo3,
             topText: '03.',
-            title: 'Planning & Installation',
-            bottomText: `Once The Customized
-            Solution Is Finalized, Our
-            Team Meticulously Plans
-            Every Aspect Of The
-            Project To Ensure A Smooth
-            And Efficient Installation
-            Process. From Scheduling
-            To Procurement Of
-            Materials, We Handle All
-            The Details To Minimize
-            Disruptions And Ensure
-            Timely Completion.
+            title: 'Planning & installation',
+            bottomText: `Once the customized
+            solution Is finalized, our
+            team meticulously plans
+            every aspect of the
+            project to ensure a smooth
+            and efficient installation
+            process. From scheduling
+            to procurement of
+            materials, we handle All
+            the details to minimize
+            disruptions and ensure
+            timely completion.
             `,
         },
         {
@@ -74,21 +63,9 @@ const Process = () => {
             backgroundImage: photo4,
             topText: '04.',
             title: ' Quality Assurance ',
-            bottomText: `We Conduct Thorough
-            Quality Assurance Checks
-            Throughout The Installation
-            Process To Ensure That
-            Everything Meets Our High
-            Standards. Additionally, We
-            Provide Ongoing Support
-            And Assistance To Address
-            Any Questions Or Concerns
-            You May Have. Our Goal Is
-            To Ensure Your Complete
-            Satisfaction With Our
-            Services And The Final
-            Outcome Of Your
-            Electrification Project`,
+            bottomText: `We conduct thorough quality assurance checks throughout the installation process to ensure
+             that everything meets our high standards. We also provide ongoing support and assistance to address
+             any questions or concerns you may have. Our goal is to ensure your complete satisfaction.`,
         },
     ];
     const Card = ({ backgroundImage, topText, bottomText, title }) => (

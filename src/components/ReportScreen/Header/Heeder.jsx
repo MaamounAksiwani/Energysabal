@@ -17,7 +17,7 @@ const Header = () => {
                                     recommendations to guide you through your
                                     electrification project. Whether you’re seeking
                                     basic insights or in depth analysis, we have the
-                                    solution for you
+                                    solution for you.
 
                                 </p>
                                 <button style={{backgroundColor:' #80aa45'}}>Receive Report

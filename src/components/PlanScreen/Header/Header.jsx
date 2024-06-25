@@ -19,7 +19,7 @@ const Header = () => {
                                     comprehensive services cover everything from
                                     planning to installation, ensuring a hassle free
                                     journey. Ready to get started? Take the first step
-                                    with us today
+                                    with us today.
 
                                 </p>
                                 <button>Make Plan

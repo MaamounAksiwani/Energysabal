@@ -21,7 +21,7 @@ const Energy = () => {
             description: `Our Contractors know the best way to
                 organize your home electrification
                 projects, so your new appliances get
-                installed on time and within your budget`
+                installed on time and within your budget.`
         },
         {
             id: 1,
@@ -30,7 +30,7 @@ const Energy = () => {
             description: `Our contractors can show you all the
                 ways to save money, like getting tax
                 credits, refunds, and other funding
-                options`
+                options.`
         },
         {
             id: 2,

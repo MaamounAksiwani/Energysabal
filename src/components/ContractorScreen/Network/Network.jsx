@@ -57,7 +57,7 @@ const Network = () => {
       <div className='content'>
         <div>
           <h1>Join Our Network</h1>
-          <p>Streamline your workload, we handle the marketing, sales, and administrative tasks while you focus on installation</p>
+          <p>Streamline your workload, we handle the marketing, sales, and administrative tasks while you focus on installation.</p>
 
         </div>
         <div className='main-form'>
