@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import WOW from 'wowjs';
 import img from '../../until/image/DeerfieldWind.jpg'
 import ElectricBoltIcon from '@mui/icons-material/ElectricBolt';
+import OurProcess from '../Shared/OurProcess'
 import Process from '../PlanScreen/Process/Process';
 import FlashOnOutlinedIcon from '@mui/icons-material/FlashOnOutlined';
 import SystemSecurityUpdateWarningIcon from '@mui/icons-material/SystemSecurityUpdateWarning';
@@ -38,7 +39,6 @@ const HeatPump = () => {
     return (
         <div className='wow fadeInDown' data-wow-duration='1s' style={{ backgroundColor: '#E7F0E9', paddingTop: '100px' }}>
             <h1 style={{ textAlign: 'center', padding: '20px 0 50px 0' }}>Upgrade to an energy-saving heat pump clothes dryer</h1>
-
             <div style={{ padding: '0 0 50px 0' }}>
                 <div>
                     <Container maxWidth="lg">
@@ -47,7 +47,7 @@ const HeatPump = () => {
                                 <img src={img} alt='not found' />
                             </div>
                             <div>
-                                <h4 style={{ fontWeight: '400' }}>
+                                <h4 style={{ fontWeight: '400' , color:"#76867e" }}>
                                     While we enjoy using all kinds of electric clothes dryers, heat
                                     pump models are our favourites. Heat pump dryers are kinder
                                     on clothing, consume less energy, and don’t require ventilation.
@@ -57,7 +57,7 @@ const HeatPump = () => {
 
                                     <h2> <FlashOnOutlinedIcon style={{ color: '#3b715a' }} /> WHY DO IT?</h2>
 
-                                    <h4 style={{ fontWeight: '400', margin: '0' }}>
+                                    <h4 style={{ fontWeight: '400', margin: '0' ,color:"#76867e"  }}>
                                         The most energy-efficient kind of electric dryers are heat pump
                                         models, which don’t emit carbon dioxide or burn fossil fuels.
                                     </h4>
@@ -69,7 +69,7 @@ const HeatPump = () => {
 
                                     <h2> <FlashOnOutlinedIcon style={{ color: '#3b715a' }} /> WHEN?</h2>
 
-                                    <h4 style={{ fontWeight: '400', margin: '0' }}>When the life of your existing dryer is almost over.</h4>
+                                    <h4 style={{ fontWeight: '400', margin: '0' ,color:"#76867e"  }}>When the life of your existing dryer is almost over.</h4>
                                 </div>
 
 
@@ -77,7 +77,7 @@ const HeatPump = () => {
 
                                     <h2> <FlashOnOutlinedIcon style={{ color: '#3b715a' }} /> WHO IS THIS FOR?</h2>
 
-                                    <h4 style={{ fontWeight: '400', margin: '0' }}>Homeowners and renters.</h4>
+                                    <h4 style={{ fontWeight: '400', margin: '0' , color:"#76867e"  }}>Homeowners and renters.</h4>
                                 </div>
                             </div>
                         </div>
@@ -88,24 +88,15 @@ const HeatPump = () => {
                             <div className='box-price'>
                                 <div>
                                     <h3> UPFRONT COST</h3>
-                                    <h4> $1,000+</h4>
+                                    <h1> $1,000+</h1>
                                 </div>
                                 <div>
-                                    <h3> UPFRONT COST</h3>
-                                    <h4> $1,000+</h4>
+                                    <h3> AVERAGE LIFESPAN</h3>
+                                    <h1> 10-13 years</h1>
                                 </div>
                                 <div>
-                                    <h3> UPFRONT COST</h3>
-                                    <h4> $1,000+</h4>
-                                </div>
-
-                                <div>
-                                    <h3>FEATURES</h3>
-
-                                    <h4> Place it anywhere
-                                        in the house; no
-                                        ventilation is
-                                        needed</h4>
+                                    <h3> AVERAGE ANNUAL ENERGY SAVINGS</h3>
+                                    <h1> $15–$45</h1>
                                 </div>
 
                                 <div>
@@ -118,25 +109,38 @@ const HeatPump = () => {
                                 </div>
 
                                 <div>
-                                    <h3>FEATURES</h3>
+                                    <h3>DIFFICULTY</h3>
 
-                                    <h4> Place it anywhere
-                                        in the house; no
-                                        ventilation is
-                                        needed</h4>
+                                    <h4 >
+
+                                        Simple, however if
+                                        you’re moving
+                                        from gas to
+                                        electric, you could
+                                        need an
+                                        electrician
+                                    </h4>
+                                </div>
+
+                                <div>
+                                    <h3>ENERGY SAVINGS</h3>
+
+                                    <h4> 50% less energy is
+                                        used than with
+                                        regular dryers</h4>
                                 </div>
                             </div>
 
 
                             <div style={{ textAlign: 'center', padding: '30px', backgroundColor: '#3b715a', color: "#FFF", borderRadius: '10px' }}>
                                 <div>
-                                    <ElectricBoltIcon style={{ color: '#fff', fontSize: '42px' }} />
-                                    <ElectricBoltIcon style={{ color: '#fff', fontSize: '42px' }} />
+                                    <FlashOnOutlinedIcon style={{ color: '#fff', fontSize: '42px' }} />
+                                    <FlashOnOutlinedIcon style={{ color: '#fff', fontSize: '42px' }} />
                                 </div>
 
                                 <h2> Our Conclusion</h2>
 
-                                <p>
+                                <p style={{color:"#C7CCCA"}}> 
                                     Heat Pump clothes dryers are environmentally friendly and highly
                                     effective
                                 </p>
@@ -145,7 +149,7 @@ const HeatPump = () => {
 
 
 
-                        <h1 style={{ padding: '20px 0 20px 0', textAlign: 'center' }}>Rebates and Credits</h1>
+                        <h1 style={{ padding: '40px 0 40px 0', textAlign: 'center' }}>Rebates and Credits</h1>
                         <div style={{ textAlign: 'center', backgroundColor: "#fff", borderRadius: '15px', margin: "20px 0" }}>
 
 
@@ -169,9 +173,9 @@ const HeatPump = () => {
                                 {activeTab == 'Federal' && <div className='des-option'>
                                     <h2> $840 off Heat Pump Clothes Dryer</h2>
 
-                                    <h4> Federal Home Electrification and Appliance Rebates (HEAR)</h4>
+                                    <h4 style={{margin:'10px 0' , color:"#76867e" , fontWeight:"BOLD"}}> Federal Home Electrification and Appliance Rebates (HEAR)</h4>
 
-                                    <h4>Rebate for heat pump dryers of up to $840. Low-income households: 100% rebate, Moderate income: 50% rebate.</h4>
+                                    <h4 style={{color:"#76867e"}}>Rebate for heat pump dryers of up to $840. Low-income households: 100% rebate, Moderate income: 50% rebate.</h4>
 
 
                                     <button>REBATE</button>
@@ -199,6 +203,7 @@ const HeatPump = () => {
 
 
                     </Container>
+                    <OurProcess/>
                     {/* <Process /> */}
                 </div>
             </div>

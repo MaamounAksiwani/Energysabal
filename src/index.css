@@ -33,11 +33,18 @@ code {
 }
 
 .box-price h3{
+  font-weight: 600;
+  /* color: red; */
+  font-size: 16px;
   margin-bottom: 0;
 }
 .box-price h4{
   font-weight: 400;
+  color:"#76867e";
   margin-top: 5px;
+}
+.box-price h1{
+  font-weight: 400;
 }
 
 .Tabs{ 
@@ -102,6 +109,7 @@ code {
 
 .Request{
   background-color: #3b715a;
+  
   color: #fff;
    text-align: center;
    padding: 30px 0;
@@ -110,10 +118,13 @@ code {
 }
 
 .Request button{
+  /* borde */
   border-radius: 50px;
-  background-color: #80aa45;
+  /* background-color: yellow; */
+  background-color: transparent; 
+  border: 1px solid #fff;
   /* padding: 10px 20px; */
-  border: none;
+  /* border: none; */
   color: #FFF;
   cursor: pointer;
   font-size: 14px;
