@@ -77,7 +77,7 @@ const OurProcess = () => {
             <Container maxWidth="lg">
                 <div className='titleTailored'>
                     <h1 style={{ color: '#000' }}>Our Process</h1>
-                    <h3 style={{ color: '#C7CCCA', fontSize: '25px ', fontWeight: '400' }}>
+                    <h3 style={{ color: '#76867e', fontSize: '25px ', fontWeight: '400' }}>
                         At Energy Sabal, we believe in transparency and clarity throughout the electrification process. Here’s an overview of our approach
                     </h3>
                 </div>
