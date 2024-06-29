@@ -29,13 +29,13 @@ const Footer = () => {
                         <h4>Installation</h4>
                         <ul>
                             <li onClick={() => handleLinkClick('/HeatPump')}> Heat Pump</li>
-                            <li>Solar</li>
-                            <li>Water Heater</li>
-                            <li>Electrical Panel</li>
-                            <li>Electric Vehicle</li>
+                            <li onClick={()=> handleLinkClick('Solar')}>Solar</li>
+                            <li onClick={()=>{handleLinkClick('/WaterHeater')}}>Water Heater</li>
+                            <li onClick={()=>{handleLinkClick('/ElectricalPanel')}}>Electrical Panel</li>
+                            <li onClick={()=>{handleLinkClick('/ElectricVehicle')}}>Electric Vehicle</li>
                             <li>Cooktop</li>
                             <li>Lawn Equipment</li>
-                            <li>Clothes Dryer</li>
+                            <li onClick={()=>{handleLinkClick('/ClothesDryer')}}>Clothes Dryer</li>
 
                         </ul>
 

@@ -8,7 +8,7 @@ import WOW from 'wowjs';
 import { Container } from '@mui/material';
 
 import FlashOnOutlinedIcon from '@mui/icons-material/FlashOnOutlined';
-const HeatPump = () => {
+const ElectricVehicle = () => {
 
 
     const [activeTab, setActiveTab] = useState('Federal');
@@ -26,7 +26,7 @@ const HeatPump = () => {
 
 
     useEffect(() => {
-        document.title = "Heat Pump | Energy Sabal";
+        document.title = "Electric Vehicle | Energy Sabal";
         return () => {
             document.title = "";
         };
@@ -36,8 +36,7 @@ const HeatPump = () => {
     return (
         <div className='wow fadeInDown' data-wow-duration='1s' style={{ backgroundColor: '#E7F0E9', paddingTop: '100px' }}>
             <h1 style={{ textAlign: 'center', padding: '20px 0 50px 0' }}>
-                Use a heat pump to improve your heating and cooling system
-
+                Use a better, quicker, and cleaner vehicle when driving an electric one
             </h1>
             <div style={{ padding: '0 0 50px 0' }}>
                 <div>
@@ -48,9 +47,10 @@ const HeatPump = () => {
                             </div>
                             <div>
                                 <h4 style={{ fontWeight: '400', color: "#76867e" }}>
-                                    A heat pump is the most effective way to cool your house in the summer and heat it in
-                                    the winter. Compared to alternative heating and conditioning
-                                    systems like gas furnaces, oil heat, and central air, heat pumps are more energy-efficient.
+
+                                    In addition to being more environmentally friendly,
+                                    electric vehicles (EVs) are more efficient than gas-powered automobiles and
+                                    trucks. Investing in an electric vehicle is a fantastic starting point for electrifying everything!
                                 </h4>
 
                                 <div style={{ margin: '40px 0' }}>
@@ -58,8 +58,7 @@ const HeatPump = () => {
                                     <h2> <FlashOnOutlinedIcon style={{ color: '#3b715a' }} /> WHY DO IT?</h2>
 
                                     <h4 style={{ fontWeight: '400', margin: '0', color: "#76867e" }}>
-
-                                        Heat pump-equipped homes use less energy and pay lower electric bills.
+                                        Compared to gas-powered cars, electric vehicles (EVs) offer lower fuel expenses per year, require less maintenance, and emit no tailpipe emissions.
 
                                     </h4>
 
@@ -72,7 +71,7 @@ const HeatPump = () => {
 
                                     <h4 style={{ fontWeight: '400', margin: '0', color: "#76867e" }}>
 
-                                        When the life of your present HVAC system is almost over (typically about 15 years).
+                                        When your present gas-powered car is ready to be replaced.
 
                                     </h4>
                                 </div>
@@ -84,7 +83,7 @@ const HeatPump = () => {
                                     <h2> <FlashOnOutlinedIcon style={{ color: '#3b715a' }} /> WHO IS THIS FOR?</h2>
 
                                     <h4 style={{ fontWeight: '400', margin: '0', color: "#76867e" }}>
-                                        For homeowners: Whole-home heat pump systems. For renters: portable and window units.
+                                        Every owner of a vehicle.
                                     </h4>
                                 </div>
                             </div>
@@ -101,11 +100,11 @@ const HeatPump = () => {
 
 
                                 <div style={{ margin: '10px 0' }}>
-                                    <h2 style={{ fontWeight: 'bold' }}> Weatherization</h2>
+                                    <h2 style={{ fontWeight: 'bold' }}> EV Charger</h2>
                                 </div>
                                 <h4 style={{ fontWeight: '400', margin: '0', color: "#76867e" }}>
-                                    Weatherizing your house can lower the amount of energy required to keep it comfortable, saving you hundreds on your
-                                    energy costs. Improvements to doors and windows, insulation, and air sealing are all part of weatherization initiatives.
+                                    Your EV can be charged considerably more quickly using a Level 2 EV charger than it can with a
+                                    regular outlet, but it is not necessary. A 240 volt circuit is needed to install a Level 2 charger.
                                 </h4>
 
 
@@ -123,41 +122,36 @@ const HeatPump = () => {
                         <div style={{ backgroundColor: "#FFF", padding: "30px", marginTop: "40px", borderRadius: "15px", boxShadow: "0 4px 10px rgba(0, 0, 0, 0.1)" }}>
                             <div className='box-price'>
                                 <div>
-                                    <h3> UPFRONT COST</h3>
-                                    <h1 style={{ marginBottom: '0' }}> $5,000 (one mini-
-                                        split) to $30,000 </h1>
-                                        <h3  style={{ margin: '0' }}>(a
-                                        large home’s
-                                        whole-home
-                                        system)</h3>
+                                    <h3> USED EV UPFRONT COST</h3>
+                                    <h1 style={{ marginBottom: '0' }}> $10,000+</h1>
                                 </div>
                                 <div>
-                                    <h3> AVERAGE LIFESPAN</h3>
-                                    <h1> 10-20 years</h1>
+                                    <h3> NEW EV UPFRONT COST</h3>
+                                    <h1> $27,500+</h1>
                                 </div>
                                 <div>
-                                    <h3> FEATURES</h3>
-                                    <h1> Your house is both heated and cooled</h1>
+                                    <h3> AVERAGE ANNUAL ENERGY SAVINGS</h3>
+                                    <h1> $1,100+</h1>
                                 </div>
 
                                 <div>
-                                    <h3>REDUCTION IN AVERAGE ANNUAL EMISSIONS</h3>
+                                    <h3>ANNUAL AVERAGE EMISSIONS REDUCTIONS</h3>
 
-                                    <h4> 2.8 tons</h4>
+                                    <h4> 4.6+ tons</h4>
+                                </div>
+
+                                <div>
+                                    <h3>HEALTH BENEFITS</h3>
+
+                                    <h4 >
+                                        No tailpipe emissions
+                                    </h4>
                                 </div>
 
                                 <div>
                                     <h3>DIFFICULTY</h3>
 
-                                    <h4 >
-                                    Moderate, we will hire an HVAC contractor
-                                    </h4>
-                                </div>
-
-                                <div>
-                                    <h3>SAVINGS ON ENERGY</h3>
-
-                                    <h4> About three times as efficient are heat pumps as typical fossil fuel heating systems</h4>
+                                    <h4> Easy</h4>
                                 </div>
                             </div>
 
@@ -171,17 +165,11 @@ const HeatPump = () => {
                                 <h2> Our Conclusion</h2>
 
                                 <p style={{ color: "#C7CCCA" }}>
-                                An annual savings of approximately $1,000 can be realised by homeowners that
-                                 replace inefficient HVAC systems with propane, fuel oil, 
-                                or traditional electric resistance (such as electric furnaces or baseboard heat).
+                                    With just one charge, several EVs on the market now can travel more than 250 miles. Electrifying your vehicle can result in annual savings exceeding $1,000!
                                 </p>
                             </div>
                         </div>
 
-
-
-
-                        {/*  END */}
                         <h1 style={{ padding: '40px 0 40px 0', textAlign: 'center' }}>Rebates and Credits</h1>
                         <div style={{ textAlign: 'center', backgroundColor: "#fff", borderRadius: '15px', margin: "20px 0" }}>
 
@@ -204,51 +192,50 @@ const HeatPump = () => {
 
 
                                 {activeTab == 'Federal' && <div className='des-option'>
-                                    <h2>30% off installation of geothermal heating</h2>
-
-                                    <h4 style={{ margin: '10px 0', color: "#76867e", fontWeight: "BOLD" }}> 
-
-                                    Federal Residential Clean Energy Credit (25D)                   
-                                                     </h4>
-
-                                    <h4 style={{ color: "#76867e" }}>
-                                    Uncapped 30% tax credit for installing geothermal equipment. valued, on average, $7,200.
-                                        </h4>
-
-
-                                    <button> TAX CREDIT</button>
-                                </div>}
-
-
-
-                                {activeTab == 'Federal' && <div className='des-option'>
-                                    <h2>A $2,000 air source heat pump discount</h2>
-
-                                    <h4 style={{ margin: '10px 0', color: "#76867e", fontWeight: "BOLD" }}> 
-                                    Federal Energy Efficient Home Improvement Credit (25C)
-                                    </h4>
-
-                                    <h4 style={{ color: "#76867e" }}>
-                                    A 30% tax credit, up to $2,000, is available for water heaters with heat pumps. annually reset.
-                                    </h4>
-
-
-                                    <button> TAX CREDIT</button>
-                                </div>}
-
-
-
-                                {activeTab == 'Federal' && <div className='des-option'>
-                                    <h2>$1,200 in savings on weatherization</h2>
+                                    <h2>$7,500 off of a brand-new electric car</h2>
 
                                     <h4 style={{ margin: '10px 0', color: "#76867e", fontWeight: "BOLD" }}>
-                                    Credit for Home Improvements with Low Energy Use (25C)
-                                                                                 </h4>
+
+                                        Federal Clean Vehicle Credit (30D)                                    </h4>
 
                                     <h4 style={{ color: "#76867e" }}>
 
+                                        For new EVs with a maximum MSRP of $55,000 and vans, pickup trucks, and SUVs with a maximum MSRP of $80,000, there is a tax credit of up to $7,500.
 
-                                    Incentives for weatherization projects, such as air sealing, insulation, doors, and windows, are 30% up to $1,200. annually reset.
+                                    </h4>
+
+
+                                    <button> TAX CREDIT</button>
+                                </div>}
+
+
+
+                                {activeTab == 'Federal' && <div className='des-option'>
+                                    <h2>$4,000 off a secondhand electric car</h2>
+
+                                    <h4 style={{ margin: '10px 0', color: "#76867e", fontWeight: "BOLD" }}> 
+                                    Federal Credit for Previously-Owned Clean Vehicles (25E)
+                                    </h4>
+
+                                    <h4 style={{ color: "#76867e" }}>
+
+                                    For a used EV weighing up to 14,000 pounds and with an MSRP of up to $25,000, there is a 30% tax credit of up to $4,000.
+                                    </h4>
+
+
+                                    <button> TAX CREDIT</button>
+                                </div>}
+
+                                {activeTab == 'Federal' && <div className='des-option'>
+                                    <h2>Save $1,000 on an electric vehicle charger.</h2>
+
+                                    <h4 style={{ margin: '10px 0', color: "#76867e", fontWeight: "BOLD" }}> 
+                                    Federal Alternative Fuel Vehicle Refueling Property Credit (30C)
+                                    </h4>
+
+                                    <h4 style={{ color: "#76867e" }}>
+                                    Tax credit for EV chargers up to $1,000. accessible in low-income or rural areas.
+
                                     </h4>
 
 
@@ -283,4 +270,4 @@ const HeatPump = () => {
     );
 };
 
-export default HeatPump;
+export default ElectricVehicle;

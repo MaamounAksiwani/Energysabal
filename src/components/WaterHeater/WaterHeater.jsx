@@ -8,7 +8,7 @@ import WOW from 'wowjs';
 import { Container } from '@mui/material';
 
 import FlashOnOutlinedIcon from '@mui/icons-material/FlashOnOutlined';
-const HeatPump = () => {
+const WaterHeater = () => {
 
 
     const [activeTab, setActiveTab] = useState('Federal');
@@ -24,9 +24,9 @@ const HeatPump = () => {
     }, [])
 
 
-
+    
     useEffect(() => {
-        document.title = "Heat Pump | Energy Sabal";
+        document.title = "Water Heater | Energy Sabal";
         return () => {
             document.title = "";
         };
@@ -35,10 +35,7 @@ const HeatPump = () => {
 
     return (
         <div className='wow fadeInDown' data-wow-duration='1s' style={{ backgroundColor: '#E7F0E9', paddingTop: '100px' }}>
-            <h1 style={{ textAlign: 'center', padding: '20px 0 50px 0' }}>
-                Use a heat pump to improve your heating and cooling system
-
-            </h1>
+            <h1 style={{ textAlign: 'center', padding: '20px 0 50px 0' }}>A heat pump water heater can help you save energy and money</h1>
             <div style={{ padding: '0 0 50px 0' }}>
                 <div>
                     <Container maxWidth="lg">
@@ -48,9 +45,9 @@ const HeatPump = () => {
                             </div>
                             <div>
                                 <h4 style={{ fontWeight: '400', color: "#76867e" }}>
-                                    A heat pump is the most effective way to cool your house in the summer and heat it in
-                                    the winter. Compared to alternative heating and conditioning
-                                    systems like gas furnaces, oil heat, and central air, heat pumps are more energy-efficient.
+                                The most energy-efficient water heaters available are heat pump hot water heaters (HPWHs),
+                                 sometimes known as hybrid hot water heaters or electric heat pump water heaters. Similar to heat pumps, HPWHs effectively transfer 
+                                heat rather than producing it, saving the typical family hundreds of dollars annually.
                                 </h4>
 
                                 <div style={{ margin: '40px 0' }}>
@@ -58,8 +55,7 @@ const HeatPump = () => {
                                     <h2> <FlashOnOutlinedIcon style={{ color: '#3b715a' }} /> WHY DO IT?</h2>
 
                                     <h4 style={{ fontWeight: '400', margin: '0', color: "#76867e" }}>
-
-                                        Heat pump-equipped homes use less energy and pay lower electric bills.
+                                    Heat pump water heaters function in all climates and are three to four times more efficient than conventional water heaters!
 
                                     </h4>
 
@@ -72,7 +68,7 @@ const HeatPump = () => {
 
                                     <h4 style={{ fontWeight: '400', margin: '0', color: "#76867e" }}>
 
-                                        When the life of your present HVAC system is almost over (typically about 15 years).
+When your present water heater is around ten years old, in order to prevent an urgent replacement.
 
                                     </h4>
                                 </div>
@@ -84,80 +80,50 @@ const HeatPump = () => {
                                     <h2> <FlashOnOutlinedIcon style={{ color: '#3b715a' }} /> WHO IS THIS FOR?</h2>
 
                                     <h4 style={{ fontWeight: '400', margin: '0', color: "#76867e" }}>
-                                        For homeowners: Whole-home heat pump systems. For renters: portable and window units.
-                                    </h4>
+                                    Homeowners
+                                        </h4>
                                 </div>
                             </div>
                         </div>
 
 
-                        <div className='Energycontent'>
-                            <div className='EnergyContentImage'>
-                                <img src={img} alt='not found' />
-                            </div>
-
-
-                            <div>
-
-
-                                <div style={{ margin: '10px 0' }}>
-                                    <h2 style={{ fontWeight: 'bold' }}> Weatherization</h2>
-                                </div>
-                                <h4 style={{ fontWeight: '400', margin: '0', color: "#76867e" }}>
-                                    Weatherizing your house can lower the amount of energy required to keep it comfortable, saving you hundreds on your
-                                    energy costs. Improvements to doors and windows, insulation, and air sealing are all part of weatherization initiatives.
-                                </h4>
-
-
-
-
-
-
-
-                            </div>
-
-                        </div>
-
+                  
 
 
                         <div style={{ backgroundColor: "#FFF", padding: "30px", marginTop: "40px", borderRadius: "15px", boxShadow: "0 4px 10px rgba(0, 0, 0, 0.1)" }}>
                             <div className='box-price'>
                                 <div>
                                     <h3> UPFRONT COST</h3>
-                                    <h1 style={{ marginBottom: '0' }}> $5,000 (one mini-
-                                        split) to $30,000 </h1>
-                                        <h3  style={{ margin: '0' }}>(a
-                                        large home’s
-                                        whole-home
-                                        system)</h3>
+                                    <h1 style={{ marginBottom: '0' }}> $3,600–$4,800 </h1>
+                                    <h3 style={{ margin: '0' }}>(not including wiring)</h3>
                                 </div>
                                 <div>
                                     <h3> AVERAGE LIFESPAN</h3>
-                                    <h1> 10-20 years</h1>
+                                    <h1> 10–15 years</h1>
                                 </div>
                                 <div>
-                                    <h3> FEATURES</h3>
-                                    <h1> Your house is both heated and cooled</h1>
+                                    <h3> AVERAGE ANNUAL ENERGY SAVINGS</h3>
+                                    <h1> $80–$230 annually</h1>
                                 </div>
 
                                 <div>
-                                    <h3>REDUCTION IN AVERAGE ANNUAL EMISSIONS</h3>
+                                    <h3>FEATURES</h3>
 
-                                    <h4> 2.8 tons</h4>
+                                    <h4> Heat pump water heaters cool and remove humidity from the surrounding area</h4>
                                 </div>
 
                                 <div>
                                     <h3>DIFFICULTY</h3>
 
                                     <h4 >
-                                    Moderate, we will hire an HVAC contractor
+                                    Moderate, we will get an HVAC or plumber to do the installation
                                     </h4>
                                 </div>
 
                                 <div>
-                                    <h3>SAVINGS ON ENERGY</h3>
+                                    <h3>ENERGY SAVINGS</h3>
 
-                                    <h4> About three times as efficient are heat pumps as typical fossil fuel heating systems</h4>
+                                    <h4> Three to four times as efficient as traditional water heaters</h4>
                                 </div>
                             </div>
 
@@ -171,17 +137,14 @@ const HeatPump = () => {
                                 <h2> Our Conclusion</h2>
 
                                 <p style={{ color: "#C7CCCA" }}>
-                                An annual savings of approximately $1,000 can be realised by homeowners that
-                                 replace inefficient HVAC systems with propane, fuel oil, 
-                                or traditional electric resistance (such as electric furnaces or baseboard heat).
-                                </p>
+
+                                Water heaters with heat pumps are safer, more efficient, and cleaner. Switching
+                                 to a heat pump water heater will save you money on utility bills and be better for the environment.       
+                                                          </p>
                             </div>
                         </div>
 
 
-
-
-                        {/*  END */}
                         <h1 style={{ padding: '40px 0 40px 0', textAlign: 'center' }}>Rebates and Credits</h1>
                         <div style={{ textAlign: 'center', backgroundColor: "#fff", borderRadius: '15px', margin: "20px 0" }}>
 
@@ -204,56 +167,25 @@ const HeatPump = () => {
 
 
                                 {activeTab == 'Federal' && <div className='des-option'>
-                                    <h2>30% off installation of geothermal heating</h2>
+                                    <h2>$2,000 off a water heater with a heat pump</h2>
 
                                     <h4 style={{ margin: '10px 0', color: "#76867e", fontWeight: "BOLD" }}> 
 
-                                    Federal Residential Clean Energy Credit (25D)                   
-                                                     </h4>
+                                    Federal Energy Efficient Home Improvement Credit (25C)                                    </h4>
 
                                     <h4 style={{ color: "#76867e" }}>
-                                    Uncapped 30% tax credit for installing geothermal equipment. valued, on average, $7,200.
+                                    A 30% tax credit, up to $2,000, is available for water heaters with heat pumps. annually reset.
+                                        
                                         </h4>
 
 
                                     <button> TAX CREDIT</button>
+
+                                    {/* <SystemSecurityUpdateWarningIcon style={{fontSize:'13px' , marginTop:'2px'}}/>  */}
+                                    {/* <button> EXPECTED IN 2025</button> */}
                                 </div>}
 
-
-
-                                {activeTab == 'Federal' && <div className='des-option'>
-                                    <h2>A $2,000 air source heat pump discount</h2>
-
-                                    <h4 style={{ margin: '10px 0', color: "#76867e", fontWeight: "BOLD" }}> 
-                                    Federal Energy Efficient Home Improvement Credit (25C)
-                                    </h4>
-
-                                    <h4 style={{ color: "#76867e" }}>
-                                    A 30% tax credit, up to $2,000, is available for water heaters with heat pumps. annually reset.
-                                    </h4>
-
-
-                                    <button> TAX CREDIT</button>
-                                </div>}
-
-
-
-                                {activeTab == 'Federal' && <div className='des-option'>
-                                    <h2>$1,200 in savings on weatherization</h2>
-
-                                    <h4 style={{ margin: '10px 0', color: "#76867e", fontWeight: "BOLD" }}>
-                                    Credit for Home Improvements with Low Energy Use (25C)
-                                                                                 </h4>
-
-                                    <h4 style={{ color: "#76867e" }}>
-
-
-                                    Incentives for weatherization projects, such as air sealing, insulation, doors, and windows, are 30% up to $1,200. annually reset.
-                                    </h4>
-
-
-                                    <button> TAX CREDIT</button>
-                                </div>}
+                          
 
 
 
@@ -283,4 +215,4 @@ const HeatPump = () => {
     );
 };
 
-export default HeatPump;
+export default WaterHeater;

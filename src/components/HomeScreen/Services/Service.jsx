@@ -10,10 +10,16 @@ import HdrWeakOutlinedIcon from '@mui/icons-material/HdrWeakOutlined';
 import LocalLaundryServiceOutlinedIcon from '@mui/icons-material/LocalLaundryServiceOutlined';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import ElectricCarOutlinedIcon from '@mui/icons-material/ElectricCarOutlined';
-
+import { useNavigate } from 'react-router';
 import GrassOutlinedIcon from '@mui/icons-material/GrassOutlined';
 import IndeterminateCheckBoxOutlinedIcon from '@mui/icons-material/IndeterminateCheckBoxOutlined';
 const Services = () => {
+
+    const navigate = useNavigate();
+
+    const handleLinkClick = (path) => {
+        navigate(path);
+    };
 
     return (
         <div className='main-service'>
@@ -42,33 +48,33 @@ const Services = () => {
                     <div>
                         <HeatPumpOutlinedIcon className='service-icon' />
                         <h3>Heat Pump</h3>
-                        <ArrowRightAltIcon style={{ color: '#FFF', cursor: 'pointer' }} className='arrow-icon' />
+                        <ArrowRightAltIcon onClick={()=>{handleLinkClick('/HeatPump')}} style={{ color: '#FFF', cursor: 'pointer' }} className='arrow-icon' />
                     </div>
 
                     <div>
                         <SolarPowerOutlinedIcon className='service-icon' />
                         <h3>Solar</h3>
-                        <ArrowRightAltIcon style={{ color: '#FFF', cursor: 'pointer' }} className='arrow-icon' />
+                        <ArrowRightAltIcon onClick={() => handleLinkClick('/Solar')}  style={{ color: '#FFF', cursor: 'pointer' }} className='arrow-icon' />
                     </div>
 
                     <div>
                         <WaterDropOutlinedIcon className='service-icon' />
                         <h3>Water Heater</h3>
-                        <ArrowRightAltIcon style={{ color: '#FFF', cursor: 'pointer' }} className='arrow-icon' />
+                        <ArrowRightAltIcon onClick={()=>handleLinkClick('/WaterHeater')} style={{ color: '#FFF', cursor: 'pointer' }} className='arrow-icon' />
                     </div>
 
 
                     <div>
                         <DeveloperBoardOutlinedIcon className='service-icon' />
                         <h3>Electrical Panel</h3>
-                        <ArrowRightAltIcon style={{ color: '#FFF', cursor: 'pointer' }} className='arrow-icon' />
+                        <ArrowRightAltIcon onClick={()=>{handleLinkClick('/ElectricalPanel')}} style={{ color: '#FFF', cursor: 'pointer' }} className='arrow-icon' />
                     </div>
 
                     <div>
                         <ElectricCarOutlinedIcon className='service-icon' />
                         
                         <h3>Electric Vehicle</h3>
-                        <ArrowRightAltIcon style={{ color: '#FFF', cursor: 'pointer' }} className='arrow-icon' />
+                        <ArrowRightAltIcon  onClick={()=>{handleLinkClick('/ElectricVehicle')}} style={{ color: '#FFF', cursor: 'pointer' }} className='arrow-icon' />
                     </div>
 
                     <div>
@@ -86,7 +92,7 @@ const Services = () => {
                     <div>
                         <LocalLaundryServiceOutlinedIcon className='service-icon' />
                         <h3>Clothes Dryer</h3>
-                        <ArrowRightAltIcon style={{ color: '#FFF', cursor: 'pointer' }} className='arrow-icon' />
+                        <ArrowRightAltIcon onClick={()=>{handleLinkClick('/ClothesDryer')}} style={{ color: '#FFF', cursor: 'pointer' }} className='arrow-icon' />
                     </div>
 
 

@@ -26,7 +26,20 @@ code {
   /* background-color: red; */
 }
 
+.box-price_ {
+  display: grid;
+  padding-top: 10px;
+  padding-bottom: 25px;
+  grid-template-columns: repeat(2, 2fr);
+  gap: 15px;
+}
+
 .box-price div{
+  padding: 5px 15px;
+  border-radius: 5px;
+  border: 1px solid #CCC;
+}
+.box-price_ div{
   padding: 5px 15px;
   border-radius: 5px;
   border: 1px solid #CCC;
@@ -38,7 +51,19 @@ code {
   font-size: 16px;
   margin-bottom: 0;
 }
+.box-price_ h3{
+  font-weight: 600;
+  /* color: red; */
+  font-size: 16px;
+  margin-bottom: 0;
+}
 .box-price h4{
+  font-weight: 400;
+  color:"#76867e";
+  margin-top: 5px;
+}
+
+.box-price_ h4{
   font-weight: 400;
   color:"#76867e";
   margin-top: 5px;
@@ -46,7 +71,9 @@ code {
 .box-price h1{
   font-weight: 400;
 }
-
+.box-price_ h1{
+  font-weight: 400;
+}
 .Tabs{ 
   display: flex;
   justify-content: center;
@@ -143,6 +170,10 @@ code {
 @media only screen and (max-width: 768px) {
   .box-price{
       grid-template-columns: repeat(1, 2fr);
+  }
+  .box-price_{
+
+    grid-template-columns: repeat(1, 2fr);
   }
   .Tabs {
     

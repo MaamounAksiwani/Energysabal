@@ -8,7 +8,7 @@ import WOW from 'wowjs';
 import { Container } from '@mui/material';
 
 import FlashOnOutlinedIcon from '@mui/icons-material/FlashOnOutlined';
-const HeatPump = () => {
+const Solar = () => {
 
 
     const [activeTab, setActiveTab] = useState('Federal');
@@ -24,9 +24,9 @@ const HeatPump = () => {
     }, [])
 
 
-
+    
     useEffect(() => {
-        document.title = "Heat Pump | Energy Sabal";
+        document.title = "Solar | Energy Sabal";
         return () => {
             document.title = "";
         };
@@ -35,10 +35,7 @@ const HeatPump = () => {
 
     return (
         <div className='wow fadeInDown' data-wow-duration='1s' style={{ backgroundColor: '#E7F0E9', paddingTop: '100px' }}>
-            <h1 style={{ textAlign: 'center', padding: '20px 0 50px 0' }}>
-                Use a heat pump to improve your heating and cooling system
-
-            </h1>
+            <h1 style={{ textAlign: 'center', padding: '20px 0 50px 0' }}>Utilise sustainable, renewable energy to power your home</h1>
             <div style={{ padding: '0 0 50px 0' }}>
                 <div>
                     <Container maxWidth="lg">
@@ -48,9 +45,10 @@ const HeatPump = () => {
                             </div>
                             <div>
                                 <h4 style={{ fontWeight: '400', color: "#76867e" }}>
-                                    A heat pump is the most effective way to cool your house in the summer and heat it in
-                                    the winter. Compared to alternative heating and conditioning
-                                    systems like gas furnaces, oil heat, and central air, heat pumps are more energy-efficient.
+                                    Solar photovoltaic (PV) panels on rooftops convert sunshine into electricity. You can put
+                                    PV panels in your yard or even on your roof. They can save you thousands of dollars year and emit
+                                    no carbon. Should rooftop solar power
+                                    prove unsatisfactory, you might be eligible to partake in a Community Solar initiative.
                                 </h4>
 
                                 <div style={{ margin: '40px 0' }}>
@@ -58,8 +56,7 @@ const HeatPump = () => {
                                     <h2> <FlashOnOutlinedIcon style={{ color: '#3b715a' }} /> WHY DO IT?</h2>
 
                                     <h4 style={{ fontWeight: '400', margin: '0', color: "#76867e" }}>
-
-                                        Heat pump-equipped homes use less energy and pay lower electric bills.
+                                        Produces carbon-free energy for your house and save money doing so.
 
                                     </h4>
 
@@ -72,8 +69,7 @@ const HeatPump = () => {
 
                                     <h4 style={{ fontWeight: '400', margin: '0', color: "#76867e" }}>
 
-                                        When the life of your present HVAC system is almost over (typically about 15 years).
-
+                                        You can, as long as you intend to replace your roof very soon or install one for the first time.
                                     </h4>
                                 </div>
 
@@ -83,9 +79,7 @@ const HeatPump = () => {
 
                                     <h2> <FlashOnOutlinedIcon style={{ color: '#3b715a' }} /> WHO IS THIS FOR?</h2>
 
-                                    <h4 style={{ fontWeight: '400', margin: '0', color: "#76867e" }}>
-                                        For homeowners: Whole-home heat pump systems. For renters: portable and window units.
-                                    </h4>
+                                    <h4 style={{ fontWeight: '400', margin: '0', color: "#76867e" }}>For homeowners: rooftop solar. For renters: community solar.</h4>
                                 </div>
                             </div>
                         </div>
@@ -101,11 +95,12 @@ const HeatPump = () => {
 
 
                                 <div style={{ margin: '10px 0' }}>
-                                    <h2 style={{ fontWeight: 'bold' }}> Weatherization</h2>
+                                    <h2 style={{ fontWeight: 'bold' }}> Battery Storage at Home</h2>
                                 </div>
                                 <h4 style={{ fontWeight: '400', margin: '0', color: "#76867e" }}>
-                                    Weatherizing your house can lower the amount of energy required to keep it comfortable, saving you hundreds on your
-                                    energy costs. Improvements to doors and windows, insulation, and air sealing are all part of weatherization initiatives.
+                                    Rooftop solar can power your house during blackouts in the case that your home is
+                                    equipped with home battery storage.
+                                    You can also store solar energy for use at night with home battery storage.
                                 </h4>
 
 
@@ -124,40 +119,37 @@ const HeatPump = () => {
                             <div className='box-price'>
                                 <div>
                                     <h3> UPFRONT COST</h3>
-                                    <h1 style={{ marginBottom: '0' }}> $5,000 (one mini-
-                                        split) to $30,000 </h1>
-                                        <h3  style={{ margin: '0' }}>(a
-                                        large home’s
-                                        whole-home
-                                        system)</h3>
+                                    <h1 style={{ marginBottom: '0' }}> $17,000–$24,000</h1>
+                                    <h3 style={{ margin: '0' }}>(after tax credits)</h3>
                                 </div>
                                 <div>
                                     <h3> AVERAGE LIFESPAN</h3>
-                                    <h1> 10-20 years</h1>
+                                    <h1> 20 - 30 years</h1>
                                 </div>
                                 <div>
-                                    <h3> FEATURES</h3>
-                                    <h1> Your house is both heated and cooled</h1>
+                                    <h3> AVERAGE ANNUAL ENERGY SAVINGS</h3>
+                                    <h1> $1,000+</h1>
                                 </div>
 
                                 <div>
-                                    <h3>REDUCTION IN AVERAGE ANNUAL EMISSIONS</h3>
+                                    <h3>FEATURES</h3>
 
-                                    <h4> 2.8 tons</h4>
+                                    <h4> Carbon-free, free electricity.</h4>
                                 </div>
 
                                 <div>
                                     <h3>DIFFICULTY</h3>
 
                                     <h4 >
-                                    Moderate, we will hire an HVAC contractor
+
+                                        Moderate, we will hire a solar installer.
                                     </h4>
                                 </div>
 
                                 <div>
-                                    <h3>SAVINGS ON ENERGY</h3>
+                                    <h3>ENERGY SAVINGS</h3>
 
-                                    <h4> About three times as efficient are heat pumps as typical fossil fuel heating systems</h4>
+                                    <h4> Carbon-free electricity.</h4>
                                 </div>
                             </div>
 
@@ -171,9 +163,8 @@ const HeatPump = () => {
                                 <h2> Our Conclusion</h2>
 
                                 <p style={{ color: "#C7CCCA" }}>
-                                An annual savings of approximately $1,000 can be realised by homeowners that
-                                 replace inefficient HVAC systems with propane, fuel oil, 
-                                or traditional electric resistance (such as electric furnaces or baseboard heat).
+
+                                    Rooftop solar can save you hundreds of dollars annually and emits no carbon emissions
                                 </p>
                             </div>
                         </div>
@@ -204,51 +195,28 @@ const HeatPump = () => {
 
 
                                 {activeTab == 'Federal' && <div className='des-option'>
-                                    <h2>30% off installation of geothermal heating</h2>
+                                    <h2>30% off Battery Storage</h2>
 
-                                    <h4 style={{ margin: '10px 0', color: "#76867e", fontWeight: "BOLD" }}> 
+                                    <h4 style={{ margin: '10px 0', color: "#76867e", fontWeight: "BOLD" }}> Federal Residential Clean Energy Credit (25D)</h4>
 
-                                    Federal Residential Clean Energy Credit (25D)                   
-                                                     </h4>
-
-                                    <h4 style={{ color: "#76867e" }}>
-                                    Uncapped 30% tax credit for installing geothermal equipment. valued, on average, $7,200.
-                                        </h4>
+                                    <h4 style={{ color: "#76867e" }}>A 30% uncapped tax credit, valued at $4,800 on average, is available for battery storage systems.</h4>
 
 
                                     <button> TAX CREDIT</button>
+
+                                    {/* <SystemSecurityUpdateWarningIcon style={{fontSize:'13px' , marginTop:'2px'}}/>  */}
+                                    {/* <button> EXPECTED IN 2025</button> */}
                                 </div>}
 
-
-
                                 {activeTab == 'Federal' && <div className='des-option'>
-                                    <h2>A $2,000 air source heat pump discount</h2>
+                                    <h2>$4,100 off Rooftop Solar</h2>
 
-                                    <h4 style={{ margin: '10px 0', color: "#76867e", fontWeight: "BOLD" }}> 
-                                    Federal Energy Efficient Home Improvement Credit (25C)
-                                    </h4>
-
-                                    <h4 style={{ color: "#76867e" }}>
-                                    A 30% tax credit, up to $2,000, is available for water heaters with heat pumps. annually reset.
-                                    </h4>
-
-
-                                    <button> TAX CREDIT</button>
-                                </div>}
-
-
-
-                                {activeTab == 'Federal' && <div className='des-option'>
-                                    <h2>$1,200 in savings on weatherization</h2>
-
-                                    <h4 style={{ margin: '10px 0', color: "#76867e", fontWeight: "BOLD" }}>
-                                    Credit for Home Improvements with Low Energy Use (25C)
-                                                                                 </h4>
+                                    <h4 style={{ margin: '10px 0', color: "#76867e", fontWeight: "BOLD" }}> Federal Residential Clean Energy Credit (25D)</h4>
 
                                     <h4 style={{ color: "#76867e" }}>
 
-
-                                    Incentives for weatherization projects, such as air sealing, insulation, doors, and windows, are 30% up to $1,200. annually reset.
+                                        Rooftop solar offers a 30% tax credit (uncapped, $4,600 average); panel upgrades also qualify. Leased or community solar may qualify
+                                        for bonuses of 10%–20% in low-income areas.
                                     </h4>
 
 
@@ -283,4 +251,4 @@ const HeatPump = () => {
     );
 };
 
-export default HeatPump;
+export default Solar;

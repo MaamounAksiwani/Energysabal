@@ -14,7 +14,11 @@ import ContactScreen from "./components/ContactScreen/ContactScreen";
 import AboutScreen from "./components/AboutScreen/AboutScreen";
 import Makeplan from "./components/Makeplan/Makeplan";
 import HeatPump from './components/HeatPump/HeatPump'
-
+import Solar from './components/Solar/Solar'
+import WaterHeater from './components/WaterHeater/WaterHeater'
+import ElectricalPanel from './components/ElectricalPanel/ElectricalPanel';
+import ElectricVehicle from './components/ElectricVehicle/ElectricVehicle';
+import ClothesDryer from './components/ClothesDryer/ClothesDryer'
 const App = () => {
   return (
     <>
@@ -30,6 +34,11 @@ const App = () => {
           <Route exact path='/About' element={<AboutScreen/>}/>
           <Route exact path='/Makeplan' element={<Makeplan/>}/>
           <Route exact path='/HeatPump' element={<HeatPump/>}/>
+          <Route exact path='/ClothesDryer' element={<ClothesDryer/>}/>
+          <Route exact path='/Solar' element={<Solar/>}/>
+          <Route exact path='/WaterHeater' element={<WaterHeater/>}/>
+          <Route exact path='/ElectricalPanel' element={<ElectricalPanel/>}/>
+          <Route exact path='/ElectricVehicle' element={<ElectricVehicle/>}/>
           <Route path="*" element={<NotFound />} />
         </Routes>
         {/* <ScrollToTopButton/> */}
