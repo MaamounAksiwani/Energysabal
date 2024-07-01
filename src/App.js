@@ -18,7 +18,8 @@ import Solar from './components/Solar/Solar'
 import WaterHeater from './components/WaterHeater/WaterHeater'
 import ElectricalPanel from './components/ElectricalPanel/ElectricalPanel';
 import ElectricVehicle from './components/ElectricVehicle/ElectricVehicle';
-import ClothesDryer from './components/ClothesDryer/ClothesDryer'
+import ClothesDryer from './components/ClothesDryer/ClothesDryer';
+import ReceiveReport from './components/ReceiveReport/ReceiveReport'
 const App = () => {
   return (
     <>
@@ -39,6 +40,7 @@ const App = () => {
           <Route exact path='/WaterHeater' element={<WaterHeater/>}/>
           <Route exact path='/ElectricalPanel' element={<ElectricalPanel/>}/>
           <Route exact path='/ElectricVehicle' element={<ElectricVehicle/>}/>
+          <Route exact path='/ReceiveReport' element={<ReceiveReport/>}/>
           <Route path="*" element={<NotFound />} />
         </Routes>
         {/* <ScrollToTopButton/> */}

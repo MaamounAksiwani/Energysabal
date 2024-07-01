@@ -104,7 +104,7 @@ const Navbar = () => {
 
             <div className={`menuItems ${menuVisible ? 'visible' : ''}`}>
               <button onClick={()=>{handleLinkClick('/Makeplan')}} className='getStartBtn'>Make Plan</button>
-              <button className='SignIn'>Receive Report</button>
+              <button onClick={()=>{handleLinkClick('/ReceiveReport')}} className='SignIn'>Receive Report</button>
             </div>
           </div>
         </Container>
