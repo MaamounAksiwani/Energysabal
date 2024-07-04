@@ -30,12 +30,12 @@ const ReceiveReport = () => {
     };
 
     return (
-        <div style={{ padding: '100px 0', height: '15.8vh' }} className='wow fadeInDown' data-wow-duration='1s'>
+        <div style={{ padding: '100px 0' , backgroundColor:'#D5E2D9'}} className='wow fadeInDown' data-wow-duration='1s'>
             <Container maxWidth="md">
                 <div className='tabs'>
                     <div onClick={handleFreeReportClick}>
                         <h1>Get Free Report</h1>
-                      
+            
                     </div>
 
                     <div onClick={handlePurchaseReportClick}>

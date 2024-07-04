@@ -103,8 +103,9 @@ const Makeplan = () => {
                                 {Object.keys(formData).map((field) => (
                                     <Grid item xs={field === 'firstName' || field === 'lastName' ? 12 : 12} key={field}>
                                         <TextField
-                                            size='medium'
-                                            variant="standard"
+                                        
+                                        size='small'
+                                            variant="outlined"
                                             label={field === 'firstName' ? 'First Name' : field === 'lastName' ? 'Last Name' : field.replace(/([A-Z])/g, ' $1').trim()}
                                             fullWidth
                                             margin="dense"
